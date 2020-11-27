@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
+import AVFoundation
+import AVKit
+import AdSupport
+import Auth0
+import AuthenticationServices
+@_exported import BearnSDK
+import Charts
+import CoreLocation
+import Foundation
+import HealthKit
+import IQKeyboardManagerSwift
+import JWTDecode
+import Kingfisher
+import LinkKit
+import MBProgressHUD
+import MapKit
+import MessageUI
+import MyFiziqSDK
+import MyFiziqSDKCommon
+import MyFiziqSDKHealthKit
+import MyFiziqSDKInputView
+import MyFiziqSDKLoginView
+import MyFiziqSDKOnboardingView
+import MyFiziqSDKProfileView
+import MyFiziqSDKTrackingView
+import NotificationBannerSwift
+import OAuthSwift
+import PureLayout
+import QuartzCore
+import RangeSeekSlider
+import SafariServices
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+extension UIButton {
+  @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
+}
+@objc @_inheritsConvenienceInitializers public class BRNAPIError : ObjectiveC.NSObject {
+  public var message: Swift.String?
+  public var code: Swift.Int
+  public var nsError: Foundation.NSError {
+    get
+  }
+  public class func webAuthError(message: Swift.String) -> BearnSDK.BRNAPIError
+  convenience public init(message: Swift.String, code: Swift.Int = 0)
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension String {
+  public var convertHtmlToNSAttributedString: Foundation.NSAttributedString? {
+    get
+  }
+  public func convertHtmlToAttributedStringWithCSS(font: UIKit.UIFont?, textColor: UIKit.UIColor? = UIColor.black, lineHeight: Swift.Int = 0, textAlign: UIKit.NSTextAlignment = .left) -> Foundation.NSAttributedString?
+}
+@objc @_inheritsConvenienceInitializers open class Bearn : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.Bearn
+  public func present(on parentViewController: UIKit.UIViewController)
+  @objc override dynamic public init()
+  public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment)
+  open func isBearnURL(url: Foundation.URL) -> Swift.Bool
+  @discardableResult
+  open func handle(url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any]) -> Swift.Bool
+  open func performFetchWithCompletionHandler(_ completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @objc deinit
+}
+extension Bearn : MyFiziqSDKLoginView.MyFiziqLoginDelegate {
+  @objc dynamic public func myfiziqIsReadyAndUserLogged(in isLoggedIn: Swift.Bool)
+  @objc dynamic public func myfiziqSetupFailedWithError(_ error: Swift.Error?)
+}
+extension UINavigationController {
+  @objc override dynamic open var childForStatusBarStyle: UIKit.UIViewController? {
+    @objc get
+  }
+}
+public enum BRNEnvironment : Swift.Int {
+  case production
+  case development
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BearnSDK.BRNEnvironment : Swift.Equatable {}
+extension BearnSDK.BRNEnvironment : Swift.Hashable {}
+extension BearnSDK.BRNEnvironment : Swift.RawRepresentable {}

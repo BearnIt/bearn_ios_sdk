@@ -1,0 +1,4891 @@
+
+/****************************************************************/
+/***************** MyFiziqSDKCore *****************************/
+/*****************    LIGHT MODE    *****************************/
+/****************************************************************/
+
+/* See InterfaCSS Github wiki to see style parameters for UIView elements */
+
+/* Globals: */
+@mfzSdkColorBase: white;
+@mfzSdkColorBaseDark: #171717;
+@mfzSdkColorBaseNeutral: #8E8E93;
+@mfzSdkColorPrimary: #13d022;
+@mfzSdkColorHighlight: #13d022;
+@mfzSdkColorButtonOpA: white;
+@mfzSdkColorButtonOpB: clear;
+@mfzSdkPrimaryBlackBackgroundColor: black;
+@mfzSdkTransparentColor: clear;
+@mfzSdkTitleFont: systemBold 34;
+@mfzSdkPhaseTitleFont: systemBold 36;
+@mfzSdkButtonFont: systemBold 20;
+@mfzSdkBodyFont: systemBold 16;
+@mfzSdkBodyBoldFont: systemBold 18;
+@mfzSdkErrorTitleFont: systemBold 34.0;
+@mfzSdkCountdownFont: systemBold 96.0;
+
+/* Nav common: */
+@mfzSdkNavCloseTopInset: 32.0;
+@mfzSdkNavCloseTopInset-iPhone-X: 40.0;
+@mfzSdkNavCloseTopInset-iPhone-XS: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseTopInset-iPhone-XS-Max: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseTopInset-iPhone-XR: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseTopInset-iPhone-11: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseTopInset-iPhone-11-Pro: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseTopInset-iPhone-11-Pro-Max: @mfzSdkNavCloseTopInset-iPhone-X;
+@mfzSdkNavCloseWidth: 40.0;
+@mfzSdkNavCloseHeight: 40.0;
+@mfzSdkNavCloseRightInset: 20.0;
+@mfzSdkNavHelpLeftInset: 20.0;
+@mfzSdkNavHelpTopInset: 27.0;
+@mfzSdkNavHelpTopInset-iPhone-X: 37.0;
+@mfzSdkNavHelpTopInset-iPhone-XS: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpTopInset-iPhone-XS-Max: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpTopInset-iPhone-XR: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpTopInset-iPhone-11: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpTopInset-iPhone-11-Pro: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpTopInset-iPhone-11-Pro-Max: @mfzSdkNavHelpTopInset-iPhone-X;
+@mfzSdkNavHelpWidth: 40.0;
+@mfzSdkNavHelpHeight: 40.0;
+
+/* Status bar style, see UIStatusBarStyle for options. */
+@mfzSdkViewStatusBarStyle: 1;
+
+/* Pose Error common: */
+@mfzSdkErrTitleTopInset: 88.0;
+@mfzSdkErrTitleTopInset-iPhone-5s: 45.0;
+@mfzSdkErrTitleTopInset-iPhone-SE: 45.0;
+@mfzSdkErrTitleTopInset-iPod-Touch-7: 45.0;
+@mfzSdkErrTitleMinHeight: 76.0;
+@mfzSdkErrPadding: 26.0;
+@mfzSdkErrButtonPadding: 8.0;
+@mfzSdkErrButtonWidth: 250.0;
+@mfzSdkErrButtonHeight: 45.0;
+
+/* Initialize Phase: */
+@mfzSdkInitTitleHeight: 40.0;
+
+/* Alignment Phase: */
+@mfzSdkAlignViewDarkBackgroundColor: rgba(0.0, 0.0, 0.0, 0.8);
+@mfzSdkAlignTitleTopInset: 35.0;
+@mfzSdkAlignTitleTopInset-iPhone-X: 77.0;
+@mfzSdkAlignTitleTopInset-iPhone-XS: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleTopInset-iPhone-XS-Max: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleTopInset-iPhone-XR: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleTopInset-iPhone-11: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleTopInset-iPhone-11-Pro: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleTopInset-iPhone-11-Pro-Max: @mfzSdkAlignTitleTopInset-iPhone-X;
+@mfzSdkAlignTitleWidth: 305.0;
+@mfzSdkAlignTitleHeight: 150.0;
+@mfzSdkAlignCameraEnableOffset: 50.0;
+@mfzSdkAlignTitleText: "Align Circles\n" (font: @mfzSdkTitleFont, color: @mfzSdkColorBase);
+@mfzSdkAlignInfoText: "\nTap screen to allow camera access.\nThis is necessary to create 3D avatars." (font: @mfzSdkBodyBoldFont, color: @mfzSdkColorBase);
+/* Spacing between lines of title */
+@mfzSdkAlignTitleSubtitleSpacing: 7.0;
+@mfzSdkAlignCountdownText: "3" (font: @mfzSdkCountdownFont, color: @mfzSdkColorHighlight);
+@mfzSdkAlignEnableCameraText: "ENABLE CAMERA" (font: @mfzSdkBodyBoldFont, color: @mfzSdkColorPrimary);
+@mfzSdkAlignLineWidth: 3.0;
+@mfzSdkAlignRadius: 85.0;
+@mfzSdkAlignRadius-iPhone-5s: 75.0;
+@mfzSdkAlignRadius-iPhone-SE: 75.0;
+@mfzSdkAlignRadius-iPod-Touch-7: 75.0;
+@mfzSdkAlignRadius: 85.0;
+@mfzSdkAlignColorUnaligned: @mfzSdkColorBase;
+@mfzSdkAlignColorAligned: @mfzSdkColorPrimary;
+@mfzSdkAlignColorAlignedLocking: @mfzSdkColorBase;
+@mfzSdkAlignColorAim: @mfzSdkColorPrimary;
+@mfzSdkAlignAimSwingConstraint: 100.0;
+
+/* Wrong Orientation: */
+@mfzSdkOrientationTitleText: "Turn Phone\nUpright\n" (font: systemBold 31.0, color: @mfzSdkColorBase);
+
+/* Pose Contour: */
+@mfzSdkPoseColorGuideFront: @mfzSdkColorPrimary;
+@mfzSdkPoseColorGuideSide: @mfzSdkColorPrimary;
+@mfzSdkPoseContourFrontIsDashed: YES;
+@mfzSdkPoseContourFrontBase: black;
+@mfzSdkPoseContourFrontDash: @mfzSdkPoseColorGuideFront;
+@mfzSdkPoseContourSideIsDashed: YES;
+@mfzSdkPoseContourSideBase: black;
+@mfzSdkPoseContourSideDash: @mfzSdkPoseColorGuideSide;
+@mfzSdkPoseContourBackgroundColor: rgba(0,0,0,0.55);
+
+/* Pose Phase: */
+@mfzSdkPoseCountdownMinOriginX: 10.0;
+@mfzSdkPoseCountdownMinOriginY: 0.0;
+@mfzSdkPoseCountdownMinOriginX-iPhone-X: 20.0;
+@mfzSdkPoseCountdownMinOriginX-iPhone-XS: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginX-iPhone-XS-Max: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginX-iPhone-XR: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginX-iPhone-11: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginX-iPhone-11-Pro: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginX-iPhone-11-Pro-Max: @mfzSdkPoseCountdownMinOriginX-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-X: 70.0;
+@mfzSdkPoseCountdownMinOriginY-iPhone-XS: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-XS-Max: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-XR: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-11: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-11-Pro: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseCountdownMinOriginY-iPhone-11-Pro-Max: @mfzSdkPoseCountdownMinOriginY-iPhone-X;
+@mfzSdkPoseFontCountdownPeriod: 10;
+@mfzSdkPoseFontCountdownFontBig: systemBold 288;
+@mfzSdkPoseFontCountdownFontBigSize: 288.0;
+@mfzSdkPoseColorCountdownLabel: @mfzSdkColorBase;
+@mfzSdkPoseColorCountdownFrontLabel: @mfzSdkPoseColorGuideFront;
+@mfzSdkPoseColorCountdownSideLabel: @mfzSdkPoseColorGuideSide;
+@mfzSdkPoseFontCountdownFontNormSize: 100.0;
+@mfzSdkPoseFontCountdownFontNorm: systemBold 144;
+@mfzSdkPoseFontTitleText: "FRONT" (font: @mfzSdkPhaseTitleFont, color: @mfzSdkColorBase, kern: 10.0);
+@mfzSdkPoseTitleHeight: @mfzSdkPoseBannerHeight;
+@mfzSdkPoseBannerHeight: 46;
+@mfzSdkPoseBannerHeight-iPhone-X: 80;
+@mfzSdkPoseBannerHeight-iPhone-XS: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseBannerHeight-iPhone-XS-Max: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseBannerHeight-iPhone-XR: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseBannerHeight-iPhone-11: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseBannerHeight-iPhone-11-Pro: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseBannerHeight-iPhone-11-Pro-Max: @mfzSdkPoseBannerHeight-iPhone-X;
+@mfzSdkPoseFrontBannerColor: @mfzSdkColorPrimary;
+@mfzSdkPoseSideBannerColor: @mfzSdkColorPrimary;
+@mfzSdkPoseFrontShutterColor: @mfzSdkPoseColorGuideFront;
+@mfzSdkPoseSideShutterColor: @mfzSdkPoseColorGuideSide;
+@mfzSdkPoseTitleText: "FRONT" (font: @mfzSdkTitleFont, color: @mfzSdkColorBase);
+
+/* Inspection errors: */
+@mfzSdkInspectRetryLimit: 1;
+@mfzSdkInspectFrontCountdownPeriod: 10;
+@mfzSdkInspectFirstColor: @mfzSdkColorPrimary;
+@mfzSdkInspectSubsequentColor: @mfzSdkColorPrimary;
+@mfzSdkInspectTitleTopInset: 88.0;
+@mfzSdkInspectTitleTopInset-iPhone-5s: 45.0;
+@mfzSdkInspectTitleTopInset-iPhone-SE: 45.0;
+@mfzSdkInspectTitleTopInset-iPod-Touch-7: 45.0;
+@mfzSdkInspectTitleMinHeight: 115.0;
+@mfzSdkInspectGuideLineWidth: @mfzSdkAlignLineWidth;
+@mfzSdkInspectGuideTrackLineWidth: @mfzSdkInspectGuideLineWidth;
+@mfzSdkInspectGuideCountdownLineWidth: @mfzSdkInspectGuideLineWidth;
+@mfzSdkInspectGuideRadius: 80.0;
+@mfzSdkInspectGuideHeight: 164.0;
+@mfzSdkInspectRetryingHeight: 30.0;
+@mfzSdkInspectRetryingTopInset: 5;
+@mfzSdkInspectGuideTrackColor: rgba(0.0, 0.0, 0.0, 0.05);
+@mfzSdkInspectGuideCountdownColor: #0FA61B;
+@mfzSdkInspectGuideTrackAlignedColor: @mfzSdkColorBase;
+@mfzSdkInspectGuideTrackUnAlignedColor: @mfzSdkColorBase;
+@mfzSdkInspectPadding: 8.0;
+@mfzSdkInspectRealignTopPadding: @mfzSdkInspectPadding;
+@mfzSdkInspectGuideTopPadding: 15;
+@mfzSdkInspectSupportButtonText: "contact support" (font: @mfzSdkButtonFont, color: @mfzSdkColorBase, underlineStyle: 1);
+
+/* Confirm Phase: */
+@mfzSdkConfirmButtonsVerticalStack: NO;
+@mfzSdkConfirmButtonsVerticalStackPractise: YES;
+@mfzSdkConfirmRetakeButtonVerticalStackBottomOffset: 20.0;
+@mfzSdkConfirmRetakeButtonVerticalStackHeight: 50.0;
+@mfzSdkConfirmRetakeButtonVerticalStackWidth: 255.0;
+@mfzSdkConfirmButtonVerticalStackBottomOffset: -14.0;
+@mfzSdkConfirmButtonVerticalStackHeight: 50.0;
+@mfzSdkConfirmButtonVerticalStackWidth: 255.0;
+@mfzSdkConfirmRetakeButtonHeight: 50.0;
+@mfzSdkConfirmConfirmButtonHeight: 50.0;
+@mfzSdkConfirmPadding: 5.0;
+@mfzSdkConfirmButtonSepPadding: 16.0;
+@mfzSdkConfirmButtonBottomOffset: 46.0;
+@mfzSdkConfirmTextHeight: 100.0;
+@mfzSdkConfirmText11: "I confirm that I am wareing " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText12: "form\nfitting clothing " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText13: "and my arms and\nlegs are " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText14: "inside the outline" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText15: "." (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText21: "I confirm that my " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText22: "feet are\ntogether" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText23: ", arms " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText24: "down my side" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmText25: "and\nI am inside the outline." (font: @mfzSdkBodyFont, color: @mfzSdkColorBase);
+@mfzSdkConfirmPhotoMaskColor: black;
+
+/* Re-take button in confirm overrides the Neutral option. */
+@mfzSdkConfirmRetake-mfzCommonSdkButtonStandardColorEnabled: #8E8E93;
+@mfzSdkConfirmRetake-mfzCommonSdkButtonActivityIndicatorColor: white;
+@mfzSdkConfirmRetake-mfzCommonSdkButtonActivityIndicatorRightSideMargin: 0.0;
+
+/* Confirm Help Phase: */
+@mfzSdkConfirmHelpTitleHeight: 50.0;
+@mfzSdkConfirmHelpBodyHeight: 70.0;
+@mfzSdkConfirmHelpBodyHeight-iPhone-5s: 95.0;
+@mfzSdkConfirmHelpBodyHeight-iPhone-SE: 95.0;
+@mfzSdkConfirmHelpBodyHeight-iPod-Touch-7: 95.0;
+@mfzSdkConfirmHelpPadding: 20.0;
+@mfzSdkConfirmHelpSugBorderWidth: 2.0;
+@mfzSdkConfirmHelpSugHeight: 1.0;
+@mfzSdkConfirmHelpOkButtonWidth: 290.0;
+@mfzSdkConfirmHelpOkButtonHeight: 50.0;
+@mfzSdkConfirmHelpOkButtonSafeAreaBottomInset: 0.0;
+@mfzSdkConfirmBodyFont: systemBold 16;
+
+/* Submit Phase */
+@mfzSdkSubmitTitleHeight: 40.0;
+@mfzSdkSubmitColorRail: @mfzSdkColorBase;
+@mfzSdkSubmitProgressWidth: 200.0;
+@mfzSdkSubmitProgressHeight: 4.0;
+@mfzSdkSubmitProgressOffset: 12.0;
+
+/* Submit Retry Phase */
+/* The number of times the submission should be reattempted
+ If value is changed to 0 or removed, 1 will be retried.
+ */
+ @myqSdkSubmitRetryAttemptsCount: 10;
+ /* The starting time of the interval; How soon after failure should the reattempt occur?
+  If value is changed to be less than 1.0 or removed, 1.0 will be used.
+  */
+ @myqSdkSubmitRetrySecondInterval: 1.0;
+ /* The multiplier of the starting time interval; How much should the submission interval multiply by for each failure?
+  eg.
+  - First attempt wait one second
+  - Second attempt wait (2 * 1.0)
+  - Third attempt wait (2 * 2.0)
+  - Fourth attempt wait (2 * 4.0)
+  - and so on
+  
+  If value is changed to be less than 1.0 or removed, 1.0 will be used.
+  */
+ @myqSdkSubmitRetrySecondIntervalMultiplier: 2.0; 
+ @mfzSdkConfirmButtonTitleColor: white;
+
+.mfz-sdk-pose-err-realign-btn {
+    /* UIButton */
+    cornerRadius: 4.0;
+    backgroundColor: @mfzSdkColorButtonOpA;
+    titleColor: @mfzSdkColorPrimary;
+    titleLabel.font: @mfzSdkButtonFont;
+    titleLabel.textAlignment: center;
+}
+
+.mfz-sdk-pose-err-exit-btn {
+    /* UIButton */
+    cornerRadius: 4.0;
+    borderWidth: 2.0;
+    borderColor: @mfzSdkColorBase;
+    backgroundColor: @mfzSdkColorButtonOpB;
+    titleColor: @mfzSdkColorBase;
+    titleLabel.font: @mfzSdkButtonFont;
+    titleLabel.textAlignment: center;
+}
+
+/* Connecting Phase: */
+.mfz-sdk-connecting-view {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-connecting-titlelabel {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: @mfzSdkTitleFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-init-view {
+    /* UIView */
+    backgroundColor: @mfzSdkColorBaseDark;
+}
+
+.mfz-sdk-submit-label {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: @mfzSdkTitleFont;
+    textAlignment: center;
+}
+
+.mfz-sdk-align-view {
+    /* UIView */
+    backgroundColor: @mfzSdkAlignViewDarkBackgroundColor;
+}
+
+.mfz-sdk-align-closebutton {
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-align-helpbutton {
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-align-titlelabel {
+    /* UILabel - uses attributed text for styling */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-align-countdownlabel {
+    /* UILabel */
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    hidden: NO;
+}
+
+.mfz-sdk-pose-orientationerr-view {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-pose-orientationerr-label {
+    /* UILabel - uses attributed text for styling */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-view {
+    /* UIView */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-pose-banner {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-pose-title {
+    /* UILabel */
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-err-view {
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary;
+}
+
+.mfz-sdk-pose-err-title {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: @mfzSdkErrorTitleFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-view {
+    /* UIView */
+    backgroundColor: @mfzSdkInspectFirstColor;
+}
+
+.mfz-sdk-inspect-err-title {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: @mfzSdkErrorTitleFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-title-iPod-Touch-7 {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: systemBold 28.0;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-body {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: @mfzSdkBodyFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-retrying {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: @mfzSdkBodyBoldFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-countdown-label {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    textAlignment: center;
+    font: systemBold 100.0;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-inspect-err-realign-btn {
+    /* UIButton */
+    cornerRadius: 4.0;
+    backgroundColor: @mfzSdkColorButtonOpA;
+    titleColor: @mfzSdkColorPrimary;
+    titleLabel.font: @mfzSdkButtonFont;
+    titleLabel.textAlignment: center;
+}
+
+.mfz-sdk-inspect-err-exit-btn {
+    /* UIButton */
+    cornerRadius: 4.0;
+    borderWidth: 2.0;
+    borderColor: @mfzSdkColorBase;
+    backgroundColor: @mfzSdkColorButtonOpB;
+    titleColor: @mfzSdkColorBase;
+    titleLabel.font: @mfzSdkButtonFont;
+    titleLabel.textAlignment: center;
+}
+
+.mfz-sdk-inspect-err-support-btn {
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor;
+    titleColor: @mfzSdkColorBase;
+    titleLabel.textAlignment: center;
+}
+
+.mfz-sdk-confirm-view {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-confirm-closebutton {
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-confirm-helpbutton {
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-confirm-textlabel {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: @mfzSdkBodyFont;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfzSdkConfirmRetake-mfz-common-standard-button {
+    /* UIButton */
+    cornerRadius: 8.0;
+    titleColor(normal): @mfzSdkConfirmButtonTitleColor;
+    titleLabel.font: systemBold 17;
+    titleLabel.lineBreakMode: wordWrapping;
+    titleLabel.numberOfLines: 0;
+    titleLabel.textAlignment: center;
+    alpha: 0.95;
+}
+
+.mfzSdkConfirmRetakePractise-mfz-common-standard-button {
+    @extend mfzSdkConfirmRetake-mfz-common-standard-button
+    /* UILabel */
+    hidden: YES;
+}
+
+.mfz-sdk-confirmhelp-view {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-pose-confirmhelp-title {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: @mfzSdkTitleFont;
+    textAlignment: center;
+}
+
+.mfz-sdk-pose-confirmhelp-body {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: @mfzSdkBodyBoldFont;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPhone-5s {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: systemBold 14;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPhone-SE {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: systemBold 14;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPod-Touch-7 {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: systemBold 14;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-sdk-pose-confirmhelp-image {
+    /* UIImageView */
+    backgroundColor: @mfzSdkTransparentColor;
+}
+
+.mfz-sdk-pose-confirmhelp-sug-topborder {
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary;
+    hidden: YES;
+}
+
+.mfz-sdk-pose-confirmhelp-sug-bottomborder {
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary;
+    hidden: YES;
+}
+
+.mfz-sdk-pose-confirmhelp-suggestion {
+    /* UILabel */
+    textColor: @mfzSdkColorPrimary;
+    font: @mfzSdkBodyFont;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    hidden: YES;
+}
+
+.mfz-sdk-submit-view {
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor;
+}
+
+.mfz-sdk-submit-label {
+    /* UILabel */
+    textColor: @mfzSdkColorBase;
+    font: @mfzSdkTitleFont;
+    textAlignment: center;
+}
+
+.mfz-sdk-submit-progress {
+    /* UIProgressView */
+    progressTintColor: @mfzSdkColorPrimary;
+    trackTintColor: @mfzSdkSubmitColorRail;
+}
+
+/***************************************************************************************/
+                                /* DARK MODE */
+/***************************************************************************************/
+
+@mfzSdkColorBase-dark: white;
+@mfzSdkColorBaseDark-dark: #171717;
+@mfzSdkColorBaseNeutral-dark: #8E8E93;
+@mfzSdkColorPrimary-dark: #13d022;
+@mfzSdkColorHighlight-dark: #13d022;
+@mfzSdkColorButtonOpA-dark: white;
+@mfzSdkColorButtonOpB-dark: clear;
+@mfzSdkTransparentColor-dark: clear;
+@mfzSdkPrimaryBlackBackgroundColor-dark: black;
+@mfzSdkAlignTitleText: "Align Circles\n" (font: @mfzSdkTitleFont, color: @mfzSdkColorBase-dark);
+@mfzSdkAlignInfoText: "\nTap screen to allow camera access.\nThis is necessary to create 3D avatars." (font: @mfzSdkBodyBoldFont, color: @mfzSdkColorBase-dark);
+@mfzSdkAlignCountdownText: "3" (font: @mfzSdkCountdownFont, color: @mfzSdkColorHighlight-dark);
+@mfzSdkAlignEnableCameraText: "ENABLE CAMERA" (font: @mfzSdkBodyBoldFont, color: @mfzSdkColorPrimary-dark);
+@mfzSdkAlignColorUnaligned-dark: @mfzSdkColorBase-dark;
+@mfzSdkAlignColorAligned-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkAlignColorAlignedLocking-dark: @mfzSdkColorBase-dark;
+@mfzSdkAlignColorAim-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkOrientationTitleText: "Turn Phone\nUpright\n" (font: systemBold 31.0, color: @mfzSdkColorBase-dark);
+@mfzSdkPoseColorGuideFront-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkPoseColorGuideSide-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkPoseContourFrontBase-dark: black;
+@mfzSdkPoseContourFrontDash-dark: @mfzSdkPoseColorGuideFront-dark;
+@mfzSdkPoseContourSideBase-dark: black;
+@mfzSdkPoseContourSideDash-dark: @mfzSdkPoseColorGuideSide-dark;
+@mfzSdkPoseContourBackgroundColor-dark: rgba(0,0,0,0.55);
+@mfzSdkPoseColorCountdownLabel-dark: @mfzSdkColorBase-dark;
+@mfzSdkPoseColorCountdownFrontLabel-dark: @mfzSdkPoseColorGuideFront-dark;
+@mfzSdkPoseColorCountdownSideLabel-dark: @mfzSdkPoseColorGuideSide-dark;
+@mfzSdkPoseFontTitleText: "FRONT" (font: @mfzSdkPhaseTitleFont, color: @mfzSdkColorBase-dark, kern: 10.0);
+@mfzSdkPoseFrontBannerColor-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkPoseSideBannerColor-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkPoseFrontShutterColor-dark: @mfzSdkPoseColorGuideFront-dark;
+@mfzSdkPoseSideShutterColor-dark: @mfzSdkPoseColorGuideSide-dark;
+@mfzSdkPoseTitleText: "FRONT" (font: @mfzSdkTitleFont, color: @mfzSdkColorBase-dark);
+@mfzSdkInspectFirstColor-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkInspectSubsequentColor-dark: @mfzSdkColorPrimary-dark;
+@mfzSdkInspectGuideTrackColor-dark: rgba(0.0, 0.0, 0.0, 0.05);
+@mfzSdkInspectGuideCountdownColor-dark: #0FA61B;
+@mfzSdkInspectGuideTrackAlignedColor-dark: @mfzSdkColorBase-dark;
+@mfzSdkInspectGuideTrackUnAlignedColor-dark: @mfzSdkColorBase-dark;
+@mfzSdkInspectSupportButtonText: "contact support" (font: @mfzSdkButtonFont, color: @mfzSdkColorBase-dark, underlineStyle: 1);
+@mfzSdkConfirmText11: "I confirm that I am wareing " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText12: "form\nfitting clothing " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText13: "and my arms and\nlegs are " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText14: "inside the outline" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText15: "." (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText21: "I confirm that my " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText22: "feet are\ntogether" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText23: ", arms " (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText24: "down my side" (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmText25: "and\nI am inside the outline." (font: @mfzSdkBodyFont, color: @mfzSdkColorBase-dark);
+@mfzSdkConfirmPhotoMaskColor-dark: black;
+@mfzSdkConfirmRetake-mfzCommonSdkButtonStandardColorEnabled-dark: #8E8E93;
+@mfzSdkConfirmRetake-mfzCommonSdkButtonActivityIndicatorColor-dark: white;
+@mfzSdkSubmitColorRail-dark: @mfzSdkColorBase-dark;
+@mfzSdkAlignViewDarkBackgroundColor-dark: rgba(0.0, 0.0, 0.0, 0.8);
+@mfzSdkConfirmButtonTitleColor-dark: white;
+
+.mfz-sdk-pose-err-realign-btn-dark {
+    @extend .mfz-sdk-pose-err-realign-btn;
+    /* UIButton */
+    backgroundColor: @mfzSdkColorButtonOpA-dark;
+    titleColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-pose-err-exit-btn-dark {
+    @extend .mfz-sdk-pose-err-exit-btn;
+    /* UIButton */
+    borderColor: @mfzSdkColorBase-dark;
+    backgroundColor: @mfzSdkColorButtonOpB-dark;
+    titleColor: @mfzSdkColorBase-dark;
+}
+
+/* Connecting Phase: */
+.mfz-sdk-connecting-view-dark {
+    @extend .mfz-sdk-connecting-view;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-connecting-titlelabel-dark {
+    @extend .mfz-sdk-connecting-titlelabel;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-init-view-dark {
+    @extend .mfz-sdk-init-view;
+    /* UIView */
+    backgroundColor: @mfzSdkColorBaseDark-dark;
+}
+
+.mfz-sdk-submit-label-dark {
+    @extend .mfz-sdk-submit-label;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-align-view-dark {
+    @extend .mfz-sdk-align-view;
+    /* UIView */
+    backgroundColor: @mfzSdkAlignViewDarkBackgroundColor-dark;
+}
+
+.mfz-sdk-align-closebutton-dark {
+    @extend .mfz-sdk-align-closebutton;
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-align-helpbutton-dark {
+    @extend .mfz-sdk-align-helpbutton;
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-align-titlelabel-dark {
+    @extend .mfz-sdk-align-titlelabel;
+    /* UILabel - uses attributed text for styling */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-align-countdownlabel-dark {
+    @extend .mfz-sdk-align-countdownlabel;
+}
+
+.mfz-sdk-pose-orientationerr-view-dark {
+    @extend .mfz-sdk-pose-orientationerr-view;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-pose-orientationerr-label-dark {
+    @extend .mfz-sdk-pose-orientationerr-label;
+    /* UILabel - uses attributed text for styling */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-view-dark {
+    @extend .mfz-sdk-pose-view;
+    /* UIView */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-pose-banner-dark {
+    @extend .mfz-sdk-pose-banner;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-pose-title-dark {
+    @extend .mfz-sdk-pose-title;
+    /* UILabel */
+}
+
+.mfz-sdk-pose-err-view-dark {
+    @extend .mfz-sdk-pose-err-view;
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-pose-err-title-dark {
+    @extend .mfz-sdk-pose-err-title;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-view-dark {
+    @extend .mfz-sdk-inspect-err-view;
+    /* UIView */
+    backgroundColor: @mfzSdkInspectFirstColor-dark;
+}
+
+.mfz-sdk-inspect-err-title-dark {
+    @extend .mfz-sdk-inspect-err-title;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-title-iPod-Touch-7-dark {
+    @extend .mfz-sdk-inspect-err-title-iPod-Touch-7;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-body-dark {
+    @extend mfz-sdk-inspect-err-body;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-retrying-dark {
+    @extend .mfz-sdk-inspect-err-retrying;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-countdown-label-dark {
+    @extend .mfz-sdk-inspect-err-countdown-label;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-realign-btn-dark {
+    @extend .mfz-sdk-inspect-err-realign-btn;
+    /* UIButton */
+    backgroundColor: @mfzSdkColorButtonOpA-dark;
+    titleColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-inspect-err-exit-btn-dark {
+    @extend .mfz-sdk-inspect-err-exit-btn;
+    /* UIButton */
+    borderColor: @mfzSdkColorBase-dark;
+    backgroundColor: @mfzSdkColorButtonOpB-dark;
+    titleColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-inspect-err-support-btn-dark {
+    @extend .mfz-sdk-inspect-err-support-btn;
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+    titleColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-confirm-view-dark {
+    @extend .mfz-sdk-confirm-view;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-confirm-closebutton-dark {
+    @extend .mfz-sdk-confirm-closebutton;
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-confirm-helpbutton-dark {
+    @extend .mfz-sdk-confirm-helpbutton;
+    /* UIButton */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-confirm-textlabel-dark {
+    @extend .mfz-sdk-confirm-textlabel;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfzSdkConfirmRetake-mfz-common-standard-button-dark {
+    @extend .mfzSdkConfirmRetake-mfz-common-standard-button;
+    /* UIButton */
+    titleColor(normal): @mfzSdkConfirmButtonTitleColor-dark;
+}
+
+.mfzSdkConfirmRetakePractise-mfz-common-standard-button-dark {
+    @extend mfzSdkConfirmRetake-mfz-common-standard-button-dark;
+    /* UIButton */
+    hidden: YES;
+}
+
+.mfz-sdk-confirmhelp-view-dark {
+    @extend .mfz-sdk-confirmhelp-view;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-title-dark {
+    @extend .mfz-sdk-pose-confirmhelp-title;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-body-dark {
+    @extend .mfz-sdk-pose-confirmhelp-body;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPhone-5s-dark {
+    @extend .mfz-sdk-pose-confirmhelp-body-iPhone-5s;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPhone-SE-dark {
+    @extend .mfz-sdk-pose-confirmhelp-body-iPhone-SE;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-body-iPod-Touch-7-dark {
+    @extend .mfz-sdk-pose-confirmhelp-body-iPod-Touch-7;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-image-dark {
+    @extend .mfz-sdk-pose-confirmhelp-image;
+    /* UIImageView */
+    backgroundColor: @mfzSdkTransparentColor-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-sug-topborder-dark {
+    @extend .mfz-sdk-pose-confirmhelp-sug-topborder;
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-sug-bottomborder-dark {
+    @extend .mfz-sdk-pose-confirmhelp-sug-bottomborder;
+    /* UIView */
+    backgroundColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-pose-confirmhelp-suggestion-dark {
+    @extend .mfz-sdk-pose-confirmhelp-suggestion;
+    /* UILabel */
+    textColor: @mfzSdkColorPrimary-dark;
+}
+
+.mfz-sdk-submit-view-dark {
+    @extend .mfz-sdk-submit-view;
+    /* UIView */
+    backgroundColor: @mfzSdkPrimaryBlackBackgroundColor-dark;
+}
+
+.mfz-sdk-submit-label-dark {
+    @extend .mfz-sdk-submit-label;
+    /* UILabel */
+    textColor: @mfzSdkColorBase-dark;
+}
+
+.mfz-sdk-submit-progress-dark {
+    @extend .mfz-sdk-submit-progress;
+    /* UIProgressView */
+    progressTintColor: @mfzSdkColorPrimary-dark;
+    trackTintColor: @mfzSdkSubmitColorRail-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKCommon *****************************/
+/*****************    LIGHT MODE    *****************************/
+/****************************************************************/
+
+@mfzCommonSDKColorGray5: systemGray5;
+@mfzCommonSDKColorGray5-dark: systemGray5;
+
+/* Math: */
+@mfzCommonMathValueDecimals: 1;
+@mfzCommonMathDeltaIncreaseSymbol: "+";
+@mfzCommonMathDeltaDecreaseSymbol: "-";
+
+/* Alerts: */
+@mfzCommonAlertWidth: 300.0;
+@mfzCommonAlertMinHeight: 80.0;
+@mfzCommonAlertLightBackgroundColor: white;
+@mfzCommonAlertOverlayColor: rgba(0, 0, 0, 0.85);
+@mfzCommonAlertColorBaseNeutral: white;
+@mfzCommonAlertColorPrimary: @mfzSdkColorPrimary;
+@mfzCommonAlertTitleHeight: 25.0;
+@mfzCommonAlertTextColor: black;
+@mfzCommonAlertPadding: 0.0;
+@mfzCommonAlertTitleTopPadding: 20.0;
+@mfzCommonAlertTitleBodyGap: 1.0;
+@mfzCommonAlertBodyButtonGap: 15.0;
+@mfzCommonAlertButtonSpacing: @mfzCommonAlertPadding;
+@mfzCommonAlertBodyMinHeight: 25.0;
+@mfzCommonAlertButtonsHeight: 50.0;
+@mfzCommonAlertButtonsStackedWidth: @mfzCommonAlertWidth;
+@mfzCommonAlertButtonsStackedGap: 0.0;
+@mfzCommonTitleFont: system 20.0;
+@mfzCommonBodyFont: system 17.0;
+@mfzCommonTitleBoldFont: systemBold 20.0;
+@mfzCommonAlertButtonBorderColor: #CFCFCF;
+@mfzCommonAlertButtonBorderHeight: 1;
+
+.mfz-common-sdk-alertlight-view {
+    /* UIView */
+    backgroundColor: @mfzCommonAlertLightBackgroundColor;
+    cornerRadius: 8.0;
+}
+
+.mfz-common-sdk-alertlight-title {
+    /* UILabel */
+    textColor: @mfzCommonAlertTextColor;
+    font: systemBold 17.0;
+    textAlignment: center;
+}
+
+.mfz-common-sdk-alertlight-body {
+    /* UILabel */
+    textColor: @mfzCommonAlertTextColor;
+    font: system 13.0;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-common-sdk-alertlight-norm-button {
+    /* UIButton */
+    cornerRadius: 8.0;
+    backgroundColor: @mfzCommonAlertColorBaseNeutral;
+    titleColor: @mfzCommonAlertColorPrimary;
+    titleLabel.font: system 17.0;
+    titleLabel.textAlignment: center;
+    titleEdgeInsets: insets(5,0,0,0);
+}
+
+.mfz-common-sdk-alertlight-high-button {
+    /* UIButton */
+    cornerRadius: 8.0;
+    backgroundColor: @mfzCommonAlertColorBaseNeutral;
+    titleColor: @mfzCommonAlertColorPrimary;
+    titleLabel.font: systemBold 17.0;
+    titleLabel.textAlignment: center;
+    titleEdgeInsets: insets(5,0,0,0);
+}
+
+/* Spinner: */
+@mfzCommonSpinnerBackgroundColor: white;
+@mfzCommonSpinnerColor: @mfzCommonAlertColorPrimary;
+@mfzCommonSpinnerRadius: 50.0;
+@mfzCommonSpinnerLineWidth: 4.0;
+@mfzCommonSpinnerActivityViewTintColor: lightgray;
+@mfzCommonSpinnerActivityViewBackgroundColor: clear;
+
+.mfz-common-spinner-activityview {
+    /* UIActivityIndicatorView */
+    backgroundColor: @mfzCommonSpinnerActivityViewBackgroundColor;
+    color: @mfzCommonSpinnerActivityViewTintColor;
+}
+
+/* Mesh: */
+@mfzCommonMeshScale: 0.88;
+@mfzCommonMeshOSLegacyLightColor: rgba(25, 25, 25, 1.0);
+@mfzCommonMeshOSLegacyAmbientColor: rgba(102, 102, 102, 1.0);
+@mfzCommonMeshOSLegacySpecularColor: rgba(102, 102, 102, 1.0);
+@mfzCommonMeshLightNonMetalColor: white;
+@mfzCommonMeshLightOneColor: rgba(178, 178, 178, 1.0);
+@mfzCommonMeshLightTwoColor: rgba(229, 229, 229, 1.0);
+@mfzCommonMeshAmbientColor: rgba(229, 229, 229, 1.0);
+@mfzCommonMeshSpecularColor: rgba(127, 127, 127, 1.0);
+@mfzCommonSDKMeshLightOneColor: rgba(178, 178, 178, 1.0);
+@mfzCommonSDKMeshLightOneColor-dark: rgba(178, 178, 178, 1.0);
+@mfzCommonMeshViewBackgroundColor: white;
+@mfzCommonMeshViewBorderColor: clear;
+
+.mfz-common-sdk-mesh-view {
+    /* SCNView : UIView */
+    backgroundColor: @mfzCommonMeshViewBackgroundColor;
+}
+
+.mfz-common-sdk-mesh-view-frame {
+    /* UIView */
+    backgroundColor: @mfzCommonMeshViewBorderColor;
+    borderColor: @mfzCommonMeshViewBackgroundColor;
+    /* DON'T alter, as it fixes "ghost" border that shows on some Plus devices. */
+    borderWidth: 4.0;
+}
+
+/* Gallery: */
+@mfzCommonGalleryFont: AvenirNext-Bold 11.0;
+@mfzCommonGalleryViewColor: #F6F6F6;
+@mfzCommonGalleryCellAvatarMeshTopInset: 3.0;
+@mfzCommonGalleryCellAvatarMeshLeftInset: 0.0;
+@mfzCommonGalleryCellAvatarMeshBottomInset: -3.0;
+@mfzCommonGalleryCellAvatarMeshRightInset: 0.0;
+@mfzCommonGalleryCellBgColor: white;
+@mfzCommonGalleryCellTextColor: black;
+@mfzCommonGalleryCellDateLabelBottomInset: 12.0;
+@mfzCommonGalleryCellDateLabelHeight: 16.0;
+@mfzCommonGalleryCellEtaLabelBottomInset: 12.0;
+@mfzCommonGalleryCellEtaLabelHeight: 16.0;
+@mfzCommonGalleryCellHeight: 154.0;
+@mfzCommonGalleryCellHeight-iPhone-SE: 108.0;
+@mfzCommonGalleryCellHeight-iPhone-5s: @mfzCommonGalleryCellHeight-iPhone-SE;
+@mfzCommonGalleryCellHeight-iPhone-12-Mini: @mfzCommonGalleryCellHeight-iPhone-SE;
+@mfzCommonGalleryCellHeight-iPod-Touch-7: @mfzCommonGalleryCellHeight-iPhone-SE;
+@mfzCommonGalleryCellHeight-iPhone-6: 130.0;
+@mfzCommonGalleryCellHeight-iPhone-6s: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-7: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-8: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-X: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-XS: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-11: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-11-Pro: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-12: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellHeight-iPhone-12-Pro: @mfzCommonGalleryCellHeight-iPhone-6;
+@mfzCommonGalleryCellWidth: 120.0;
+@mfzCommonGalleryCellWidth-iPhone-SE: 88.0;
+@mfzCommonGalleryCellWidth-iPhone-5s: @mfzCommonGalleryCellWidth-iPhone-SE;
+@mfzCommonGalleryCellWidth-iPhone-12-Mini: @mfzCommonGalleryCellWidth-iPhone-SE;
+@mfzCommonGalleryCellWidth-iPod-Touch-7: @mfzCommonGalleryCellWidth-iPhone-SE;
+@mfzCommonGalleryCellWidth-iPhone-6: 106.0;
+@mfzCommonGalleryCellWidth-iPhone-6s: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-7: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-8: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-X: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-XS: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-11: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-11-Pro: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-12: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidth-iPhone-12-Pro: @mfzCommonGalleryCellWidth-iPhone-6;
+@mfzCommonGalleryCellWidthZoomMode: 105;
+@mfzCommonGalleryCellWidth-iPhone-6-ZoomMode: @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-6s-ZoomMode: @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-7-ZoomMode:  @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-8-ZoomMode:  @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-X-ZoomMode: @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-XS-ZoomMode: @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-11-Pro-ZoomMode: @mfzCommonGalleryCellWidthZoomMode - 17;
+@mfzCommonGalleryCellWidth-iPhone-XS-Max-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-XR-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-11-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-11-Pro-Max-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-12-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-12-Pro-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-12-Pro-Max-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-6-Plus-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-6s-Plus-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-7-Plus-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellWidth-iPhone-8-Plus-ZoomMode: @mfzCommonGalleryCellWidthZoomMode;
+@mfzCommonGalleryCellMarginTop: 15.0;
+@mfzCommonGalleryCellMarginLeft: 15.0;
+@mfzCommonGalleryCellMarginBottom: 15.0;
+@mfzCommonGalleryCellMarginRight: 15.0;
+@mfzCommonGalleryCellInterItemSpacing: 10.0;
+@mfzCommonGalleryCellLineSpacing: 10.0;
+@mfzCommonGalleryCellDefaultAlpha: 0.3;
+@mfzCommonGalleryUseDefaultRefreshControl: YES;
+@mfzCommonGalleryViewTransparentColor: clear;
+@mfzCommonGalleryViewThumbnailViewColor: @mfzCommonGalleryViewTransparentColor;
+
+.mfz-common-gallery-collection-view {
+    /* UICollectionView */
+    backgroundColor: @mfzCommonGalleryViewColor;
+    alwaysBounceVertical: YES;
+}
+
+.mfz-common-galleryview-refreshcontrol {
+    /* UIRefreshControl */
+    backgroundColor: @mfzCommonGalleryCellBgColor;
+}
+
+.mfz-common-gallery-cell-view {
+    /* UIView */
+    backgroundColor: @mfzCommonGalleryCellBgColor;
+}
+
+.mfz-common-gallery-cell-thumbnailview {
+    /* UIImageView */
+    backgroundColor: @mfzCommonGalleryViewThumbnailViewColor;
+}
+
+.mfz-common-gallery-cell-datelabel {
+    /* UILabel */
+    backgroundColor: @mfzCommonGalleryViewTransparentColor;
+    textColor: @mfzCommonGalleryCellTextColor;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    font: @mfzCommonGalleryFont;
+}
+
+.mfz-common-gallery-cell-etalabel {
+    /* UILabel */
+    backgroundColor: @mfzCommonGalleryViewTransparentColor;
+    textColor: @mfzCommonGalleryCellTextColor;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    font: @mfzCommonGalleryFont;
+}
+
+/* MYQ Common Button */
+@mfzCommonButtonWhiteColor: #FFFFFF;
+@mfzCommonButtonOrangeColor: @mfzSdkColorPrimary;
+@mfzCommonButtonDisabledGrayColor: rgba(142, 142, 147, 0.5);
+@mfzCommonButtonWarningYellowColor: #ffae42;
+@mfzCommonButtonErrorRedColor: #cc0000;
+@mfzCommonSdkButtonDefaultHeight: 50.0;
+@mfzCommonSdkButtonFont: systemBold 17;
+@mfzCommonSdkButtonStandardColorEnabled: @mfzCommonButtonOrangeColor;
+@mfzCommonSdkButtonStandardColorDisabled: @mfzCommonButtonDisabledGrayColor;
+@mfzCommonSdkButtonDangerColorEnabled: @mfzCommonButtonErrorRedColor;
+@mfzCommonSdkButtonWarningColorEnabled: @mfzCommonButtonWarningYellowColor;
+@mfzCommonSdkButtonColorDisabled: @mfzCommonButtonDisabledGrayColor;
+@mfzCommonSdkButtonActivityIndicatorColor: @mfzCommonButtonWhiteColor;
+@mfzCommonSdkButtonActivityIndicatorRightSideMargin: 0.0;
+
+/* Default styling of buttons*/
+.mfz-common-standard-button {
+    /* UIButton */
+    cornerRadius: 8.0;
+    titleColor(normal): @mfzCommonButtonWhiteColor;
+    titleLabel.font: @mfzCommonSdkButtonFont;
+    titleLabel.lineBreakMode: wordWrapping;
+    titleLabel.numberOfLines: 0;
+    titleLabel.textAlignment: center;
+    alpha: 0.95;
+}
+
+/* Common Picker */
+@mfzCommonSdkPickerPreferredHeight: 217.0;
+@mfzCommonSdkPickerDismissButtonFont: system 13;
+@mfzCommonSdkPickerViewDismissButtonColor: @mfzSdkColorPrimary;
+@mfzCommonSdkMeasurementPreferencePickerDividingLineTopMargin: 50.0;
+@mfzCommonSdkMeasurementPreferencePickerDividingLineBottomMargin: 50.0;
+@mfzCommonSdkMeasurementPreferencePickerDividingLineHeight: 1.0;
+@mfzCommonSdkMeasurementPreferencePickerPadding: 16.0;
+@mfzCommonSdkDatePickerTextColor: black;
+
+/* Date in format "dd/MM/yyyy" */
+/* Date picker is geared towards age, but using prefix style, it can be altered for date specific requirements. */
+@mfzCommonSdkPickerDateMinDate: "01/01/1900";
+@mfzCommonSdkPickerDateYoungestAge: 4;
+@mfzCommonSdkPickerDateDefaultAge: 25;
+@mfzCommonSdkPickerTextColor: black;
+@mfzCommonSdkPickerBackgroundColor: white;
+@mfzCommonSdkPickerDividerColor: black;
+
+/* Date: */
+
+.mfz-common-picker-date-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-date-control-view {
+    /* UIDatePicker : UIControl */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-date-view-dismiss-button {
+    /* UIButton */
+    titleLabel.font: @mfzCommonSdkPickerDismissButtonFont;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-divider-top-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSdkPickerDividerColor;
+}
+
+.mfz-common-picker-divider-bottom-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSdkPickerDividerColor;
+}
+
+/* Height: */
+
+.mfz-common-picker-height-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-height-control-view {
+    /* UIPickerView : UIControl */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-height-view-dismiss-button {
+    /* UIButton */
+    titleLabel.font: @mfzCommonSdkPickerDismissButtonFont;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+/* Weight: */
+
+.mfz-common-picker-weight-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-weight-control-view {
+    /* UIPickerView : UIControl */
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+.mfz-common-picker-weight-view-dismiss-button {
+    /* UIButton */
+    titleLabel.font: @mfzCommonSdkPickerDismissButtonFont;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKCommon *****************************/
+/*****************     DARK MODE    *****************************/
+/****************************************************************/
+@mfzCommonPrimaryDarkModeDarkColor: rgba(33, 33, 33, 1.0);
+@mfzCommonAlertLightBackgroundColor-dark: @mfzCommonPrimaryDarkModeDarkColor;
+@mfzCommonAlertOverlayColor-dark: rgba(0, 0, 0, 0.85);
+@mfzCommonAlertColorBaseNeutral-dark: @mfzCommonPrimaryDarkModeDarkColor;
+@mfzCommonAlertColorPrimary-dark: @mfzSdkColorPrimary;
+@mfzCommonAlertTextColor-dark: white;
+@mfzCommonTitleBoldFont-dark: systemBold 20.0;
+@mfzCommonAlertButtonBorderColor-dark: #CFCFCF;
+@mfzCommonSpinnerBackgroundColor-dark: black;
+@mfzCommonSpinnerColor-dark: @mfzCommonAlertColorPrimary-dark;
+@mfzCommonMeshOSLegacyLightColor-dark: rgba(25, 25, 25, 1.0);
+@mfzCommonMeshOSLegacyAmbientColor-dark: rgba(102, 102, 102, 1.0);
+@mfzCommonMeshOSLegacySpecularColor-dark: rgba(102, 102, 102, 1.0);
+@mfzCommonMeshLightNonMetalColor-dark: white;
+@mfzCommonMeshLightOneColor-dark: rgba(178, 178, 178, 1.0);
+@mfzCommonMeshLightTwoColor-dark: rgba(229, 229, 229, 1.0);
+@mfzCommonMeshAmbientColor-dark: rgba(229, 229, 229, 1.0);
+@mfzCommonMeshSpecularColor-dark: rgba(127, 127, 127, 1.0);
+@mfzCommonGalleryViewColor-dark: black;
+@mfzCommonGalleryCellBgColor-dark: @mfzCommonPrimaryDarkModeDarkColor;
+@mfzCommonButtonWhiteColor-dark: @mfzCommonPrimaryDarkModeDarkColor;
+@mfzCommonButtonOrangeColor-dark: @mfzSdkColorPrimary;
+@mfzCommonButtonDisabledGrayColor-dark: rgba(142, 142, 147, 0.5);
+@mfzCommonButtonWarningYellowColor-dark: #ffae42;
+@mfzCommonButtonErrorRedColor-dark: #cc0000;
+@mfzCommonSdkButtonStandardColorEnabled-dark: @mfzCommonButtonOrangeColor-dark;
+@mfzCommonSdkButtonStandardColorDisabled-dark: @mfzCommonButtonDisabledGrayColor-dark;
+@mfzCommonSdkButtonDangerColorEnabled-dark: @mfzCommonButtonErrorRedColor-dark;
+@mfzCommonSdkButtonWarningColorEnabled-dark: @mfzCommonButtonWarningYellowColor-dark;
+@mfzCommonSdkButtonColorDisabled-dark: @mfzCommonButtonDisabledGrayColor-dark;
+@mfzCommonSdkButtonActivityIndicatorColor-dark: @mfzCommonButtonWhiteColor-dark;
+@mfzCommonSdkPickerViewDismissButtonColor-dark: @mfzSdkColorPrimary;
+@mfzCommonSdkPickerTextColor-dark: white;
+@mfzCommonSdkDatePickerTextColor-dark: white;
+@mfzCommonSdkPickerBackgroundColor-dark: @mfzCommonPrimaryDarkModeDarkColor;
+@mfzCommonSdkPickerDividerColor-dark: white;
+@mfzCommonGalleryViewTransparentColor-dark: clear;
+@mfzCommonGalleryViewThumbnailViewColor-dark: @mfzCommonGalleryViewTransparentColor-dark;
+@mfzCommonGalleryCellTextColor-dark: white;
+@mfzCommonSpinnerActivityViewTintColor-dark: lightgray;
+@mfzCommonSpinnerActivityViewBackgroundColor-dark: clear;
+@mfzCommonMeshViewBackgroundColor-dark: #212121;
+@mfzCommonMeshViewBorderColor-dark: clear;
+
+
+.mfz-common-sdk-alertlight-view-dark {
+    @extend .mfz-common-sdk-alertlight-view;
+    backgroundColor: @mfzCommonAlertLightBackgroundColor-dark;
+}
+
+.mfz-common-sdk-alertlight-title-dark {
+    @extend .mfz-common-sdk-alertlight-title;
+    textColor: @mfzCommonAlertTextColor-dark;
+}
+
+.mfz-common-sdk-alertlight-body-dark {
+    @extend .mfz-common-sdk-alertlight-body;
+    textColor: @mfzCommonAlertTextColor-dark;
+}
+
+.mfz-common-sdk-alertlight-norm-button-dark {
+    @extend .mfz-common-sdk-alertlight-norm-button;
+    backgroundColor: @mfzCommonAlertColorBaseNeutral-dark;
+    titleColor: @mfzCommonAlertColorPrimary-dark;
+}
+
+.mfz-common-sdk-alertlight-high-button-dark {
+    @extend .mfz-common-sdk-alertlight-high-button;
+    backgroundColor: @mfzCommonAlertColorBaseNeutral-dark;
+    titleColor: @mfzCommonAlertColorPrimary-dark;
+}
+
+.mfz-common-spinner-activityview-dark {
+    @extend .mfz-common-spinner-activityview;
+    backgroundColor: @mfzCommonSpinnerActivityViewBackgroundColor-dark;
+    color: @mfzCommonSpinnerActivityViewTintColor-dark;
+}
+
+.mfz-common-sdk-mesh-view-dark {
+    @extend .mfz-common-sdk-mesh-view;
+    backgroundColor: @mfzCommonMeshViewBackgroundColor-dark;
+}
+
+.mfz-common-sdk-mesh-view-frame-dark {
+    @extend .mfz-common-sdk-mesh-view-frame;
+    backgroundColor: @mfzCommonMeshViewBorderColor-dark;
+    borderColor: @mfzCommonMeshViewBackgroundColor-dark;
+}
+
+.mfz-common-gallery-collection-view-dark {
+    @extend .mfz-common-gallery-collection-view;
+    backgroundColor: @mfzCommonGalleryViewColor-dark;
+}
+
+.mfz-common-galleryview-refreshcontrol-dark {
+    @extend .mfz-common-galleryview-refreshcontrol;
+    backgroundColor: @mfzCommonGalleryCellBgColor-dark;
+}
+
+.mfz-common-gallery-cell-view-dark {
+    @extend .mfz-common-gallery-cell-view;
+    backgroundColor: @mfzCommonGalleryCellBgColor-dark;
+}
+
+.mfz-common-gallery-cell-thumbnailview-dark {
+    @extend .mfz-common-gallery-cell-thumbnailview;
+}
+
+.mfz-common-gallery-cell-datelabel-dark {
+    @extend .mfz-common-gallery-cell-datelabel;
+    backgroundColor: @mfzCommonGalleryViewTransparentColor-dark;
+    textColor: @mfzCommonGalleryCellTextColor-dark;
+}
+
+.mfz-common-gallery-cell-etalabel-dark {
+    @extend .mfz-common-gallery-cell-etalabel;
+    backgroundColor: @mfzCommonGalleryViewTransparentColor-dark;
+    textColor: @mfzCommonGalleryCellTextColor-dark;
+}
+
+.mfz-common-standard-button-dark {
+    @extend .mfz-common-standard-button;
+}
+
+.mfz-common-picker-date-view-dark {
+    @extend .mfz-common-picker-date-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-date-control-view-dark {
+    @extend .mfz-common-picker-date-control-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-date-view-dismiss-button-dark {
+    @extend .mfz-common-picker-date-view-dismiss-button;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-divider-top-view-dark {
+    @extend .mfz-common-picker-divider-top-view;
+}
+
+.mfz-common-picker-divider-bottom-view-dark {
+    @extend .mfz-common-picker-divider-bottom-view;
+}
+
+.mfz-common-picker-height-view-dark {
+    @extend .mfz-common-picker-height-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-height-control-view-dark {
+    @extend .mfz-common-picker-height-control-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-height-view-dismiss-button-dark {
+    @extend .mfz-common-picker-height-view-dismiss-button;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-weight-view-dark {
+    @extend .mfz-common-picker-weight-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-weight-control-view-dark {
+    @extend .mfz-common-picker-weight-control-view;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+.mfz-common-picker-weight-view-dismiss-button-dark {
+    @extend .mfz-common-picker-weight-view-dismiss-button;
+    backgroundColor: @mfzCommonSdkPickerBackgroundColor-dark;
+}
+
+
+
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/*                          Gallery Card Collection View Styles                     */
+/************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+
+@mfzCommonSDKCollectionViewCellCardSortOrderLatestAtBottom: NO;
+@mfzCommonSDKCollectionViewCellCardCardViewCellHeight: 137.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellMarginTop: 0.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellMarginLeft: 0.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellMarginBottom: 0.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellMarginRight: 0.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellInterItemSpacing: 0.0;
+@mfzCommonSDKCollectionViewCellCardCardViewCellLineSpacing: 0.0;
+@mfzCommonSDKBasicCollectionViewCellTitleValueLabelInset: 8.0;
+@mfzCommonSDKBasicCollectionViewCellBorderWidth: 1.0;
+@mfzCommonSDKCollectionViewCellCardViewContainerTopInset: 6.0;
+@mfzCommonSDKCollectionViewCellCardViewContainerLeftInset: 16.0;
+@mfzCommonSDKCollectionViewCellCardViewContainerBottomInset: 6.0;
+@mfzCommonSDKCollectionViewCellCardViewContainerRightInset: 16.0;
+/* The ratio here should equal 1.0 - if a wider left side container is set, ensure balance on the right side. */
+@mfzCommonSDKTbfCollectionViewCellLeftSideContainerWidthRatio: 0.5;
+@mfzCommonSDKTbfCollectionViewCellRightSideContainerWidthRatio: 0.5;
+@mfzCommonSDKTbfCollectionViewCellLeftSideContainerWidthRatio-4-inch-device: 0.55;
+@mfzCommonSDKTbfCollectionViewCellRightSideContainerWidthRatio-4-inch-device: 0.45;
+@mfzCommonSDKTbfCollectionViewCellDateLabelTopInset: 16.0;
+@mfzCommonSDKTbfCollectionViewCellDateLabelHeight: 18.0;
+@mfzCommonSDKTbfCollectionViewCellTbfLabelHeight: 37.0;
+@mfzCommonSDKTbfCollectionViewCellTbfLabelTopInset:0.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryContainerHeight: 16.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryContainerLeftInset: 16.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryContainerLeftInset-4-inch-device: 8.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryContainerTopInset:0.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryLabelTopInset: 0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryLabelLeftInset: 5.0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryLabelBottomInset: 0;
+@mfzCommonSDKTbfCollectionViewCellTbfCategoryLabelRightInset: 5.0;
+@mfzCommonSDKTbfCollectionViewCellWeightLabelHeight:16.0;
+@mfzCommonSDKTbfCollectionViewCellWeightLabelTopInset:5.0;
+@mfzCommonSDKTbfCollectionViewCellEveryLabelLeftInset: 16.0;
+@mfzCommonSDKTbfCollectionViewCellEveryLabelLeftInset-4-inch-device: 8.0;
+@mfzCommonSDKTbfCollectionViewCellEveryLabelRightInset: 16.0;
+@mfzCommonSDKTbfCollectionViewCellEveryLabelRightInset-4-inch-device: 8.0;
+/* The ratio here should equal 1.0 - if a wider left side container is set, ensure balance on the right side. */
+@mfzCommonSDKWeightCollectionViewCellLeftSideContainerWidthRatio: 0.5;
+@mfzCommonSDKWeightCollectionViewCellRightSideContainerWidthRatio: 0.5;
+@mfzCommonSDKWeightCollectionViewCellDateLabelTopInset: 16.0;
+@mfzCommonSDKWeightCollectionViewCellDateLabelHeight: 18.0;
+@mfzCommonSDKWeightCollectionViewCellTbfLabelHeight: 37.0;
+@mfzCommonSDKWeightCollectionViewCellTbfLabelTopInset:0.0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryContainerHeight: 16.0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryContainerLeftInset:16.0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryContainerTopInset:0.0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryLabelTopInset: 0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryLabelLeftInset: 5.0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryLabelBottomInset: 0;
+@mfzCommonSDKWeightCollectionViewCellTbfCategoryLabelRightInset: 5.0;
+@mfzCommonSDKWeightCollectionViewCellWeightLabelHeight:37.0;
+@mfzCommonSDKWeightCollectionViewCellWeightLabelTopInset:0.0;
+@mfzCommonSDKWeightCollectionViewCellEveryLabelLeftInset: 16.0;
+@mfzCommonSDKWeightCollectionViewCellEveryLabelRightInset: 16.0;
+@mfzCommonSDKWeightCollectionViewCellHeightLabelHeight: 17.0;
+@mfzCommonSDKWeightCollectionViewCellHeightLabelTopInset: 1.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderLabelTopInset: 3.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderLabelBottomInset: 3.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderLabelLeftInset: 16.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderLabelRightInset: 16.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderViewHeight: 32.0;
+@mfzCommonSDKCollectionViewCellCardCollectionViewHeaderViewShouldStickToTop: YES;
+@mfzCommonSDKLoadingCellActivityIndicatorWidth: 36.0;
+@mfzCommonSDKLoadingCellActivityIndicatorHeight: 36.0;
+@mfzCommonSDKLoadingCellActivityIndicatorTopLabelOffset: -9.0;
+@mfzCommonSDKLoadingCellTitleLabelCenterOffset: 18.0;
+@mfzCommonSDKLoadingCellTitleLabelLeftInset: 16.0;
+@mfzCommonSDKLoadingCellTitleLabelRightInset: 16.0;
+@mfzCommonSDKLoadingCellTitleLabelHeight: 16.0;
+@mfzCommonSDKLoadingCellDetailLabelLeftInset: 16.0;
+@mfzCommonSDKLoadingCellDetailLabelRightInset: 16.0;
+@mfzCommonSDKLoadingCellDetailLabelHeight: 16.0;
+@mfzCommonSDKLoadingCellDetailTopOffset: 0.0;
+/* Loading footer */
+@mfzCommonSDKLoadingFooterViewContainerTopInset: 0;
+@mfzCommonSDKLoadingFooterViewContainerAdjustedTopInset: -20;
+@mfzCommonSDKLoadingFooterViewContainerLeftInset: 0;
+@mfzCommonSDKLoadingFooterViewContainerBottomInset: 0;
+@mfzCommonSDKLoadingFooterViewContainerRightInset: 0;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorWidth: 36.0;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorHeight: 36.0;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorTopLabelOffset: -9.0;
+@mfzCommonSDKLoadingFooterViewTitleLabelLeftInset: 18.0;
+@mfzCommonSDKLoadingFooterViewTitleLabelRightInset: 16.0;
+@mfzCommonSDKLoadingFooterViewTitleLabelHeight: 16.0;
+@mfzCommonSDKLoadingFooterViewTitleLabelCenterOffset: 16.0;
+@mfzCommonSDKLoadingFooterViewDetailLabelLeftInset: 16.0;
+@mfzCommonSDKLoadingFooterViewDetailLabelRightInset: 16.0;
+@mfzCommonSDKLoadingFooterViewDetailLabelHeight: 16.0;
+@mfzCommonSDKLoadingFooterViewDetailTopOffset: 0.0;
+@mfzCommonSDKCornerRadiusSmall: 4.0;
+@mfzCommonSDKCornerRadiusLarge: 8.0;
+@mfzCommonSDKFontFamilyRegular: system;
+@mfzCommonSDKFontFamilyBold: systemBold;
+@mfzCommonSDKFontFamilyMedium: systemMedium;
+@mfzCommonSDKFontFamilySemiBold: systemSemiBold;
+/* The font sizes can be found on Figma and aim to reflect the font sizes found in the Apple Guidelines.
+ https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/
+ */
+@mfzCommonSDKFontSizeLargeTitle: 34.0;
+@mfzCommonSDKFontSizeTitle1: 28.0;
+@mfzCommonSDKFontSizeTitle3: 20.0;
+@mfzCommonSDKFontSizeBody: 17.0;
+@mfzCommonSDKFontSizeSubhead: 15.0;
+@mfzCommonSDKFontSizeFootnote: 13.0;
+@mfzCommonSDKFontSizeCaption1: 12.0;
+@mfzCommonSDKFontSizeCaption2: 11.0;
+/* This is used as the descriptive title label font for the labels of input view cells */
+@mfzCommonSDKTableViewCellFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+/* This is used for either the descriptive input title label font for the placeholder/input view font of input view cells */
+@mfzCommonSDKTableViewCellInputFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+/* This is used for placeholder font */
+@mfzCommonSDKTableViewCellInputPlaceholderFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+/* This is used for the section headers throughout the app. */
+@mfzCommonSDKTableViewSectionHeaderFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeFootnote;
+@mfzCommonSDKInputViewCellFont: @mfzCommonSDKTableViewCellInputFont;
+@mfzCommonSDKTitleFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle3;
+@mfzCommonSDKBodyFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKTitleBoldFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeTitle3;
+@mfzCommonSDKButtonFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleFont: @mfzCommonSDKFontFamilyBold 14;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueFont: @mfzCommonSDKFontFamilyRegular 14;
+@mfzCommonSDKCollectionViewCellCardDateFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeCaption1;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle1;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueFont-4-inch-device: @mfzCommonSDKFontFamilyRegular 21;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueWeightFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeLargeTitle;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueWeightDescriptionFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeTitle1;
+@mfzCommonSDKCollectionViewCellCardSecondaryFont: @mfzCommonSDKFontFamilyBold 14;
+@mfzCommonSDKCollectionViewCellCardSecondaryFont-4-inch-device: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKCollectionViewCellCardCategoryFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeCaption1;
+@mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKCollectionViewCellCardLoadingDetailLabelFont: @mfzCommonSDKFontFamilyBold @mfzCommonSDKFontSizeCaption2;
+@mfzCommonSDKPickerDismissButtonFont: @mfzCommonSDKFontFamilyRegular @mfzCommonSDKFontSizeBody;
+@mfzCommonSDKColorFeature: @mfzSdkColorPrimary;
+@mfzCommonSDKColorFeature-dark: @mfzSdkColorPrimary;
+@mfzCommonSDKColorBlack: systemBlack;
+@mfzCommonSDKColorWhite: systemWhite;
+@mfzCommonSDKColorTransparent: clear;
+@mfzCommonSDKColorSeparator: separator;
+@mfzCommonSDKColorOverlay: rgba(0, 0, 0, 0.85);
+@mfzCommonSDKColorActivityIndicator: #DADADA;
+@mfzCommonSDKColorBackground: secondarySystemBackground;
+@mfzCommonSDKColorBackground-dark: systemGray6;
+@mfzCommonSDKColorBackgroundSecondary: systemBackground;
+@mfzCommonSDKColorBackgroundSecondary-dark: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary-dark: @mfzCommonSDKColorGray5-dark;
+@mfzCommonSDKTextColorPrimary: label;
+@mfzCommonSDKTextColorPrimary-dark: label;
+@mfzCommonSDKTextColorSecondary: secondaryLabel;
+@mfzCommonSDKTextColorSecondary-dark: secondaryLabel;
+@mfzCommonSDKTextColorTertiary: @mfzCommonSDKColorWhite;
+@mfzCommonSDKTextColorTertiary-dark: @mfzCommonSDKColorWhite;
+@mfzCommonSDKTextColorFeature: @mfzCommonSDKColorFeature;
+@mfzCommonSDKTextColorFeature-dark: @mfzCommonSDKColorFeature-dark;
+@mfzCommonSDKTextColorPlaceholder: placeholderText;
+@mfzCommonSDKTextColorPlaceholder-dark: placeholderText;
+@mfzCommonSDKTableViewCellSectionHeaderTextColor: @mfzCommonSDKTextColorSecondary;
+@mfzCommonSDKTableViewCellSectionHeaderTextColor-dark: @mfzCommonSDKTextColorSecondary-dark;
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardDateTextColor: @mfzCommonSDKTextColorSecondary;
+@mfzCommonSDKCollectionViewCellCardDateTextColor-dark: @mfzCommonSDKTextColorSecondary-dark;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueDescriptionTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardPrimaryValueDescriptionTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardSecondaryTextColor: @mfzCommonSDKTextColorPrimary;
+@mfzCommonSDKCollectionViewCellCardSecondaryTextColor-dark: @mfzCommonSDKTextColorPrimary-dark;
+@mfzCommonSDKCollectionViewCellCardCategoryTextColor: @mfzCommonSDKTextColorTertiary;
+@mfzCommonSDKCollectionViewCellCardCategoryTextColor-dark: @mfzCommonSDKTextColorTertiary-dark;
+/* Gallery styles */
+@mfzCommonSDKColorGray1: systemGray5;
+@mfzCommonSDKColorGray1-dark: systemGray;
+@mfzCommonSDKColorGray3: systemGray3;
+@mfzCommonSDKColorGray3-dark: systemGray3;
+@mfzCommonSDKColorActivityIndicator: #DADADA;
+@mfzCommonSDKColorBackground: secondarySystemBackground;
+@mfzCommonSDKColorBackground-dark: systemGray6;
+@mfzCommonSDKColorBackgroundSecondary: systemBackground;
+@mfzCommonSDKColorBackgroundSecondary-dark: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary: systemBackground;
+@mfzCommonSDKColorBackgroundTertiary-dark: @mfzCommonSDKColorGray5-dark;
+@mfzCommonSDKCollectionViewCellCardBackgroundColor: @mfzCommonSDKColorBackground;
+@mfzCommonSDKCollectionViewCellCardBackgroundColor-dark: @mfzCommonSDKColorBackground-dark;
+@mfzCommonSDKCollectionViewCellCardCellBackgroundColor: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKCollectionViewCellCardCellBackgroundColor-dark: @mfzCommonSDKColorTransparent;
+@mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor: @mfzCommonSDKColorBackgroundSecondary;
+@mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor-dark: @mfzCommonSDKColorBackgroundTertiary-dark;
+@mfzCommonSDKBasicCollectionViewCellBorderColor: @mfzCommonSDKColorGray1;
+@mfzCommonSDKBasicCollectionViewCellBorderColor-dark: @mfzCommonSDKColorGray3;
+@mfzCommonSDKLoadingCellActivityIndicatorColor: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingCellActivityIndicatorColor-dark: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorColor: @mfzCommonSDKColorActivityIndicator;
+@mfzCommonSDKLoadingFooterViewActivityIndicatorColor-dark: @mfzCommonSDKColorActivityIndicator;
+/* Total Body Fat Category colors */
+@mfzCommonSDKTBFCategoryLeanColor: rgb(89.25, 198.9, 249.9);
+@mfzCommonSDKTBFCategoryHealthyColor: rgb(76.5, 216.75, 99.45);
+@mfzCommonSDKTBFCategoryOverweightColor: rgb(255, 204, 0);
+@mfzCommonSDKTBFCategoryObeseColor: rgb(255, 86.7, 33.15);
+@mfzCommonSDKTBFCategoryUnknownColor: systemGray;
+
+.mfz-common-sdk-collection-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardBackgroundColor;
+}
+
+.mfz-common-sdk-collection-view-dark {
+    @extend .mfz-common-sdk-collection-view;
+    /* UIView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardBackgroundColor-dark;
+}
+
+.mfz-common-sdk-collection-view-header-view {
+    /* UIReusableView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardBackgroundColor;
+}
+
+.mfz-common-sdk-collection-view-header-view-dark {
+    @extend .mfz-common-sdk-collection-view-header-view;
+    /* UIReusableView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardBackgroundColor-dark;
+}
+
+.mfz-common-sdk-collection-view-header-view-title-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewGalleryHeaderViewTitleFont;
+    textColor: @mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor;
+}
+
+.mfz-common-sdk-collection-view-header-view-title-label-dark {
+    @extend .mfz-common-sdk-collection-view-header-view-title-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewGalleryHeaderViewTitleTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell {
+    /* UICollectionViewCell*/
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardCellBackgroundColor;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell;
+    /* UICollectionViewCell*/
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardCellBackgroundColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-container-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor;
+    cornerRadius: @mfzCommonSDKCornerRadiusLarge;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-container-view-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-container-view;
+    /* UIView */
+    backgroundColor: @mfzCommonSDKCollectionViewCellCardCellContainerViewBackgroundColor-dark;
+    cornerRadius: @mfzCommonSDKCornerRadiusLarge;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-left-container-view {
+    /* UIView */
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-left-container-view-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-left-container-view;
+    /* UIView */
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-right-container-view {
+    /* UIView */
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-right-container-view-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-right-container-view;
+    /* UIView */
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-date-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardDateFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardDateTextColor;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-date-label-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-date-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardDateTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-primary-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardPrimaryValueFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-primary-label-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-primary-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-category-container-view {
+    /* UIView */
+    cornerRadius: @mfzCommonSDKCornerRadiusSmall;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-category-container-view-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-category-container-view;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-category-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardCategoryFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardCategoryTextColor;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-category-label-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-category-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardCategoryTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-weight-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardSecondaryFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardSecondaryTextColor;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-weight-label-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-weight-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardSecondaryTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-height-label {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-weight-label;
+    /* UILabel */
+}
+
+.mfz-common-sdk-collection-view-card-view-cell-height-label-dark {
+    @extend .mfz-common-sdk-collection-view-card-view-cell-weight-label-dark;
+    /* UILabel */
+}
+
+.mfz-common-sdk-title-value-view-title-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardTableMeasurementTitleFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor;
+}
+
+.mfz-common-sdk-title-value-view-title-label-dark {
+    @extend .mfz-common-sdk-title-value-view-title-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardTableMeasurementTitleTextColor-dark;
+}
+
+.mfz-common-sdk-title-value-view-value-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardTableMeasurementValueFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor;
+}
+
+.mfz-common-sdk-title-value-view-value-label-dark {
+    @extend .mfz-common-sdk-title-value-view-value-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardTableMeasurementValueTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-title-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+    textAlignment: center;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-title-label-dark {
+    @extend .mfz-common-sdk-collection-view-cell-loading-title-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-detail-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+    textAlignment: center;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-detail-label-dark {
+    @extend .mfz-common-sdk-collection-view-cell-loading-detail-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-container-view {
+    /* UIView */
+    backgroundColor: @mfzCommonSDKColorTransparent;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-container-view-dark {
+    @extend .mfz-common-sdk-collection-view-cell-loading-footer-container-view;
+    /* UIView */
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-title-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+    textAlignment: center;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-title-label-dark {
+    @extend .mfz-common-sdk-collection-view-cell-loading-footer-title-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-detail-label {
+    /* UILabel */
+    font: @mfzCommonSDKCollectionViewCellCardLoadingTitleLabelFont;
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor;
+    textAlignment: center;
+}
+
+.mfz-common-sdk-collection-view-cell-loading-footer-detail-label-dark {
+    @extend .mfz-common-sdk-collection-view-cell-loading-footer-detail-label;
+    /* UILabel */
+    textColor: @mfzCommonSDKCollectionViewCellCardPrimaryValueTextColor-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKInputView **************************/
+/*****************      LIGHT MODE     **************************/
+/****************************************************************/
+
+@mfzInputViewSDKWhiteColor: white;
+@mfzInputViewSDKBlackColor: black;
+@mfzInputViewSDKBackgroundColor: #F6F6F6;
+@mfzInputViewSDKGrayTextColor: #8E8E93;
+@mfzInputViewSDKGrayBorderColor: #C7C7CC;
+@mfzInputViewSDKPrimaryColor: @mfzSdkColorPrimary;
+@mfzInputViewSDKTransparentColor: clear;
+@mfzInputViewSDKInputViewTextColor: @mfzInputViewSDKBlackColor;
+@mfzInputViewSDKInputViewSelectionColor: @mfzInputViewSDKPrimaryColor;
+@mfzInputViewSDKInputViewDisabledGenderViewColor: @mfzInputViewSDKGrayBorderColor;
+@mfzInputViewSDKInputViewDisabledMeasurementTextFieldColor: rgba(160.65,140,104.55,0.4);
+@mfzInputViewSDKCellBorderLeftRightInset: 0.0;
+@mfzInputViewSDKCellBorderBottomInset: 0.0;
+@mfzInputViewSDKCellBorderColor: @mfzInputViewSDKGrayBorderColor;
+@mfzInputViewSDKCellBorderHeight: 0.25;
+@mfzInputViewSDKInputTableViewInsetTopBottom: 0;
+@mfzInputViewSDKInputTableViewInsetLeftRight: 8.0;
+@mfzInputViewSDKTableViewCellHeight: 95.0;
+@mfzInputViewSDKTextFieldBorderHeight: 0.0;
+@mfzInputViewSDKTextFieldBorderWidth: 0.0;
+@mfzInputViewSDKStdTitleFont: systemBold 24;
+
+/* LAYOUT */
+
+/* Gender Container View */
+@mfzInputViewSDKGenderContainerMultiplier: 0.44; /* Used for setting proportion of width of male and female containers. Currently they occupy half of the superview size minus an offset. */
+@mfzInputViewSDKGenderContainerInsetConstant: 16.0;
+@mfzInputViewSDKGenderButtonHeight: 48.0;
+
+/* Measurement Container View */
+@mfzInputViewSDKMeasurementLabelContainerSizeHeight: 30.0;
+@mfzInputViewSDKMeasurementTextFieldContainerHeight: 50.0;
+@mfzInputViewSDKMeasurementGenderContainerHeight: 50.0;
+@mfzInputViewSDKCellContentInset: 16.0;
+@mfzInputViewSDKTextfieldClearButtonHeightWidth: @mfzInputViewSDKMeasurementTextFieldContainerHeight;
+@mfzInputViewSDKTextfieldClearButtonImageHeightWidth: 15.0;
+
+/* Main Input View */
+@mfzInputViewSDKConfirmButtonHeight: 50;
+@mfzInputViewSDKConfirmButtonWidth: 250;
+@mfzInputViewSDKConfirmButtonLeadingInset: 20;
+@mfzInputViewSDKConfirmButtonTrailingInset: 20;
+@mfzInputViewSDKTableViewHeaderHeight: 110;
+@mfzInputViewSDKTitleLabelHeight: 70; /* Generally same as TableViewHeaderHeight until spacing is required between the header and content. */
+@mfzInputViewSDKTableViewFooterSpacing: 80; /*To add spacing between footer and table content */
+@mfzInputViewSDKTableViewFooterHeight: @mfzInputViewSDKConfirmButtonHeight + @mfzInputViewSDKTableViewFooterSpacing;
+
+/* Picker View */
+/* A boolean value to use or not use ounces in favor of 0.5 pound increments. */
+@mfzInputViewSDKWeightPickerViewUseHalfPoundIncrements: true;
+
+.mfz-input-text-field-container-view {
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor;
+}
+
+.mfz-input-gender-container-view {
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+}
+
+.mfz-input-tableView {
+    /* UITableView */
+    backgroundColor: @mfzInputViewSDKBackgroundColor;
+    separatorStyle: none;
+}
+
+.mfz-input-title {
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    textColor : @mfzInputViewSDKInputViewTextColor;
+    text-align: center;
+    numberOfLines: 2;
+    font: @mfzInputViewSDKStdTitleFont;
+}
+
+.mfz-input-male-radio-button {
+    /* UIButton */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    tintColor: @mfzInputViewSDKPrimaryColor;
+}
+
+.mfz-input-female-radio-button {
+    /* UIButton */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    tintColor: @mfzInputViewSDKPrimaryColor;
+}
+
+.mfz-input-View {
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+}
+
+.mfz-input-tableview-cell {
+    /* UITableViewCell */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+}
+
+.mfz-input-measurement-title {
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    font: system 13;
+    textColor: @mfzInputViewSDKGrayTextColor;
+}
+
+.mfz-input-gender-label {
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    font: system 13;
+    textColor: @mfzInputViewSDKGrayTextColor;
+}
+
+.mfz-input-measurement-textfield {
+    /* UITextField */
+    backgroundColor: @mfzInputViewSDKWhiteColor;
+    font: systemBold 17.0;
+    textColor: @mfzInputViewSDKInputViewTextColor;
+}
+
+.mfz-input-male-containerview {
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor;
+    cornerRadius: 2.0;
+    borderWidth: 1.0;
+    borderColor: @mfzInputViewSDKGrayBorderColor;
+}
+
+.mfz-input-female-containerview {
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor;
+    cornerRadius: 2.0;
+    borderWidth: 1.0;
+    borderColor: @mfzInputViewSDKGrayBorderColor;
+}
+
+.mfz-input-male-label {
+    /* UILabel */
+    font: systemBold 17.0;
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    textColor: @mfzInputViewSDKInputViewTextColor;
+    textAlignment: left;
+}
+
+.mfz-input-female-label {
+    /* UILabel */
+    font: systemBold 17.0;
+    backgroundColor: @mfzInputViewSDKTransparentColor;
+    textColor: @mfzInputViewSDKInputViewTextColor;
+    textAlignment: left;
+}
+
+/****************************************************************/
+/***************** MyFiziqSDKInputView **************************/
+/*****************     DARK MODE    *****************************/
+/****************************************************************/
+
+@mfzInputViewSDKWhiteColor-dark: rgba(33, 33, 33, 1.0);
+@mfzInputViewSDKBlackColor-dark: white;
+@mfzInputViewSDKBackgroundColor-dark: black;
+@mfzInputViewSDKGrayTextColor-dark: #8E8E93;
+@mfzInputViewSDKGrayBorderColor-dark: #929292;
+@mfzInputViewSDKPrimaryColor-dark: @mfzSdkColorPrimary;
+@mfzInputViewSDKTransparentColor-dark: clear;
+@mfzInputViewSDKInputViewTextColor-dark: white;
+@mfzInputViewSDKInputViewSelectionColor-dark: @mfzInputViewSDKPrimaryColor-dark;
+@mfzInputViewSDKInputViewDisabledGenderViewColor-dark: @mfzInputViewSDKGrayBorderColor-dark;
+@mfzInputViewSDKCellBorderColor-dark: @mfzInputViewSDKGrayBorderColor-dark;
+
+.mfz-input-text-field-container-view-dark {
+    @extend .mfz-input-text-field-container-view;
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor-dark;
+}
+
+.mfz-input-gender-container-view-dark {
+    @extend .mfz-input-gender-container-view;
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+}
+
+.mfz-input-tableView-dark {
+    @extend .mfz-input-tableView;
+    /* UITableView */
+    backgroundColor: @mfzInputViewSDKBackgroundColor-dark;
+}
+
+.mfz-input-title-dark {
+    @extend .mfz-input-title;
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    textColor : @mfzInputViewSDKInputViewTextColor-dark;
+}
+
+.mfz-input-male-radio-button-dark {
+    @extend .mfz-input-male-radio-button;
+    /* UIButton */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    tintColor: @mfzInputViewSDKPrimaryColor-dark;
+}
+
+.mfz-input-female-radio-button-dark {
+    @extend .mfz-input-female-radio-button;
+    /* UIButton */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    tintColor: @mfzInputViewSDKPrimaryColor-dark;
+}
+
+.mfz-input-View-dark {
+    @extend .mfz-input-View;
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+}
+
+.mfz-input-tableview-cell-dark {
+    @extend .mfz-input-tableview-cell;
+    /* UITableViewCell */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+}
+
+.mfz-input-measurement-title-dark {
+    @extend .mfz-input-measurement-title;
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    textColor: @mfzInputViewSDKGrayTextColor-dark;
+}
+
+.mfz-input-gender-label-dark {
+    @extend .mfz-input-gender-label;
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    textColor: @mfzInputViewSDKGrayTextColor-dark;
+}
+
+.mfz-input-measurement-textfield-dark {
+    @extend .mfz-input-measurement-textfield;
+    /* UITextField */
+    backgroundColor: @mfzInputViewSDKWhiteColor-dark;
+    textColor: @mfzInputViewSDKInputViewTextColor-dark;
+}
+
+.mfz-input-male-containerview-dark {
+    @extend .mfz-input-male-containerview;
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor-dark;
+    borderColor: @mfzInputViewSDKGrayBorderColor-dark;
+}
+
+.mfz-input-female-containerview-dark {
+    @extend .mfz-input-female-containerview;
+    /* UIView */
+    backgroundColor: @mfzInputViewSDKWhiteColor-dark;
+    borderColor: @mfzInputViewSDKGrayBorderColor-dark;
+}
+
+.mfz-input-male-label-dark {
+    @extend .mfz-input-male-label;
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    textColor: @mfzInputViewSDKInputViewTextColor-dark;
+}
+
+.mfz-input-female-label-dark {
+    @extend .mfz-input-female-label;
+    /* UILabel */
+    backgroundColor: @mfzInputViewSDKTransparentColor-dark;
+    textColor: @mfzInputViewSDKInputViewTextColor-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKOnboardingView *********************/
+/*****************     LIGHT MODE    ****************************/
+/****************************************************************/
+
+@mfzOnboardPrimaryColor: @mfzSdkColorPrimary;
+/* InnerTutorial - (PageViewController) */
+@mfzOnboardPageControlColor: rgba(255,255,255,0.2);
+@mfzOnboardPageControlSelectedColor: white;
+@mfzOnboardLabelTextColor: black;
+@mfzOnboardShortHeadingTextColor: white;
+@mfzOnboardSkipButtonTextColor: black;
+@mfzOnboardPageInstructionBgColor: black;
+@mfzOnboardButtonTextColor: white;
+@mfzOnboardInstructionCellTextColor: white;
+@mfzOnboardBackgroundWhiteColor: white;
+@mfzOnboardTransparentBackgroundColor: clear;
+@mfzOnboardReadyButtonFont: systemBold 17.0;
+@mfzOnboardInstructionFont: systemBold 12.0;
+@mfzOnboardTitleFont: systemBold 26.0;
+@mfzOnboardTitleFontSmallDevice: systemBold 23.0;
+@mfzOnboardSkipButtonFont: systemBold 17.0;
+@mfzOnboardBackForwardButtonFont: systemBold 17.0;
+/* Insets */
+@mfzOnboardSkipButtonWidth: 150;
+@mfzOnboardSkipButtonHeight: 30;
+@mfzOnboardSkipButtonRightInset: 15;
+@mfzOnboardSkipButtonBottomOffset: -10;
+@mfzOnboardCloseButtonTopInset: 30;
+@mfzOnboardCloseButtonRightInset: 15;
+@mfzOnboardCloseButtonWidth: 50;
+@mfzOnboardCloseButtonHeight: 50;
+@mfzOnboardPageNavigatorHeight: 50;
+@mfzOnboardPageNavigatorHeight-iPhone-X: 82;
+@mfzOnboardPageNavigatorHeight-iPhone-XS: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-XR: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-XS-Max: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-11: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-11-Pro: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-11-Pro-Max: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-12: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-12-Pro: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-12-Pro-Max: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageNavigatorHeight-iPhone-12-Mini: @mfzOnboardPageNavigatorHeight-iPhone-X;
+@mfzOnboardPageControlTopInset: 10;
+@mfzOnboardReadyButtonLeftInset: 30;
+@mfzOnboardReadyButtonRightInset: 30;
+@mfzOnboardReadyButtonBottomInset: 20;
+@mfzOnboardReadyButtonBottomInset-iPhone-X: 50;
+@mfzOnboardReadyButtonBottomInset-iPhone-XS: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-XR: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-XS-Max: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-11: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-11-Pro: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-11-Pro-Max: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-12: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-12-Pro: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-12-Pro-Max: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonBottomInset-iPhone-12-Mini: @mfzOnboardReadyButtonBottomInset-iPhone-X;
+@mfzOnboardReadyButtonHeight: 50;
+@mfzOnboardBackArrowTopInset: 0;
+@mfzOnboardBackArrowBottomInset: 0;
+@mfzOnboardBackArrowLeftInset: 10;
+@mfzOnboardBackButtonTopInset: 0;
+@mfzOnboardBackButtonBottomInset: 0;
+@mfzOnboardBackButtonLeftInset: 10;
+@mfzOnboardBackButtonHeight: 50;
+@mfzOnboardForwardArrowTopInset: 0;
+@mfzOnboardForwardArrowBottomInset: 0;
+@mfzOnboardForwardArrowRightInset: 10;
+@mfzOnboardForwardButtonTopInset: 0;
+@mfzOnboardForwardButtonBottomInset: 0;
+@mfzOnboardForwardButtonRightInset: -10;
+@mfzOnboardForwardButtonHeight: 50;
+@mfzOnboardPageTitleTopInset: 40;
+@mfzOnboardPageTitleTopInset-iPhone-X: 55;
+@mfzOnboardPageTitleTopInset-iPhone-XR: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-XS: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-XS-Max: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-11: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-11-Pro: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-11-Pro-Max: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-12: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-12-Pro: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-12-Pro-Max: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleTopInset-iPhone-12-Mini: @mfzOnboardPageTitleTopInset-iPhone-X;
+@mfzOnboardPageTitleLeftInset: 20;
+@mfzOnboardPageTitleRightInset: 20;
+@mfzOnboardPageTitleHeight: 70;
+@mfzOnboardPageShortTitleBottomInset: 20;
+@mfzOnboardPageShortTitleWidth: 70;
+@mfzOnboardPageShortTitleHeight: 20;
+
+/* Bottom inset to pagenavigator */
+@mfzOnboardPageContainerBottomInset: 100;
+@mfzOnboardPageContainerLeftInset: 20;
+@mfzOnboardPageContainerRightInset: 20;
+@mfzOnboardPageContainerTopInset: 0;
+@mfzOnboardPageInstructionCellMinLineHeight: 14;
+@mfzOnboardPageInstructionCellMaxLineHeight: 14;
+@mfzOnboardPageInstructionCellLetterSpacing: 0.4;
+/* Insets between instruction cell and the label */
+@mfzOnboardPageInstructionLabelLeftInset: 0;
+@mfzOnboardPageInstructionLabelRightInset: 0;
+@mfzOnboardPageInstructionLabelBottomInset: 0;
+@mfzOnboardPageInstructionLabelTopInset: 0;
+/* Animation settings */
+@mfzOnboardPageInstructionAlphaStart: 0.0;
+@mfzOnboardPageInstructionAlphaEnd: 1.0;
+@mfzOnboardPageInstructionDuration: 1.0;
+@mfzOnboardPageInstructionDelay: 0.0;
+@mfzOnboardPageInstructionSpringDamping: 0.3;
+@mfzOnboardPageInstructionSpringVelocity: 7.0;
+@mfzOnboardPageInstructionPopTime: 0.3;
+
+.mfz-onboard-view {
+    /* UIView */
+    backgroundColor: @mfzOnboardBackgroundWhiteColor;
+}
+
+.mfz-onboard-view-ready-button {
+    /* UIButton */
+    backgroundColor: @mfzOnboardPrimaryColor;
+    titleColor: @mfzOnboardButtonTextColor;
+    font: @mfzOnboardReadyButtonFont;
+    cornerRadius: 8;
+}
+
+.mfz-onboard-view-skip-button {
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor;
+    titleColor: @mfzOnboardSkipButtonTextColor;
+    font: @mfzOnboardSkipButtonFont;
+    contentHorizontalAlignment: right;
+}
+
+.mfz-onboard-view-forward-button {
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor;
+    titleColor: @mfzOnboardButtonTextColor;
+    font: @mfzOnboardBackForwardButtonFont;
+}
+
+.mfz-onboard-view-back-button {
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor;
+    titleColor: @mfzOnboardButtonTextColor;
+    font: @mfzOnboardBackForwardButtonFont;
+}
+
+.mfz-onboard-view-close-button {
+    /* UIView */
+     backgroundColor: @mfzOnboardTransparentBackgroundColor;
+}
+
+.mfz-onboard-view-back-arrow-imageview {
+    /* UIImageView */
+    userInteractionEnabled: YES;
+    contentMode: scaleAspectFit;
+}
+
+.mfz-onboard-view-forward-arrow-imageview {
+    /* UIImageView */
+    userInteractionEnabled: YES;
+    contentMode: scaleAspectFit;
+}
+
+.mfz-onboard-view-paging-scrollview {
+    /* UIScrollView */
+    scrollEnabled: NO;
+    showsHorizontalScrollIndicator: NO;
+}
+
+.mfz-onboard-view-page-navigator-bar-view {
+    /* UIView */
+    backgroundColor: @mfzOnboardPrimaryColor;
+}
+
+/* Pages Start */
+/*/* Maximum of three instructions per page. Name specification need to be as following*/
+/* * LAYOUT PROPERTIES: Page(pagenumber>=1)-myfiziqSdkPageInstructionCellRightInset-(instructionnumber>=1),*/
+/*                      Page(pagenumber>=1)-myfiziqSdkPageInstructionCellLeftInset-(instructionnumber>=1)*/
+/*                      Page(pagenumber>=1)-myfiziqSdkPageInstructionCellTopInset-(instructionnumber>=1)*/
+/*                      Page(pagenumber>=1)-myfiziqSdkPageInstructionCellBottomInset-(instructionnumber>=1)*/
+/*                      @Page(pagenumber>=1)-myfiziqSdkPageInstructionAlignHorizontal-(instructionnumber>=1)*/
+/*                      @Page(pagenumber>=1)-myfiziqSdkPageInstructionAlignVertical-(instructionnumber>=1)*/
+/* * STYLE CLASS FOR PAGE VIEW: myfiziq-sdk-tutorial-view-page-view-pagenumber*/
+/* * STYLE CLASS FOR INSTRUCTION BUBBLE: myfiziq-sdk-tutorial-view-page-instruction-view-(instruction number)*/
+/* */
+
+/* Page 1 */
+@mfzOnboardPage1InstructionCellRightInset-1: 5;
+@mfzOnboardPage1InstructionCellTopInset-1: 57;
+@mfzOnboardPage1InstructionCellWidth-1: 100;
+@mfzOnboardPage1InstructionCellHeight-1: 100;
+@mfzOnboardPage1InstructionCellLeftInset-2: 0;
+@mfzOnboardPage1InstructionCellWidth-2: 100;
+@mfzOnboardPage1InstructionCellHeight-2: 100;
+@mfzOnboardPage1InstructionAlignHorizontal-2: NO;
+@mfzOnboardPage1InstructionAlignVertical-2: YES;
+@mfzOnboardPage1InstructionCellRightInset-3: 5;
+@mfzOnboardPage1InstructionCellBottomInset-3: 5;
+@mfzOnboardPage1InstructionCellWidth-3: 100;
+@mfzOnboardPage1InstructionCellHeight-3: 100;
+
+.mfz-onboard-page-view-1 {
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage1InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-2 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage1InstructionCellHeight-2 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-3 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage1InstructionCellHeight-3 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-view-page-view-shortTitle {
+        hidden: YES;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+    clipsToBounds: YES;
+}
+
+/* Page 2 */
+@mfzOnboardPage2InstructionCellLeftInset-1: 5;
+@mfzOnboardPage2InstructionCellTopInset-1: 57;
+@mfzOnboardPage2InstructionCellWidth-1: 100;
+@mfzOnboardPage2InstructionCellHeight-1: 100;
+
+.mfz-onboard-page-view-2 {
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage2InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-2 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage2InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-page-instruction-view-3 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage2InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-view-page-view-shortTitle {
+        hidden: YES;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+    clipsToBounds: YES;
+}
+
+/* Page 3 */
+@mfzOnboardPage3InstructionCellLeftInset-1: 5;
+@mfzOnboardPage3InstructionCellTopInset-1: 42;
+@mfzOnboardPage3InstructionCellWidth-1: 100;
+@mfzOnboardPage3InstructionCellHeight-1: 100;
+
+.mfz-onboard-page-view-3 {
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage3InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-2 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage3InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-page-instruction-view-3 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage3InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-view-page-view-shortTitle {
+        hidden: YES;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+    clipsToBounds: YES;
+}
+
+/* Page 4 */
+@mfzOnboardPage4PageInstructionCellLeftInset-1: 5;
+@mfzOnboardPage4InstructionCellTopInset-1: 20;
+@mfzOnboardPage4InstructionCellWidth-1: 100;
+@mfzOnboardPage4InstructionCellHeight-1: 100;
+@mfzOnboardPage4InstructionCellRightInset-2: 5;
+@mfzOnboardPage4InstructionCellBottomInset-2: 10;
+
+.mfz-onboard-page-view-4 {
+    .mfz-onboard-page-instruction-view-1 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage4InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-2 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage4InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-page-instruction-view-3 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage4InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: YES;
+    }
+    .mfz-onboard-view-page-view-shortTitle {
+        hidden: NO;
+        backgroundColor: @mfzOnboardPrimaryColor;
+        cornerRadius: @mfzOnboardPageShortTitleHeight / 2.0;
+        clipsToBounds: YES;
+        textAlignment: center;
+        textColor: @mfzOnboardShortHeadingTextColor;
+        font: @mfzOnboardInstructionFont;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+    clipsToBounds: YES;
+}
+
+/* Page 5 */
+@mfzOnboardPage5InstructionCellRightInset-1: 5;
+@mfzOnboardPage5InstructionCellTopInset-1: 70;
+@mfzOnboardPage5InstructionCellTopInset-1-iPhone-5s: 20;
+@mfzOnboardPage5InstructionCellTopInset-1-iPhone-5c: @mfzOnboardPage5InstructionCellTopInset-1-iPhone-5s;
+@mfzOnboardPage5InstructionCellTopInset-1-iPhone-SE: @mfzOnboardPage5InstructionCellTopInset-1-iPhone-5s;
+@mfzOnboardPage5InstructionCellTopInset-1-iPod-Touch-7: @mfzOnboardPage5InstructionCellTopInset-1-iPhone-5s;
+@mfzOnboardPage5InstructionCellWidth-1: 100;
+@mfzOnboardPage5InstructionCellHeight-1: 100;
+@mfzOnboardPage5InstructionCellLeftInset-2: 5;
+@mfzOnboardPage5InstructionCellWidth-2: 100;
+@mfzOnboardPage5InstructionCellHeight-2: 100;
+@mfzOnboardPage5InstructionAlignHorizontal-2: NO;
+@mfzOnboardPage5InstructionAlignVertical-2: YES;
+@mfzOnboardPage5InstructionCellRightInset-3: 5;
+@mfzOnboardPage5InstructionCellBottomInset-3: 5;
+@mfzOnboardPage5InstructionCellBottomInset-3-iPhone-5s: -40;
+@mfzOnboardPage5InstructionCellBottomInset-3-iPhone-5c: @mfzOnboardPage5InstructionCellBottomInset-3-iPhone-5s;
+@mfzOnboardPage5InstructionCellBottomInset-3-iPhone-SE: @mfzOnboardPage5InstructionCellBottomInset-3-iPhone-5s;
+@mfzOnboardPage5InstructionCellBottomInset-3-iPod-Touch-7: @mfzOnboardPage5InstructionCellBottomInset-3-iPhone-5s;
+@mfzOnboardPage5InstructionCellWidth-3: 100;
+@mfzOnboardPage5InstructionCellHeight-3: 100;
+
+.mfz-onboard-page-view-5 {
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage5InstructionCellHeight-1 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-2 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage5InstructionCellHeight-2 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-page-instruction-view-3 {
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor;
+        cornerRadius: @mfzOnboardPage5InstructionCellHeight-3 / 2;
+        clipsToBounds: YES;
+        hidden: NO;
+    }
+    .mfz-onboard-view-page-view-shortTitle {
+        hidden: NO;
+        backgroundColor: @mfzOnboardPrimaryColor;
+        cornerRadius: @mfzOnboardPageShortTitleHeight / 2.0;
+        clipsToBounds: YES;
+        textAlignment: center;
+        textColor: @mfzOnboardShortHeadingTextColor;
+        font: @mfzOnboardInstructionFont;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+    clipsToBounds: YES;
+}
+
+/* Pages End */
+
+.mfz-onboard-view-page-view-title {
+    /* UILabel */
+    numberOfLines: 0;
+    textAlignment: center;
+    lineBreakMode: wordWrapping;
+    textColor: @mfzOnboardLabelTextColor;
+    font: @mfzOnboardTitleFont;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-SE {
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+    font: @mfzOnboardTitleFontSmallDevice;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-5s {
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+    font: @mfzOnboardTitleFontSmallDevice;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-5c {
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+    font: @mfzOnboardTitleFontSmallDevice;
+}
+
+.mfz-onboard-view-page-view-title-iPod-Touch-7 {
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+    font: @mfzOnboardTitleFontSmallDevice;
+}
+
+.mfz-onboard-view-page-view-container {
+    /* UIView */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor;
+}
+
+.mfz-onboard-view-page-view-background-imageview {
+    /* UIImageView */
+    contentMode: scaleAspectFill;
+}
+
+.mfz-onboard-view-page-instruction-view-title {
+    /* UILabel */
+    numberOfLines: 0;
+    lineBreakMode: wordWrapping;
+    textAlignment: center;
+    font: @mfzOnboardInstructionFont;
+    textColor: @mfzOnboardInstructionCellTextColor;
+}
+
+/****************************************************************/
+/***************** MyFiziqSDKOnboardingView *********************/
+/******************     DARK MODE    ****************************/
+/****************************************************************/
+
+
+@mfzOnboardPrimaryColor-dark: @mfzSdkColorPrimary;
+/* InnerTutorial - (PageViewController) */
+@mfzOnboardPageControlColor-dark: rgba(255,255,255,0.2);
+@mfzOnboardPageControlSelectedColor-dark: white;
+@mfzOnboardLabelTextColor-dark: black;
+@mfzOnboardShortHeadingTextColor-dark: white;
+@mfzOnboardSkipButtonTextColor-dark: black;
+@mfzOnboardPageInstructionBgColor-dark: black;
+@mfzOnboardButtonTextColor-dark: white;
+@mfzOnboardInstructionCellTextColor-dark: white;
+@mfzOnboardBackgroundWhiteColor-dark: white;
+@mfzOnboardTransparentBackgroundColor-dark: clear;
+
+.mfz-onboard-view-dark {
+    @extend .mfz-onboard-view;
+    /* UIView */
+    backgroundColor: @mfzOnboardBackgroundWhiteColor-dark;
+}
+
+.mfz-onboard-view-ready-button-dark {
+    @extend .mfz-onboard-view-ready-button;
+    /* UIButton */
+    backgroundColor: @mfzOnboardPrimaryColor-dark;
+    titleColor: @mfzOnboardButtonTextColor-dark;
+}
+
+.mfz-onboard-view-skip-button-dark {
+    @extend .mfz-onboard-view-skip-button;
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor-dark;
+    titleColor: @mfzOnboardSkipButtonTextColor-dark;
+}
+
+.mfz-onboard-view-forward-button-dark {
+    @extend .mfz-onboard-view-forward-button;
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor-dark;
+    titleColor: @mfzOnboardButtonTextColor-dark;
+}
+
+.mfz-onboard-view-back-button-dark {
+    @extend .mfz-onboard-view-back-button;
+    /* UIButton */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor-dark;
+    titleColor: @mfzOnboardButtonTextColor-dark;
+}
+
+.mfz-onboard-view-close-button-dark {
+    @extend .mfz-onboard-view-close-button;
+    /* UIView */
+     backgroundColor: @mfzOnboardTransparentBackgroundColor-dark;
+}
+
+.mfz-onboard-view-back-arrow-imageview-dark {
+    @extend .mfz-onboard-view-back-arrow-imageview;
+    /* UIImageView */
+}
+
+.mfz-onboard-view-forward-arrow-imageview-dark {
+    @extend .mfz-onboard-view-forward-arrow-imageview;
+    /* UIImageView */
+}
+
+.mfz-onboard-view-paging-scrollview-dark {
+    @extend .mfz-onboard-view-paging-scrollview;
+    /* UIScrollView */
+}
+
+.mfz-onboard-view-page-navigator-bar-view-dark {
+    @extend .mfz-onboard-view-page-navigator-bar-view;
+    /* UIView */
+    backgroundColor: @mfzOnboardPrimaryColor-dark;
+}
+
+.mfz-onboard-page-view-1-dark {
+    @extend .mfz-onboard-page-view-1;
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1-dark {
+        @extend .mfz-onboard-page-instruction-view-1;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-2-dark {
+        @extend .mfz-onboard-page-instruction-view-2;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-3-dark {
+        @extend .mfz-onboard-page-instruction-view-3;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-view-page-view-shortTitle-dark {
+        @extend .mfz-onboard-view-page-view-shortTitle;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+}
+
+.mfz-onboard-page-view-2-dark {
+    @extend .mfz-onboard-page-view-2;
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1-dark {
+        @extend .mfz-onboard-page-instruction-view-1;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-2-dark {
+        @extend .mfz-onboard-page-instruction-view-2;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-3-dark {
+        @extend .mfz-onboard-page-instruction-view-3;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-view-page-view-shortTitle-dark {
+        @extend .mfz-onboard-view-page-view-shortTitle;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+}
+
+.mfz-onboard-page-view-3-dark {
+    @extend .mfz-onboard-page-view-3;
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1-dark {
+        @extend .mfz-onboard-page-instruction-view-1;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-2-dark {
+        @extend .mfz-onboard-page-instruction-view-2;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-3-dark {
+        @extend .mfz-onboard-page-instruction-view-3;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-view-page-view-shortTitle-dark {
+        @extend .mfz-onboard-view-page-view-shortTitle;
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+}
+
+.mfz-onboard-page-view-4-dark {
+    @extend .mfz-onboard-page-view-4;
+    .mfz-onboard-page-instruction-view-1-dark {
+        @extend .mfz-onboard-page-instruction-view-1;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-2-dark {
+        @extend .mfz-onboard-page-instruction-view-2;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-3-dark {
+        @extend .mfz-onboard-page-instruction-view-3;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-view-page-view-shortTitle-dark {
+        @extend .mfz-onboard-view-page-view-shortTitle;
+        backgroundColor: @mfzOnboardPrimaryColor-dark;
+        textColor: @mfzOnboardShortHeadingTextColor-dark;
+
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+}
+
+.mfz-onboard-page-view-5-dark {
+    @extend .mfz-onboard-page-view-5;
+    /* UIView */
+    .mfz-onboard-page-instruction-view-1-dark {
+        @extend .mfz-onboard-page-instruction-view-1;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-2-dark {
+        @extend .mfz-onboard-page-instruction-view-2;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-page-instruction-view-3-dark {
+        @extend .mfz-onboard-page-instruction-view-3;
+        /* UIView */
+        backgroundColor: @mfzOnboardPageInstructionBgColor-dark;
+    }
+    .mfz-onboard-view-page-view-shortTitle-dark {
+        @extend .mfz-onboard-view-page-view-shortTitle;
+        backgroundColor: @mfzOnboardPrimaryColor-dark;
+        textColor: @mfzOnboardShortHeadingTextColor-dark;
+
+    }
+    /* The background image view is aspect fill which causes the image to extend beyond bounds of page view. Set this property to true, to clip the extended view. */
+}
+
+.mfz-onboard-view-page-view-title-dark {
+    @extend .mfz-onboard-view-page-view-title;
+    /* UILabel */
+    textColor: @mfzOnboardLabelTextColor-dark;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-SE-dark {
+    @extend .mfz-onboard-view-page-view-title-iPhone-SE;
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-5s-dark {
+    @extend .mfz-onboard-view-page-view-title-iPhone-5s;
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+}
+
+.mfz-onboard-view-page-view-title-iPhone-5c-dark {
+    @extend .mfz-onboard-view-page-view-title-iPhone-5c;
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+}
+
+.mfz-onboard-view-page-view-title-iPod-Touch-7-dark {
+    @extend .mfz-onboard-view-page-view-title-iPod-Touch-7;
+    /* UILabel */
+    @extend .mfz-onboard-view-page-view-title;
+}
+
+.mfz-onboard-view-page-view-container-dark {
+    @extend .mfz-onboard-view-page-view-container;
+    /* UIView */
+    backgroundColor: @mfzOnboardTransparentBackgroundColor-dark;
+}
+
+.mfz-onboard-view-page-view-background-imageview-dark {
+    @extend .mfz-onboard-view-page-view-background-imageview;
+    /* UIImageView */
+}
+
+.mfz-onboard-view-page-instruction-view-title-dark {
+    @extend .mfz-onboard-view-page-instruction-view-title;
+    /* UILabel */
+    textColor: @mfzOnboardInstructionCellTextColor-dark;
+}
+
+
+
+/****************************************************************/
+/***************** MyFiziqSDKProfileView ************************/
+/*****************     LIGHT MODE    ****************************/
+/****************************************************************/
+/* Globals: */
+@mfzAvatarCardPadding: 16.0;
+@mfzAvatarCardBackgroundColor: white;
+@mfzAvatarCardBorderColor: #E5E5EA;
+@mfzAvatarCardTextColor: black;
+@mfzAvatarColorPrimary: @mfzSdkColorPrimary;
+@mfzAvatarSystemFont: system;
+@mfzAvatarTitleFont: systemBold 20;
+@mfzAvatarSubtitleFont: system 15;
+@mfzAvatarCellTitleFont: system 17;
+@mfzAvatarCellValueFont: system 17;
+@mfzAvatarBodyFont: system 12;
+@mfzAvatarBodyFontSmall: system 10;
+@mfzAvatarAttrLabelFont: systemBold 13;
+@mfzAvatarAttrValFont: system 13;
+@mfzAvatarCellHeaderFont: system 13;
+
+/* ProfileHomeView: */
+@mfzProfileHomeAvatarMeshTopInset: 20.0;
+@mfzProfileHomeAvatarMeshRightInset: 16.0;
+@mfzProfileHomeAvatarMeshLeftInset: 16.0;
+@mfzProfileHomeAvatarMeshHeight: 350.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-XS-Max: 530.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-11-Pro-Max: @mfzProfileHomeAvatarMeshHeight-iPhone-XS-Max;
+@mfzProfileHomeAvatarMeshHeight-iPhone-XR: 480.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-11: @mfzProfileHomeAvatarMeshHeight-iPhone-XR;
+@mfzProfileHomeAvatarMeshHeight-iPhone-12: @mfzProfileHomeAvatarMeshHeight-iPhone-XR;
+@mfzProfileHomeAvatarMeshHeight-iPhone-XS: 445.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-X: @mfzProfileHomeAvatarMeshHeight-iPhone-XS;
+@mfzProfileHomeAvatarMeshHeight-iPhone-11-Pro: @mfzProfileHomeAvatarMeshHeight-iPhone-XS;
+@mfzProfileHomeAvatarMeshHeight-iPhone-12-Pro: @mfzProfileHomeAvatarMeshHeight-iPhone-XS;
+@mfzProfileHomeAvatarMeshHeight-iPhone-8-Plus: 430.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-7-Plus: 430.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-6s-Plus: 430.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-6: 360.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-6s: @mfzProfileHomeAvatarMeshHeight-iPhone-6;
+@mfzProfileHomeAvatarMeshHeight-iPhone-7: @mfzProfileHomeAvatarMeshHeight-iPhone-6;
+@mfzProfileHomeAvatarMeshHeight-iPhone-8: @mfzProfileHomeAvatarMeshHeight-iPhone-6;
+@mfzProfileHomeAvatarMeshHeight-iPhone-5s: 290.0;
+@mfzProfileHomeAvatarMeshHeight-iPhone-SE: @mfzProfileHomeAvatarMeshHeight-iPhone-5s;
+@mfzProfileHomeAvatarMeshHeight-iPhone-12-Mini: @mfzProfileHomeAvatarMeshHeight-iPhone-5s;
+@mfzProfileHomeAvatarMeshHeight-iPod-Touch-7: @mfzProfileHomeAvatarMeshHeight-iPhone-5s;
+@mfzProfileHomeAvatarMeshPinchEnabled: NO;
+@mfzProfileHomeAvatarMeshPanTranslationEnabled: NO;
+@mfzProfileHomeControlContainerTopInset: 8.0;
+@mfzProfileHomeControlContainerHeight: 50;
+@mfzProfileHomeControlContainerWidth: 100.0;
+@mfzProfileHomePlayButtonWidth: 50;
+@mfzProfileHomeRotateButtonWidth: 50.0;
+@mfzProfileHomeAvatarListTopInset: 16.0;
+@mfzProfileHomeAvatarListLeftInset: 0.0;
+@mfzProfileHomeAvatarListRightInset: 0.0;
+@mfzProfileHomeAvatarListRowHeight: 50;
+@mfzProfileHomeAvatarListHeaderHeight: @mfzProfileHomeAvatarListRowHeight;
+@mfzProfileHomeAvatarListHeaderWidth: 300;
+@mfzProfileHomeAvatarListHeaderLeftInset: 20;
+@mfzProfileHomeAvatarListHeaderTopInset: 5;
+@mfzProfileHomeAvatarListFooterHeight: 40;
+@mfzProfileHomeAvatarListFooterWidth: 200;
+@mfzProfileHomeAvatarListFooterLeftInset: 20;
+@mfzProfileHomeAvatarListFooterTopInset: 0;
+@mfzProfileHomeAvatarListHeaderSeperatorLineColor: rgb(215,215,215);
+@mfzProfileHomeAvatarListHeaderSeperatorLineHeight:0.5;
+@mfzProfileHomeAvatarListHeaderSeperatorLineRightInset: 0.0;
+@mfzProfileHomeAvatarListHeaderSeperatorLineLeftInset: 0.0;
+@mfzProfileHomeAvatarListHeaderSeperatorLineBottomInset: 0.0;
+@mfzProfileHomeAvatarListHeaderTitleColor: #8E8E93;
+@mfzProfileHomeAvatarListFooterTitleColor: #8E8E93;
+@mfzProfileHomeViewBgColor: #FAFAFA;
+@mfzProfileHomeAvatarCellTitleTopInset: 5.0;
+@mfzProfileHomeAvatarCellTitleLeftInset: 20.0;
+@mfzProfileHomeAvatarCellTitleBottomInset: 5.0;
+@mfzProfileHomeAvatarCellValueTopInset: 5.0;
+@mfzProfileHomeAvatarCellValueRightInset: 20.0;
+@mfzProfileHomeAvatarCellValueBottomInset: 5.0;
+@mfzProfileHomeAvatarCellTitleWidth: 100.0;
+@mfzProfileHomeAvatarCellValueWidth: 200.0;
+@mfzProfileHomeAvatarCellSeparatorHeight: 0.25;
+@mfzProfileHomeAvatarCellSeparatorRightInset: 0.0;
+@mfzProfileHomeAvatarCellSeparatorLeftInset: 0.0;
+@mfzProfileHomeAvatarCellSeparatorBottomInset: 0.0;
+@mfzProfileHomeAvatarButtonDisabledColor: @mfzAvatarCardBorderColor;
+@mfzProfileHomeAvatarButtonEnabledColor: @mfzAvatarColorPrimary;
+@mfzProfileHomeBackgroundTransparentColor: clear;
+@mfzProfileHomeViewBackgroundColor: white;
+@mfzProfileHomeListViewBackgroundColor: #FAFAFA;
+@mfzProfileHomeViewCellTitleColor: black;
+@mfzProfileHomeMeshViewBackgroundColor: clear;
+@mfzProfileHomeShowCategoryByDefault: NO;
+@mfzProfileHomeShowAgeByDefault: NO;
+
+.mfz-profile-home-content-scrollview {
+    /* UIScrollView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-contentview {
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-controls-container-view {
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-play-button {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-pause-button {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-rotate-button {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-profile-home-data-list-view {
+    /* UITableView */
+    backgroundColor: @mfzProfileHomeListViewBackgroundColor;
+    separatorStyle: none;
+}
+
+.mfz-profile-home-view {
+    /* UIView */
+    backgroundColor: @mfzProfileHomeViewBackgroundColor;
+}
+
+.mfz-profile-home-list-header {
+    /* UILabel */
+    textColor: @mfzProfileHomeAvatarListHeaderTitleColor;
+    font: @mfzAvatarCellHeaderFont;
+}
+
+.mfz-profile-home-list-footer {
+    /* UILabel */
+    textColor: @mfzProfileHomeAvatarListFooterTitleColor;
+    font: @mfzAvatarSystemFont 12;
+}
+
+.mfz-profile-home-avatarcell {
+    /* UIView */
+    backgroundColor: @mfzProfileHomeViewBackgroundColor;
+}
+
+.mfz-profile-home-avatarcell-title-label {
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    textColor: @mfzProfileHomeViewCellTitleColor;
+    font: @mfzAvatarCellTitleFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    textAlignment: left;
+}
+
+.mfz-profile-home-avatarcell-value-label {
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    textColor: @mfzProfileHomeAvatarListHeaderTitleColor;
+    font: @mfzAvatarCellValueFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    textAlignment: right;
+}
+
+/* AvatarCardView: */
+@mfzAvatarCardNoneSuggestedHeight: 200.0;
+@mfzAvatarCardNoneSuggestedWidth: 342.0;
+@mfzAvatarCardNoneTitleTopInset: 21.5;
+@mfzAvatarCardNoneButtonFont: systemBold 17;
+@mfzAvatarCardNoneBodyTopInset: 0.0;
+@mfzAvatarCardNoneBodyLeftInset: @mfzAvatarCardPadding;
+@mfzAvatarCardNoneBodyWidth: 194.0;
+@mfzAvatarCardNoneBodyHeight: 65.0;
+@mfzAvatarCardNoneBodyHeight-iPhone-SE: 50.0;
+@mfzAvatarCardNoneBodyHeight-iPhone-5s: @mfzAvatarCardNoneBodyHeight-iPhone-SE;
+@mfzAvatarCardNoneBodyHeight-iPhone-12-Mini: @mfzAvatarCardNoneBodyHeight-iPhone-SE;
+@mfzAvatarCardNoneBodyHeight-iPod-Touch-7: @mfzAvatarCardNoneBodyHeight-iPhone-SE;
+@mfzAvatarCardNoneButtonWidth: 190.0;
+@mfzAvatarCardNoneButtonHeight: 39.0;
+@mfzAvatarCardNoneButtonBottomInset-iPhone-SE: 16.0;
+@mfzAvatarCardNoneButtonBottomInset-iPhone-5s: @mfzAvatarCardNoneButtonBottomInset-iPhone-SE;
+@mfzAvatarCardNoneButtonBottomInset-iPhone-12-Mini: @mfzAvatarCardNoneButtonBottomInset-iPhone-SE;
+@mfzAvatarCardNoneButtonBottomInset-iPod-Touch-7: @mfzAvatarCardNoneButtonBottomInset-iPhone-SE;
+@mfzAvatarCardNoneButtonBottomInset: 34.0;
+@mfzAvatarCardNoneButtonLeftInset: @mfzAvatarCardPadding;
+@mfzAvatarCardNoneMeshWidth: 122.0;
+@mfzAvatarCardNoneMeshHeight: 178.0;
+@mfzProfileCardAvatarMeshPinchEnabled: NO;
+@mfzProfileCardAvatarMeshPanTranslationEnabled: NO;
+
+@mfzAvatarCardDetailsTableWidth = 200.0;
+@mfzAvatarCardAvatarSuggestedHeight: 301.0;
+@mfzAvatarCardAvatarSuggestedWidth: 342.0;
+@mfzAvatarCardMeshTopInset: 28.0;
+@mfzAvatarCardMeshRightInset: @mfzAvatarCardPadding;
+@mfzAvatarCardMeshWidth: 122.0;
+@mfzAvatarCardMeshHeight: 180.0;
+@mfzAvatarCardTitleHeight: 25.0;
+@mfzAvatarCardTitleWidth: @mfzAvatarCardDetailsTableWidth;
+@mfzAvatarCardTitleTopInset: 21.5;
+@mfzAvatarCardTitleLeftInset: 16.0;
+@mfzAvatarCardSubTitleHeight: 20.0;
+@mfzAvatarCardSubTitleWidth: @mfzAvatarCardDetailsTableWidth;
+@mfzAvatarCardSubTitleTopInset: 8.0;
+@mfzAvatarCardSubTitleLeftInset: @mfzAvatarCardPadding;
+@mfzAvatarCardSpacerTopOffset: 80.0;
+@mfzAvatarCardSpacerWidth: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerHeight: 2.0;
+@mfzAvatarCardSpacerLeftOffset: @mfzAvatarCardPadding;
+@mfzAvatarCardButtonBarHeight: 73.0;
+@mfzAvatarCardButtonWidth: 50.0;
+@mfzAvatarCardButtonHeight: 50.0;
+@mfzAvatarCardButtonBottomInset: 12.0;
+@mfzAvatarCardButtonShowAllLeft: 26.0;
+@mfzAvatarCardButtonTrackLeft: 85.0;
+@mfzAvatarCardButtonNewLeft: 144.0;
+
+@mfzAvatarCardNoneSuggestedHeight-iPhone-SE: 168.0;
+@mfzAvatarCardNoneSuggestedHeight-iPhone-5s: @mfzAvatarCardNoneSuggestedHeight-iPhone-SE;
+@mfzAvatarCardNoneSuggestedHeight-iPhone-12-Mini: @mfzAvatarCardNoneSuggestedHeight-iPhone-SE;
+@mfzAvatarCardNoneSuggestedHeight-iPod-Touch-7: @mfzAvatarCardNoneSuggestedHeight-iPhone-SE;
+@mfzAvatarCardNoneSuggestedWidth-iPhone-SE: 288.0;
+@mfzAvatarCardNoneSuggestedWidth-iPhone-5s: @mfzAvatarCardNoneSuggestedWidth-iPhone-SE;
+@mfzAvatarCardNoneSuggestedWidth-iPhone-12-Mini: @mfzAvatarCardNoneSuggestedWidth-iPhone-SE;
+@mfzAvatarCardNoneSuggestedWidth-iPod-Touch-7: @mfzAvatarCardNoneSuggestedWidth-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedHeight-iPhone-SE: 286.0;
+@mfzAvatarCardAvatarSuggestedHeight-iPhone-5s: @mfzAvatarCardAvatarSuggestedHeight-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedHeight-iPhone-12-Mini: @mfzAvatarCardAvatarSuggestedHeight-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedHeight-iPod-Touch-7: @mfzAvatarCardAvatarSuggestedHeight-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedWidth-iPhone-SE: 288.0;
+@mfzAvatarCardAvatarSuggestedWidth-iPhone-5s: @mfzAvatarCardAvatarSuggestedWidth-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedWidth-iPhone-12-Mini: @mfzAvatarCardAvatarSuggestedWidth-iPhone-SE;
+@mfzAvatarCardAvatarSuggestedWidth-iPod-Touch-7: @mfzAvatarCardAvatarSuggestedWidth-iPhone-SE;
+@mfzAvatarCardSpacerWidth-iPhone-SE: 255.0;
+@mfzAvatarCardSpacerWidth-iPhone-5s: @mfzAvatarCardSpacerWidth-iPhone-SE;
+@mfzAvatarCardSpacerWidth-iPhone-12-Mini: @mfzAvatarCardSpacerWidth-iPhone-SE;
+@mfzAvatarCardSpacerWidth-iPod-Touch-7: @mfzAvatarCardSpacerWidth-iPhone-SE;
+@mfzAvatarCardSpacerWidth-iPhone-X: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-XS: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-XS-Max: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-11: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-11-Pro: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-11-Pro-Max: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-12: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-12-Pro: @mfzAvatarCardDetailsTableWidth -20;
+@mfzAvatarCardSpacerWidth-iPhone-12-Pro-Max: @mfzAvatarCardDetailsTableWidth -20;
+
+@mfzAvatarCardNoneBodyWidth-iPhone-SE: @mfzAvatarCardSpacerWidth-iPhone-SE;
+@mfzAvatarCardNoneBodyWidth-iPhone-5s: @mfzAvatarCardNoneBodyWidth-iPhone-SE;
+@mfzAvatarCardNoneBodyWidth-iPhone-12-Mini: @mfzAvatarCardNoneBodyWidth-iPhone-SE;
+@mfzAvatarCardNoneBodyWidth-iPod-Touch-7: @mfzAvatarCardNoneBodyWidth-iPhone-SE;
+@mfzAvatarCardNoneButtonWidth-iPhone-SE: @mfzAvatarCardSpacerWidth-iPhone-SE;
+@mfzAvatarCardNoneButtonWidth-iPhone-5s: @mfzAvatarCardNoneButtonWidth-iPhone-SE;
+@mfzAvatarCardNoneButtonWidth-iPhone-12-Mini: @mfzAvatarCardNoneButtonWidth-iPhone-SE;
+@mfzAvatarCardNoneButtonWidth-iPod-Touch-7: @mfzAvatarCardNoneButtonWidth-iPhone-SE;
+@mfzAvatarCardButtonShowAllLeft-iPhone-SE: 16.0;
+@mfzAvatarCardButtonShowAllLeft-iPhone-5s: @mfzAvatarCardButtonShowAllLeft-iPhone-SE;
+@mfzAvatarCardButtonShowAllLeft-iPhone-12-Mini: @mfzAvatarCardButtonShowAllLeft-iPhone-SE;
+@mfzAvatarCardButtonShowAllLeft-iPod-Touch-7: @mfzAvatarCardButtonShowAllLeft-iPhone-SE;
+@mfzAvatarCardButtonTrackLeft-iPhone-SE: 120.0;
+@mfzAvatarCardButtonTrackLeft-iPhone-5s: @mfzAvatarCardButtonTrackLeft-iPhone-SE;
+@mfzAvatarCardButtonTrackLeft-iPhone-12-Mini: @mfzAvatarCardButtonTrackLeft-iPhone-SE;
+@mfzAvatarCardButtonTrackLeft-iPod-Touch-7: @mfzAvatarCardButtonTrackLeft-iPhone-SE;
+@mfzAvatarCardButtonNewLeft-iPhone-SE: 224.0;
+@mfzAvatarCardButtonNewLeft-iPhone-5s: @mfzAvatarCardButtonNewLeft-iPhone-SE;
+@mfzAvatarCardButtonNewLeft-iPhone-12-Mini: @mfzAvatarCardButtonNewLeft-iPhone-SE;
+@mfzAvatarCardButtonNewLeft-iPod-Touch-7: @mfzAvatarCardButtonNewLeft-iPhone-SE;
+@mfzAvatarCardNoneMeshWidth-iPhone-SE: 1.0;
+@mfzAvatarCardNoneMeshWidth-iPhone-5s: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardNoneMeshWidth-iPhone-12-Mini: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardNoneMeshWidth-iPod-Touch-7: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardNoneMeshHeight-iPhone-SE: 1.0;
+@mfzAvatarCardNoneMeshHeight-iPhone-5s: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardNoneMeshHeight-iPhone-12-Mini: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardNoneMeshHeight-iPod-Touch-7: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardMeshWidth-iPhone-SE: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardMeshWidth-iPhone-5s: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardMeshWidth-iPhone-12-Mini: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardMeshWidth-iPod-Touch-7: @mfzAvatarCardNoneMeshWidth-iPhone-SE;
+@mfzAvatarCardMeshHeight-iPhone-SE: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardMeshHeight-iPhone-5s: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardMeshHeight-iPhone-12-Mini: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+@mfzAvatarCardMeshHeight-iPod-Touch-7: @mfzAvatarCardNoneMeshHeight-iPhone-SE;
+
+/* Avatar Card - Single Avatar Measurements */
+@mfzAvatarCardAttrLabelHeight: 16.0;
+@mfzAvatarCardAttrLabelTopOffset: 7.0;
+@mfzAvatarCardAttrValueLeftWidth: 50.0;
+@mfzAvatarCardAttrValueLeftInset: 122.0;
+@mfzAvatarCardAttrDirWidth : 18.0;
+@mfzAvatarCardAttrHRColor: #F7F7F7;
+@mfzAvatarCardAttrHRHeight: 1.0;
+@mfzAvatarCardNoneButtonBackgroundColor: white;
+@mfzAvatarCardNoneButtonBarBackgroundColor: #F7F7F7;
+
+.mfz-avatarcard-none-body {
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    textColor: @mfzAvatarCardTextColor;
+    font: @mfzAvatarSubtitleFont;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+}
+
+.mfz-avatarcard-none-btn {
+    /* UIButton */
+    backgroundColor: @mfzAvatarCardNoneButtonBackgroundColor;
+    titleLabel.font: @mfzAvatarCardNoneButtonFont;
+    titleLabel.textAlignment: center;
+    borderColor: @mfzAvatarColorPrimary;
+    titleColor: @mfzAvatarColorPrimary;
+    borderWidth: 2.0;
+    cornerRadius: 8.0;
+}
+
+.mfz-avatarcard-view {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardBackgroundColor;
+    borderColor: @mfzAvatarCardBorderColor;
+    cornerRadius: 8.0;
+    borderWidth: 1.0;
+}
+
+.mfz-avatarcard-btn-bar {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardNoneButtonBarBackgroundColor;
+    cornerRadius: 8.0;
+}
+
+.mfz-avatarcard-title {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarTitleFont;
+}
+
+.mfz-avatarcard-subtitle {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarSubtitleFont;
+}
+
+.mfz-avatarcard-spacerview {
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+}
+
+.mfz-avatarcard-attr-hr {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-attrlabel {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-attrval {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+}
+
+.mfz-avatarcard-labelchest {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-value1chest {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    textAlignment: right;
+}
+
+.mfz-avatarcard-value2chest {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+.mfz-avatarcard-value2compchest {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: left;
+}
+
+.mfz-avatarcard-dirchest {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: center;
+}
+
+.mfz-avatarcard-hrchest {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-labelwaist {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-value1waist {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+
+.mfz-avatarcard-value2waist {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+.mfz-avatarcard-value2compwaist {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: left;
+}
+
+.mfz-avatarcard-dirwaist {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: center;
+}
+
+.mfz-avatarcard-hrwaist {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-labelhip {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-value1hip {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+
+.mfz-avatarcard-value2hip {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+.mfz-avatarcard-value2comphip {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: left;
+}
+
+.mfz-avatarcard-dirhip {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: center;
+}
+
+.mfz-avatarcard-hrhip {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-labelthigh {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-value1thigh {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+
+.mfz-avatarcard-value2thigh {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+.mfz-avatarcard-value2compthigh {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: left;
+}
+
+.mfz-avatarcard-dirthigh {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: center;
+}
+
+.mfz-avatarcard-hrthigh {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-labelweight {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrLabelFont;
+}
+
+.mfz-avatarcard-value1weight {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+
+.mfz-avatarcard-value2weight {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: right;
+}
+.mfz-avatarcard-value2compweight {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: left;
+}
+
+.mfz-avatarcard-dirweight {
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    font: @mfzAvatarAttrValFont;
+    textAlignment: center;
+}
+
+.mfz-avatarcard-hrweight {
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor;
+}
+
+.mfz-avatarcard-btn-showall {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    titleLabel.textAlignment: center;
+    titleColor: @mfzAvatarCardTextColor;
+    tintColor: @mfzAvatarCardTextColor;
+}
+
+.mfz-avatarcard-btn-track {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    titleLabel.textAlignment: center;
+    titleColor: @mfzAvatarCardTextColor;
+    tintColor: @mfzAvatarCardTextColor;
+}
+
+.mfz-avatarcard-btn-new {
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor;
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    titleLabel.textAlignment: center;
+    titleColor: @mfzAvatarCardTextColor;
+    tintColor: @mfzAvatarCardTextColor;
+}
+
+.mfzProfileHomeViewmfz-common-sdk-mesh-view {
+    @extend .mfz-common-sdk-mesh-view;
+    backgroundColor: @mfzProfileHomeMeshViewBackgroundColor;
+}
+
+.mfzProfileHomeViewmfz-common-sdk-mesh-view-frame {
+    @extend .mfz-common-sdk-mesh-view-frame;
+    borderColor: @mfzProfileHomeMeshViewBackgroundColor;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKProfileView ************************/
+/*****************     DARK MODE     ****************************/
+/****************************************************************/
+
+@mfzProfileSdkPrimaryDarkModeDarkColor: rgba(33, 33, 33, 1.0);
+@mfzAvatarCardBackgroundColor-dark: @mfzProfileSdkPrimaryDarkModeDarkColor;
+@mfzAvatarCardBorderColor-dark: rgba(33, 33, 33, 0.7);
+@mfzAvatarCardTextColor-dark: white;
+@mfzAvatarColorPrimary-dark: @mfzSdkColorPrimary;
+@mfzProfileHomeAvatarListHeaderSeperatorLineColor-dark: #929292;
+@mfzProfileHomeAvatarListHeaderTitleColor-dark: #8E8E93;
+@mfzProfileHomeAvatarListFooterTitleColor-dark: #8E8E93;
+@mfzProfileHomeViewBgColor-dark: black;
+@mfzProfileHomeAvatarButtonDisabledColor-dark: @mfzAvatarCardBorderColor-dark;
+@mfzProfileHomeAvatarButtonEnabledColor-dark: @mfzAvatarColorPrimary-dark;
+@mfzAvatarCardAttrHRColor-dark: #F7F7F7;
+@mfzProfileHomeBackgroundTransparentColor-dark: clear;
+@mfzProfileHomeViewBackgroundColor-dark: black;
+@mfzProfileHomeListViewBackgroundColor-dark: black;
+@mfzProfileHomeViewCellTitleColor-dark: white;
+@mfzAvatarCardNoneButtonBackgroundColor-dark: black;
+@mfzAvatarCardNoneButtonBarBackgroundColor-dark: @mfzProfileSdkPrimaryDarkModeDarkColor;
+@mfzProfileHomeMeshViewBackgroundColor-dark: clear;
+
+.mfz-profile-home-content-scrollview-dark {
+    @extend .mfz-profile-home-content-scrollview;
+    /* UIScrollView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-contentview-dark {
+    @extend .mfz-profile-home-contentview;
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-controls-container-view-dark {
+    @extend .mfz-profile-home-controls-container-view;
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-play-button-dark {
+    @extend .mfz-profile-home-play-button;
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-pause-button-dark {
+    @extend .mfz-profile-home-pause-button;
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-rotate-button-dark {
+    @extend .mfz-profile-home-rotate-button;
+    /* UIButton */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-profile-home-data-list-view-dark {
+    @extend .mfz-profile-home-data-list-view;
+    /* UITableView */
+    backgroundColor: @mfzProfileHomeListViewBackgroundColor-dark;
+}
+
+.mfz-profile-home-view-dark {
+    @extend .mfz-profile-home-view;
+    /* UIView */
+    backgroundColor: @mfzProfileHomeViewBackgroundColor-dark;
+}
+
+.mfz-profile-home-list-header-dark {
+    @extend .mfz-profile-home-list-header;
+    /* UILabel */
+    textColor: @mfzProfileHomeAvatarListHeaderTitleColor-dark;
+}
+
+.mfz-profile-home-list-footer-dark {
+    @extend .mfz-profile-home-list-footer;
+    /* UILabel */
+    textColor: @mfzProfileHomeAvatarListFooterTitleColor-dark;
+}
+
+.mfz-profile-home-avatarcell-dark {
+    @extend .mfz-profile-home-avatarcell;
+    /* UIView */
+    backgroundColor: @mfzProfileSdkPrimaryDarkModeDarkColor;
+}
+
+.mfz-profile-home-avatarcell-title-label-dark {
+    @extend .mfz-profile-home-avatarcell-title-label;
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    textColor: @mfzProfileHomeViewCellTitleColor-dark;
+}
+
+.mfz-profile-home-avatarcell-value-label-dark {
+    @extend .mfz-profile-home-avatarcell-value-label;
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    textColor: @mfzProfileHomeAvatarListHeaderTitleColor-dark;
+}
+
+.mfz-avatarcard-none-body-dark {
+    @extend .mfz-avatarcard-none-body;
+    /* UILabel */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    textColor: @mfzAvatarCardTextColor-dark;
+}
+
+.mfz-avatarcard-none-btn-dark {
+    @extend .mfz-avatarcard-none-btn;
+    /* UIButton */
+    backgroundColor: @mfzAvatarCardNoneButtonBackgroundColor-dark;
+    borderColor: @mfzAvatarColorPrimary-dark;
+    titleColor: @mfzAvatarColorPrimary;
+}
+
+.mfz-avatarcard-view-dark {
+    @extend .mfz-avatarcard-view;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardBackgroundColor-dark;
+    borderColor: @mfzAvatarCardBorderColor-dark;
+}
+
+.mfz-avatarcard-btn-bar-dark {
+    @extend .mfz-avatarcard-btn-bar;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardNoneButtonBarBackgroundColor-dark;
+}
+
+.mfz-avatarcard-title-dark {
+    @extend .mfz-avatarcard-title;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-subtitle-dark {
+    @extend .mfz-avatarcard-subtitle;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-spacerview-dark {
+    @extend .mfz-avatarcard-spacerview;
+    /* UIView */
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-attr-hr-dark {
+    @extend .mfz-avatarcard-attr-hr;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-attrlabel-dark {
+    @extend .mfz-avatarcard-attrlabel;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-attrval-dark {
+    @extend .mfz-avatarcard-attrval;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-labelchest-dark {
+    @extend .mfz-avatarcard-labelchest;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value1chest-dark {
+    @extend .mfz-avatarcard-value1chest;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    textColor: @mfzAvatarCardTextColor-dark;
+}
+
+.mfz-avatarcard-value2chest-dark {
+    @extend .mfz-avatarcard-value2chest;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+.mfz-avatarcard-value2compchest-dark {
+    @extend .mfz-avatarcard-value2compchest;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-dirchest-dark {
+    @extend .mfz-avatarcard-dirchest;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-hrchest-dark {
+    @extend .mfz-avatarcard-hrchest;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-labelwaist-dark {
+    @extend .mfz-avatarcard-labelwaist;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value1waist-dark {
+    @extend .mfz-avatarcard-value1waist;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value2waist-dark {
+    @extend .mfz-avatarcard-value2waist;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+.mfz-avatarcard-value2compwaist-dark {
+    @extend .mfz-avatarcard-value2compwaist;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-dirwaist-dark {
+    @extend .mfz-avatarcard-dirwaist;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-hrwaist-dark {
+    @extend .mfz-avatarcard-hrwaist;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-labelhip-dark {
+    @extend .mfz-avatarcard-labelhip;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value1hip-dark {
+    @extend .mfz-avatarcard-value1hip;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value2hip-dark {
+    @extend .mfz-avatarcard-value2hip;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+.mfz-avatarcard-value2comphip-dark {
+    @extend .mfz-avatarcard-value2comphip;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-dirhip-dark {
+    @extend .mfz-avatarcard-dirhip;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-hrhip-dark {
+    @extend .mfz-avatarcard-hrhip;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-labelthigh-dark {
+    @extend .mfz-avatarcard-labelthigh;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value1thigh-dark {
+    @extend .mfz-avatarcard-value1thigh;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value2thigh-dark {
+    @extend .mfz-avatarcard-value2thigh;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+.mfz-avatarcard-value2compthigh-dark {
+    @extend .mfz-avatarcard-value2compthigh;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-dirthigh-dark {
+    @extend .mfz-avatarcard-dirthigh;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-hrthigh-dark {
+    @extend .mfz-avatarcard-hrthigh;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-labelweight-dark {
+    @extend .mfz-avatarcard-labelweight;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value1weight-dark {
+    @extend .mfz-avatarcard-value1weight;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-value2weight-dark {
+    @extend .mfz-avatarcard-value2weight;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+.mfz-avatarcard-value2compweight-dark {
+    @extend .mfz-avatarcard-value2compweight;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-dirweight-dark {
+    @extend .mfz-avatarcard-dirweight;
+    /* UILabel */
+    textColor: @mfzAvatarCardTextColor-dark;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+}
+
+.mfz-avatarcard-hrweight-dark {
+    @extend .mfz-avatarcard-hrweight;
+    /* UIView */
+    backgroundColor: @mfzAvatarCardAttrHRColor-dark;
+}
+
+.mfz-avatarcard-btn-showall-dark {
+    @extend .mfz-avatarcard-btn-showall;
+    /* UIButton */
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    titleColor: @mfzAvatarCardTextColor-dark;
+    tintColor: @mfzAvatarCardTextColor-dark;
+}
+
+.mfz-avatarcard-btn-track-dark {
+    @extend .mfz-avatarcard-btn-track;
+    /* UIButton */
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    titleColor: @mfzAvatarCardTextColor-dark;
+    tintColor: @mfzAvatarCardTextColor-dark;
+}
+
+.mfz-avatarcard-btn-new-dark {
+    @extend .mfz-avatarcard-btn-new;
+    /* UIButton */
+    titleLabel.font: @mfzAvatarBodyFontSmall;
+    backgroundColor: @mfzProfileHomeBackgroundTransparentColor-dark;
+    titleColor: @mfzAvatarCardTextColor-dark;
+    tintColor: @mfzAvatarCardTextColor-dark;
+}
+
+.mfzProfileHomeViewmfz-common-sdk-mesh-view-dark {
+    @extend .mfz-common-sdk-mesh-view;
+    backgroundColor: @mfzProfileHomeMeshViewBackgroundColor-dark;
+}
+
+.mfzProfileHomeViewmfz-common-sdk-mesh-view-frame-dark {
+    @extend .mfz-common-sdk-mesh-view-frame;
+    borderColor: @mfzProfileHomeMeshViewBackgroundColor-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKLoginView **************************/
+/*****************     LIGHT MODE    ****************************/
+/****************************************************************/
+/* Globals: */
+/* Metric = 2, Imperial = 1 */
+@mfzLoginUnitPreference: 1;  
+@mfzLoginMarginInset: 16.0;
+@mfzLoginHeaderFont: systemBold 34;
+@mfzLoginSectionHeaderFont: system 13;
+@mfzLoginSectionDescFont: systemBold 15;
+@mfzLoginSeparationColor: #C8C7CC;
+@mfzLoginSectionHeaderFontColor: #8E8E93;
+@mfzLoginSectionDescFontColor: black;
+@mfzLoginBackgroundColor: #F6F6F6;
+@mfzLoginForegroundColor: white;
+@mfzLoginPrimaryColor: @mfzSdkColorPrimary;
+
+/* MyFiziqLoginVew: */
+@mfzLoginViewBackgroundColor: @mfzLoginBackgroundColor;
+@mfzLoginViewHeaderColor: @mfzLoginForegroundColor;
+@mfzLoginViewHeaderHeight: 100.0;
+@mfzLoginViewHeaderTitleHeight: 40.0;
+@mfzLoginViewHeaderBackButtonMargin: 2.0;
+@mfzLoginViewHeaderBackButtonTopInset: 8.0;
+@mfzLoginViewHeaderBackButtonWidth: 44.0;
+@mfzLoginViewHeaderBackButtonHeight: 44.0;
+@mfzLoginViewHeaderMarginLeft: @mfzLoginMarginInset;
+@mfzLoginViewHeaderMarginRight: @mfzLoginMarginInset;
+@mfzLoginViewTableSectionHeight: 80.0;
+@mfzLoginViewTableSectionJoinHeight: 55.0;
+@mfzLoginViewTableSectionResetPassHeight: 156.0;
+@mfzLoginViewTableSectionHeaderTitleHeight: 18.0;
+@mfzLoginViewTableSectionMarginInset: @mfzLoginMarginInset;
+@mfzLoginViewTableSectionBottomInset: 8.0;
+@mfzLoginViewTableCellHeight: 45.0;
+@mfzLoginViewTableCellColor: @mfzLoginForegroundColor;
+@mfzLoginViewTableCellMarginInset: @mfzLoginMarginInset;
+@mfzLoginViewTableCellSeparationHeight: 0.25;
+@mfzLoginViewTableCellSeparationColor: @mfzLoginSeparationColor;
+@mfzLoginViewTableCellLoginFieldFont:system 17.0;
+@mfzLoginViewLoginButtonHeight: 50.0;
+@mfzLoginViewLoginButtonLeftInset: @mfzLoginMarginInset;
+@mfzLoginViewLoginButtonRightInset: @mfzLoginMarginInset;
+@mfzLoginViewLoginButtonBottomInset: @mfzLoginMarginInset;
+@mfzLoginViewLoginButtonTopInset: @mfzLoginMarginInset;
+@mfzLoginViewLoginButtonFont: systemBold 17;
+@mfzLoginViewSpinnerHeight: 100.0;
+@mfzLoginViewSpinnerWidth: 100.0;
+@mfzLoginResetPasswordButtonFont: systemBold 12;
+@mfzLoginResetPasswordButtonWidth: 110.0;
+@mfzLoginResetPasswordButtonHeight: 16.0;
+@mfzLoginResetPasswordButtonRightMargin: 18.0;
+@mfzLoginViewTableCellClearTextButtonRightInset: 20.0;
+@mfzLoginViewTableCellClearTextButtonHeight: 22.0;
+@mfzLoginViewTableCellClearTextButtonWidth: 22.0;
+@mfzLoginViewTableCellGenderRightInset: @mfzLoginMarginInset;
+@mfzLoginViewTableCellGenderHeight: 27.0;
+@mfzLoginViewTableCellGenderWidth: 163.0;
+@mfzLoginTableCellLoginFieldPlaceholderColor: #8E8E93;
+@mfzLoginViewFieldPlaceholderText: "Email" (font: system 17, color: @mfzLoginTableCellLoginFieldPlaceholderColor);
+@mfzLoginViewTableCellGenderText: "Male" (font: system 13);
+@mfzLoginViewButtonContainerViewColor: clear;
+@mfzLoginSdkSegmentSelectedColor: @mfzLoginPrimaryColor;
+@mfzLoginHeaderTitleColor: black;
+@mfzLoginHeaderButtonBackgroundColor: clear;
+@mfzLoginHeaderButtonTintColor: black;
+@mfzLoginGenderPickerBackgroundColor: clear;
+@mfzLoginGenderPickerTextColor: white;
+@mfzLoginTableViewCellBackgroundColor: clear;
+@mfzLoginClearTextfieldButtonBackgroundColor: clear;
+@mfzLoginClearResetPasswordButtonBackgroundColor: clear;
+@mfzLoginClearResetPasswordButtonTextColor: clear;
+@mfzLoginClearTextfieldBackgroundColor: clear;
+@mfzLoginClearTextfieldTextColor: black;
+@mfzLoginSpinnerBackgroundColor: rgba(0.0, 0.0, 0.0, 0.7);
+@mfzLoginSpinnerContainerBackgroundColor: white;
+
+.mfz-login-view {
+    /* UIView */
+    backgroundColor: @mfzLoginViewBackgroundColor;
+}
+
+.mfz-login-headerview {
+    /* UIView */
+    backgroundColor: @mfzLoginViewHeaderColor;
+}
+
+.mfz-login-headerback-button {
+    /* UIButton */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor;
+    tintColor: @mfzLoginHeaderButtonTintColor;
+}
+
+.mfz-login-headertitle {
+    /* UILabel */
+    font: @mfzLoginHeaderFont;
+    textColor: @mfzLoginHeaderTitleColor;
+}
+
+.mfz-login-tableview {
+    /* UITableView */
+    separatorStyle: none;
+/*    showsVerticalScrollIndicator: NO;*/
+/*    alwaysBounceVertical: NO;*/
+    backgroundColor: @mfzLoginViewBackgroundColor;
+}
+
+.mfz-login-tableview-sectionheader-view {
+    /* UIView */
+    backgroundColor: @mfzLoginViewBackgroundColor;
+}
+
+.mfz-login-tableview-sectionheader-desc {
+    /* UILabel */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor;
+    font: @mfzLoginSectionDescFont;
+    textColor: @mfzLoginSectionDescFontColor;
+    lineBreakMode: wordWrapping;
+    numberOfLines: 0;
+    textAlignment: center;
+}
+
+.mfz-login-tableview-sectionheader-label {
+    /* UILabel */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor;
+    font: @mfzLoginSectionHeaderFont;
+    textColor: @mfzLoginSectionHeaderFontColor;
+}
+
+.mfz-login-tableviewcell-genderpicker {
+    /* UISegmentedControl */
+    backgroundColor: clear;
+    cornerRadius: 4.0;
+    backgroundColor: @mfzLoginGenderPickerBackgroundColor;
+    tintColor: @mfzLoginPrimaryColor;
+    textColor(normal): @mfzLoginPrimaryColor;
+    textColor(selected): @mfzLoginGenderPickerTextColor;
+
+}
+
+.mfz-login-tableviewcell {
+    /* UITableViewCell */
+    selectionStyle: none;
+    backgroundColor: @mfzLoginTableViewCellBackgroundColor;
+}
+
+.mfz-login-tableviewcell-textview-container {
+    /* UIView */
+    backgroundColor: @mfzLoginSeparationColor;
+}
+
+.mfz-login-tableviewcell-textview-segment {
+    /* UIView */
+    backgroundColor: @mfzLoginGenderPickerTextColor;
+}
+
+.mfz-login-tableviewcell-textview-clearbutton {
+    /* UIButton */
+    backgroundColor: @mfzLoginClearTextfieldButtonBackgroundColor;
+}
+
+.mfz-login-tableviewcell-loginfield {
+    /* UITextField */
+    backgroundColor: @mfzLoginClearTextfieldBackgroundColor;
+    tintColor: @mfzLoginPrimaryColor;
+    textColor: @mfzLoginClearTextfieldTextColor;
+    font: @mfzLoginViewTableCellLoginFieldFont;
+}
+
+.mfz-login-tableviewcell-resetpass-button {
+    /* UIButton */
+    backgroundColor: clear;
+    titleLabel.font: @mfzLoginResetPasswordButtonFont;
+    titleLabel.textAlignment: center;
+    titleColor: @mfzLoginClearTextfieldTextColor;
+}
+
+.mfz-login-spinner-background-view {
+    /* UIView */
+    backgroundColor: @mfzLoginSpinnerBackgroundColor;
+}
+
+.mfz-login-spinner-container-view {
+    /* UIView */
+    backgroundColor: @mfzLoginSpinnerContainerBackgroundColor;
+    cornerRadius: 8.0;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKLoginView **************************/
+/*****************     DARK MODE    *****************************/
+/****************************************************************/
+
+@mfzLoginSdkPrimaryDarkModeDarkColor: rgba(33, 33, 33, 1.0);
+@mfzLoginSdkSegmentSelectedColor-dark: @mfzLoginPrimaryColor;
+@mfzLoginSectionHeaderFontColor-dark: #8E8E93;
+@mfzLoginSectionDescFontColor-dark: black;
+@mfzLoginBackgroundColor-dark: @mfzLoginSdkPrimaryDarkModeDarkColor;
+@mfzLoginForegroundColor-dark: @mfzLoginSdkPrimaryDarkModeDarkColor;
+@mfzLoginPrimaryColor-dark: @mfzSdkColorPrimary;
+@mfzLoginViewBackgroundColor-dark: black;
+@mfzLoginViewHeaderColor-dark: black;
+@mfzLoginViewTableCellColor-dark: @mfzLoginForegroundColor-dark;
+@mfzLoginSeparationColor-dark: #929292;
+@mfzLoginViewTableCellSeparationColor-dark: @mfzLoginSeparationColor-dark;
+@mfzLoginTableCellLoginFieldPlaceholderColor-dark: #8E8E93;
+@mfzLoginViewFieldPlaceholderText-dark: "Email" (font: system 17, color: @mfzLoginTableCellLoginFieldPlaceholderColor-dark);
+@mfzLoginViewButtonContainerViewColor-dark: clear;
+@mfzLoginHeaderTitleColor-dark: white;
+@mfzLoginHeaderButtonBackgroundColor-dark: clear;
+@mfzLoginHeaderButtonTintColor-dark: white;
+@mfzLoginGenderPickerBackgroundColor-dark: clear;
+@mfzLoginGenderPickerTextColor-dark: white;
+@mfzLoginTableViewCellBackgroundColor-dark: clear;
+@mfzLoginClearTextfieldButtonBackgroundColor-dark: clear;
+@mfzLoginClearResetPasswordButtonBackgroundColor-dark: clear;
+@mfzLoginClearTextfieldBackgroundColor-dark: clear;
+@mfzLoginClearTextfieldTextColor-dark: white;
+@mfzLoginSpinnerBackgroundColor-dark: rgba(255.0, 255.0, 255.0, 0.7);
+@mfzLoginSpinnerContainerBackgroundColor-dark: @mfzLoginSdkPrimaryDarkModeDarkColor;
+
+.mfz-login-view-dark {
+    @extend .mfz-login-view;
+    /* UIView */
+    backgroundColor: @mfzLoginViewBackgroundColor-dark;
+}
+
+.mfz-login-headerview-dark {
+    @extend .mfz-login-headerview;
+    /* UIView */
+    backgroundColor: @mfzLoginViewHeaderColor-dark;
+}
+
+.mfz-login-headerback-button-dark {
+    @extend .mfz-login-headerback-button;
+    /* UIButton */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor-dark;
+    tintColor: @mfzLoginHeaderButtonTintColor-dark;
+}
+
+.mfz-login-headertitle-dark {
+    @extend .mfz-login-headertitle;
+    /* UILabel */
+    textColor: @mfzLoginHeaderTitleColor-dark;
+}
+
+.mfz-login-tableview-dark {
+    @extend .mfz-login-tableview;
+    /* UITableView */
+    backgroundColor: @mfzLoginViewBackgroundColor-dark;
+}
+
+.mfz-login-tableview-sectionheader-view-dark {
+    @extend .mfz-login-tableview-sectionheader-view;
+    /* UIView */
+    backgroundColor: @mfzLoginViewBackgroundColor-dark;
+}
+
+.mfz-login-tableview-sectionheader-desc-dark {
+    @extend .mfz-login-tableview-sectionheader-desc;
+    /* UILabel */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor-dark;
+    textColor: @mfzLoginSectionDescFontColor-dark;
+}
+
+.mfz-login-tableview-sectionheader-label-dark {
+    @extend .mfz-login-tableview-sectionheader-label;
+    /* UILabel */
+    backgroundColor: @mfzLoginHeaderButtonBackgroundColor-dark;
+    textColor: @mfzLoginSectionHeaderFontColor-dark;
+}
+
+.mfz-login-tableviewcell-genderpicker-dark {
+    @extend .mfz-login-tableviewcell-genderpicker;
+    /* UISegmentedControl */
+    backgroundColor: @mfzLoginGenderPickerBackgroundColor-dark;
+    tintColor: @mfzLoginPrimaryColor-dark;
+    textColor(normal): @mfzLoginPrimaryColor-dark;
+    textColor(selected): @mfzLoginGenderPickerTextColor-dark;
+}
+
+.mfz-login-tableviewcell-dark {
+    @extend .mfz-login-tableviewcell;
+    /* UITableViewCell */
+    backgroundColor: @mfzLoginTableViewCellBackgroundColor-dark;
+}
+
+.mfz-login-tableviewcell-textview-container-dark {
+    @extend .mfz-login-tableviewcell-textview-container;
+    /* UIView */
+    backgroundColor: @mfzLoginSeparationColor-dark;
+}
+
+.mfz-login-tableviewcell-textview-segment-dark {
+    @extend .mfz-login-tableviewcell-textview-segment;
+    /* UIView */
+    backgroundColor: @mfzLoginSdkPrimaryDarkModeDarkColor;
+}
+
+.mfz-login-tableviewcell-textview-clearbutton-dark {
+    @extend .mfz-login-tableviewcell-textview-clearbutton;
+    /* UIButton */
+    backgroundColor: @mfzLoginClearTextfieldButtonBackgroundColor-dark;
+}
+
+.mfz-login-tableviewcell-loginfield-dark {
+    @extend .mfz-login-tableviewcell-loginfield;
+    /* UITextField */
+    backgroundColor: @mfzLoginClearTextfieldBackgroundColor-dark;
+    tintColor: @mfzLoginPrimaryColor-dark;
+    textColor: @mfzLoginClearTextfieldTextColor-dark;
+}
+
+.mfz-login-tableviewcell-resetpass-button-dark {
+    @extend .mfz-login-tableviewcell-resetpass-button;
+    /* UIButton */
+    backgroundColor: @mfzLoginClearResetPasswordButtonBackgroundColor-dark;
+    titleColor: @mfzLoginClearTextfieldTextColor-dark;
+}
+
+.mfz-login-spinner-background-view-dark {
+    @extend .mfz-login-spinner-background-view;
+    /* UIView */
+    backgroundColor: @mfzLoginSpinnerBackgroundColor-dark;
+}
+
+.mfz-login-spinner-container-view-dark {
+    @extend .mfz-login-spinner-container-view;
+    /* UIView */
+    backgroundColor: @mfzLoginSpinnerContainerBackgroundColor-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKTrackingView ***********************/
+/*****************     LIGHT MODE    ****************************/
+/****************************************************************/
+@mfzTrackSdkPrimaryWhiteColor: white;
+@mfzTrackSdkPrimaryBlackColor: black;
+@mfzTrackSdkPrimaryTransparentColor: clear;
+@mfzTrackSdkPrimaryOrangeColor: @mfzSdkColorPrimary;
+@mfzTrackSdkPrimaryBackgroundColor: @mfzTrackSdkPrimaryWhiteColor;
+@mfzTrackSdkPrimaryOffwhiteBackgroundColor: #F6F6F6;
+@mfzTrackSdkPrimaryWhiteTextColor: white;
+@mfzTrackSdkPrimaryBlackTextColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackSdkBlackBorderColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackSdkPrimaryBorderColor: #CFCFCF;
+@mfzTrackSdkPrimaryGrayTextColor: #8E8E93;
+
+/* Track and Compare */
+.mfz-track-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-collection-view {
+    /* UICollectionView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-container-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+/* Header / Segment container */
+@mfzTrackHeaderViewHeight: 60.0;
+@mfzTrackSegmentControlHeight: 27.0;
+@mfzTrackSegmentControlSidePadding: 16.0;
+@mfzTrackSdkSegmentSelectedColor: @mfzTrackSdkPrimaryOrangeColor;
+
+.mfz-track-segment-container-header-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-segmented-control {
+    /* UISegmentedControl */
+    cornerRadius: 4.0;
+    borderColor: @mfzTrackSdkPrimaryTransparentColor;
+    tintColor: @mfzTrackSdkPrimaryOrangeColor;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+    textColor(normal): @mfzTrackSdkPrimaryOrangeColor;
+    textColor(selected): @mfzTrackSdkPrimaryWhiteTextColor;
+}
+
+/* Mesh views */
+@mfzTrackMeshParentHeight: 290.0;
+@mfzTrackMeshParentHeight-iPhone-SE: 190.0;
+@mfzTrackMeshParentHeight-iPhone-5s: @mfzTrackMeshParentHeight-iPhone-SE;
+@mfzTrackMeshParentHeight-iPhone-12-Mini: @mfzTrackMeshParentHeight-iPhone-SE;
+@mfzTrackMeshParentHeight-iPod-Touch-7: @mfzTrackMeshParentHeight-iPhone-SE;
+@mfzTrackMeshWidthMultiplier: 0.5;
+@mfzTrackMeshLeftPadding: 5.0;
+@mfzTrackMeshRightPadding: -5.0;
+@mfzTrackMeshTopPadding: 0.0;
+@mfzTrackMeshHeight: 270.0;
+@mfzTrackMeshHeight-iPhone-SE: 155.0;
+@mfzTrackMeshHeight-iPhone-5s: @mfzTrackMeshHeight-iPhone-SE;
+@mfzTrackMeshHeight-iPhone-12-Mini: @mfzTrackMeshHeight-iPhone-SE;
+@mfzTrackMeshHeight-iPod-Touch-7: @mfzTrackMeshHeight-iPhone-SE;
+@mfzTrackMeshButtonRadius: 35.0;
+@mfzTrackMeshButtonWidth: 2 * @mfzTrackMeshButtonRadius;
+@mfzTrackMeshButtonHeight: 2 * @mfzTrackMeshButtonRadius;
+@mfzTrackMeshButtonPadding: 5.0;
+@mfzTrackDateLabelHeight: 20.0;
+@mfzTrackShouldAnimateAvatarOptionsButtons: YES;
+@mfzTrackSdkMeshViewOptionsColor: rgba(255, 255, 255, 0.5);
+
+.mfz-track-mesh-container-view {
+    /* UIView */
+}
+
+.mfz-track-mesh-date-label {
+    /* UILabel */
+    font: systemBold 11;
+    textAlignment: center;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-mesh-view-options {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-mesh-view-options-button {
+    /* UIButton */
+    font: systemBold 16;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    borderWidth: 2.0;
+    borderColor: @mfzTrackSdkBlackBorderColor;
+    backgroundColor: @mfzTrackSdkMeshViewOptionsColor;
+    titleColor(normal): @mfzTrackSdkPrimaryBlackTextColor;
+    cornerRadius: @mfzTrackMeshButtonRadius;
+}
+
+/* Compare Table */
+@mfzTrackMeasurementsHRHeight: 1.0;
+@mfzTrackMeasurementsTableViewRowHeight: 43.0;
+@mfzTrackMeasurementsCompareCenterWidth: 92.0;
+@mfzTrackMeasurementsAttrTitleFont: systemBold 13;
+@mfzTrackMeasurementsAttrTitleFontColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackMeasurementsAttrDeltaFont: systemBold 11;
+@mfzTrackMeasurementsAttrDeltaFontColor: @mfzTrackSdkPrimaryGrayTextColor;
+
+.mfz-track-measurements-list-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-measurements-table-view {
+    /* UITableView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+    separatorStyle: none;
+}
+
+.mfz-track-measurements-table-view-cell {
+    /* UITableViewCell */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-measurements-table-view-top-border {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor;
+}
+
+.mfz-track-measurements-table-view-cell-center-label {
+    /* UILabel */
+    textAlignment: center;
+    numberOfLines: 0;
+}
+
+.mfz-track-measurements-table-view-cell-left-label {
+    /* UILabel */
+    textAlignment: right;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    font: systemBold 12;
+}
+
+.mfz-track-measurements-table-view-cell-right-label {
+    /* UILabel */
+    textAlignment: left;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    font: systemBold 12;
+}
+
+.mfz-track-measurements-table-view-cell-seperator {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor;
+}
+
+/* Progress */
+/* Height cannot be less than 200.0 */
+@mfzTrackChartViewHeight: 450.0;
+@mfzTrackChartViewHeight-iPhone-SE: 350.0;
+@mfzTrackChartViewHeight-iPhone-5s: @mfzTrackChartViewHeight-iPhone-SE;
+@mfzTrackChartViewHeight-iPhone-12-Mini: @mfzTrackChartViewHeight-iPhone-SE;
+@mfzTrackChartViewHeight-iPod-Touch-7: @mfzTrackChartViewHeight-iPhone-SE;
+@mfzTrackChartViewHeight-iPhone-6: 400.0;
+@mfzTrackChartViewHeight-iPhone-6s: @mfzTrackChartViewHeight-iPhone-6;
+@mfzTrackChartViewHeight-iPhone-7: @mfzTrackChartViewHeight-iPhone-6;
+@mfzTrackChartViewHeight-iPhone-8: @mfzTrackChartViewHeight-iPhone-6;
+@mfzTrackChartBackgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+@mfzTrackChartLineColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackChartPointColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackChartLineWidth: 1.0;
+@mfzTrackChartDotRadius: 4.0;
+@mfzTrackChartGridViewLineColor: rgba(222,222,222,1.0);
+@mfzTrackChartGridViewBottomLineColor: @mfzTrackSdkPrimaryBorderColor;
+@mfzTrackChartViewChartLineLabelColor: @mfzTrackSdkPrimaryBlackColor;
+@mfzTrackChartViewChartLabelFont: systemBold 11;
+@mfzTrackChartViewChartDateLabelFont: system 11;
+@mfzTrackChartViewChangeLabelHeight: 33.0;
+@mfzTrackChartViewChangeTitleLabelHeight: 20.0;
+@mfzTrackChartViewChangeTitleLabelTopOffset: -10.0;
+@mfzTrackChartViewChangeTitleLabelWidth: 70.0;
+@mfzTrackChartViewMeasurementTopBorderThickness: 1.0;
+@mfzTrackChartViewMeasurementViewTopSpacing: 0.0;
+@mfzTrackChartViewMeasurementViewHeight: 60.0;
+@mfzTrackChartViewMeasurementLabelLeadingOffset: 20.0;
+@mfzTrackChartViewMeasurementLabelWidth: 300.0;
+@mfzTrackChartViewAttrSelectButtonTrailing: 30.0;
+@mfzTrackChartViewChangeRightLeftLabelTopInset: 5.0;
+@mfzTrackChartViewSegmentControlHeight: 30.0;
+@mfzTrackChartViewSegmentControlLeftRightOffset: 20.0;
+@mfzTrackChartViewSegmentControlTopOffset: 15.0;
+@mfzTrackChartViewSegmentControlBottomOffset: 15.0;
+@mfzTrackChartViewGraphPadding: 20.0;
+@mfzTrackChartViewChangeAttributeLabelHeight: 17.0;
+@mfzTrackMeasurementCellSelectedTextColor: @mfzTrackSdkPrimaryBlackTextColor;
+@mfzTrackMeasurementCellDefaultTextColor: @mfzTrackSdkPrimaryBorderColor;
+@mfzTrackChartViewMeasurementTableRowHeight: 50.0;
+@mfzTrackChartViewTableTitleTopInset: 10;
+@mfzTrackChartViewTableTitleLeftInset: 20;
+@mfzTrackChartViewTableTitleBottomInset: 10;
+@mfzTrackChartViewTableTitleRightInset: 10;
+
+.mfz-track-sdk-chart-change-attribute-view {
+    /* UIView */
+    backgroundColor: @mfzTrackChartBackgroundColor;
+}
+
+.mfz-track-sdk-chart-progress-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-chart-attribute-title-label {
+    /* UILabel */
+    font: systemBold 13.0;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    textAlignment: center;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-chart-attribute-label {
+    /* UILabel */
+    font: systemBold 11;
+    textColor: @mfzTrackSdkPrimaryGrayTextColor;
+    textAlignment: center;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-chart-measurement-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryOffwhiteBackgroundColor;
+}
+
+.mfz-track-chart-attribute-data-label {
+    /* UILabel */
+    textAlignment: center;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    font: systemBold 11;
+}
+
+.mfz-track-chart-measurement-top-border {
+    /* UILabel */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor;
+}
+
+.mfz-track-chart-measurement-label {
+    /* UILabel */
+    font: systemBold 18;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+}
+
+.mfz-track-chart-measurement-attr-change-button {
+    /* UIButton */
+    backgroundColor: @mfzTrackSdkPrimaryOffwhiteBackgroundColor;
+    tintColor: @mfzTrackSdkPrimaryBlackColor;
+}
+
+.mfz-track-chart-segmented-control-background-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-chart-view-value-label {
+    /* UILabel */
+    font: systemBold 11;
+    textColor: @mfzTrackChartLineColor;
+    textAlignment: center;
+}
+
+.mfz-track-chart-view-date-label {
+    /* UILabel */
+    font:  @mfzTrackChartViewChartDateLabelFont;
+    textColor: @mfzTrackChartLineColor;
+    textAlignment: left;
+}
+
+.mfz-track-chart-measurement-tableview {
+    /* UITableView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+.mfz-track-measurement-cell-option-label {
+    /* UILabel */
+    font: system 14;
+}
+
+.mfz-track-measurement-cell {
+    /* UITableViewCell */
+    selectionStyle: none;
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor;
+}
+
+/* Single Avatar View styling */
+@mfzTrackOneAvatarTitleInset: 126.0;
+@mfzTrackOneAvatarTitleHeight: 34.0;
+@mfzTrackOneAvatarTitleHeight-iPhone-5s: 65.0;
+@mfzTrackOneAvatarTitleHeight-iPhone-SE: @mfzTrackOneAvatarTitleHeight-iPhone-5s;
+@mfzTrackOneAvatarTitleHeight-iPhone-12-Mini: @mfzTrackOneAvatarTitleHeight-iPhone-5s;
+@mfzTrackOneAvatarTitleHeight-iPod-Touch-7: @mfzTrackOneAvatarTitleHeight-iPhone-5s;
+@mfzTrackOneAvatarDescriptionHeight: 41.0;
+@mfzTrackOneAvatarButtonHeight: 50.0;
+@mfzTrackOneAvatarButtonWidth: 220.0;
+@mfzTrackOneAvatarButtonTopOffset: 15.0;
+
+.mfz-track-one-avatar-view {
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor;
+}
+
+.mfz-track-one-avatar-view-heading-label {
+    /* UILabel */
+    font: systemBold 26;
+    numberOfLines: 0;
+    lineBreakMode: wordWrapping;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    textAlignment: center;
+}
+
+.mfz-track-one-avatar-view-description-label {
+    /* UILabel */
+    font: systemBold 15;
+    numberOfLines: 0;
+    lineBreakMode: wordWrapping;
+    textColor: @mfzTrackSdkPrimaryBlackTextColor;
+    textAlignment: center;
+}
+
+@mfzTrackHomeMeshViewBackgroundColor: clear;
+
+.mfzTrackSdkViewmfz-common-sdk-mesh-view {
+    @extend .mfz-common-sdk-mesh-view;
+    backgroundColor: @mfzTrackHomeMeshViewBackgroundColor;
+}
+
+.mfzTrackSdkViewmfz-common-sdk-mesh-view-frame {
+    @extend .mfz-common-sdk-mesh-view-frame;
+    borderColor: @mfzTrackHomeMeshViewBackgroundColor;
+}
+
+/****************************************************************/
+/***************** MyFiziqSDKTrackingView ***********************/
+/*****************     DARK MODE    *****************************/
+/****************************************************************/
+
+@mfzTrackSdkPrimaryDarkModeDarkColor: rgba(33, 33, 33, 1.0);
+@mfzTrackSdkPrimaryWhiteColor-dark: black;
+@mfzTrackSdkPrimaryBlackColor-dark: white;
+@mfzTrackSdkPrimaryTransparentColor-dark: clear;
+@mfzTrackSdkPrimaryOrangeColor-dark: @mfzSdkColorPrimary;
+@mfzTrackSdkPrimaryBackgroundColor-dark: @mfzTrackSdkPrimaryWhiteColor-dark;
+@mfzTrackSdkPrimaryOffwhiteBackgroundColor-dark: @mfzTrackSdkPrimaryDarkModeDarkColor;
+@mfzTrackSdkPrimaryWhiteTextColor-dark: black;
+@mfzTrackSdkPrimaryBlackTextColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackSdkBlackBorderColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackSdkPrimaryBorderColor-dark: #929292;
+@mfzTrackSdkPrimaryGrayTextColor-dark: #8E8E93;
+@mfzTrackSdkSegmentSelectedColor-dark: @mfzTrackSdkPrimaryOrangeColor-dark;
+@mfzTrackSdkMeshViewOptionsColor-dark: rgba(0, 0, 0, 0.5);
+@mfzTrackMeasurementsAttrTitleFontColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackMeasurementsAttrDeltaFontColor-dark: @mfzTrackSdkPrimaryGrayTextColor-dark;
+@mfzTrackChartBackgroundColor-dark: @mfzTrackSdkPrimaryTransparentColor-dark;
+@mfzTrackChartLineColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackChartPointColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackChartGridViewLineColor-dark: @mfzTrackSdkPrimaryBorderColor-dark;
+@mfzTrackChartGridViewBottomLineColor-dark: @mfzTrackSdkPrimaryBorderColor-dark;
+@mfzTrackChartViewChartLineLabelColor-dark: @mfzTrackSdkPrimaryBlackColor-dark;
+@mfzTrackMeasurementCellSelectedTextColor-dark: @mfzTrackSdkPrimaryBlackTextColor-dark;
+@mfzTrackMeasurementCellDefaultTextColor-dark: @mfzTrackSdkPrimaryBorderColor-dark;
+@mfzTrackHomeMeshViewBackgroundColor-dark: clear;
+
+.mfz-track-view-dark {
+    @extend .mfz-track-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-collection-view-dark {
+    @extend .mfz-track-collection-view;
+    /* UICollectionView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-container-view-dark {
+    @extend .mfz-track-container-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-segment-container-header-view-dark {
+    @extend .mfz-track-segment-container-header-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-segmented-control-dark {
+    @extend .mfz-track-segmented-control;
+    /* UISegmentedControl */
+    borderColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+    tintColor: @mfzTrackSdkPrimaryOrangeColor-dark;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+    textColor(normal): @mfzTrackSdkPrimaryOrangeColor-dark;
+    textColor(selected): @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-mesh-container-view-dark {
+    @extend .mfz-track-mesh-container-view;
+    /* UIView */
+}
+
+.mfz-track-mesh-date-label-dark {
+    @extend .mfz-track-mesh-date-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-mesh-view-options-dark {
+    @extend .mfz-track-mesh-view-options;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-mesh-view-options-button-dark {
+    @extend .mfz-track-mesh-view-options-button;
+    /* UIButton */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+    borderColor: @mfzTrackSdkBlackBorderColor-dark;
+    backgroundColor: @mfzTrackSdkMeshViewOptionsColor-dark;
+    titleColor(normal): @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-measurements-list-view-dark {
+    @extend .mfz-track-measurements-list-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-measurements-table-view-dark {
+    @extend .mfz-track-measurements-table-view;
+    /* UITableView */
+    backgroundColor: @mfzTrackSdkPrimaryDarkModeDarkColor;
+}
+
+.mfz-track-measurements-table-view-cell-dark {
+    @extend .mfz-track-measurements-table-view-cell;
+    /* UITableViewCell */
+    backgroundColor: @mfzTrackSdkPrimaryDarkModeDarkColor;
+}
+
+.mfz-track-measurements-table-view-top-border-dark {
+    @extend .mfz-track-measurements-table-view-top-border;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor-dark;
+}
+
+.mfz-track-measurements-table-view-cell-center-label-dark {
+    @extend .mfz-track-measurements-table-view-cell-center-label;
+    /* UILabel */
+}
+
+.mfz-track-measurements-table-view-cell-left-label-dark {
+    @extend .mfz-track-measurements-table-view-cell-left-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-measurements-table-view-cell-right-label-dark {
+    @extend .mfz-track-measurements-table-view-cell-right-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-measurements-table-view-cell-seperator-dark {
+    @extend .mfz-track-measurements-table-view-cell-seperator;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor-dark;
+}
+
+.mfz-track-sdk-chart-change-attribute-view-dark {
+    @extend .mfz-track-sdk-chart-change-attribute-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-sdk-chart-progress-view-dark {
+    @extend .mfz-track-sdk-chart-progress-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-chart-attribute-title-label-dark {
+    @extend .mfz-track-chart-attribute-title-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-chart-attribute-label-dark {
+    @extend .mfz-track-chart-attribute-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryGrayTextColor-dark;
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-chart-measurement-view-dark {
+    @extend .mfz-track-chart-measurement-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryOffwhiteBackgroundColor-dark;
+}
+
+.mfz-track-chart-attribute-data-label-dark {
+    @extend .mfz-track-chart-attribute-data-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-chart-measurement-top-border-dark {
+    @extend .mfz-track-chart-measurement-top-border;
+    /* UILabel */
+    backgroundColor: @mfzTrackSdkPrimaryBorderColor-dark;
+}
+
+.mfz-track-chart-measurement-label-dark {
+    @extend .mfz-track-chart-measurement-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-chart-measurement-attr-change-button-dark {
+    @extend .mfz-track-chart-measurement-attr-change-button;
+    /* UIButton */
+    backgroundColor: @mfzTrackSdkPrimaryOffwhiteBackgroundColor-dark;
+    tintColor: @mfzTrackSdkPrimaryBlackColor-dark;
+}
+
+.mfz-track-chart-segmented-control-background-view-dark {
+    @extend .mfz-track-chart-segmented-control-background-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-chart-view-value-label-dark {
+    @extend .mfz-track-chart-view-value-label;
+    /* UILabel */
+    textColor: @mfzTrackChartLineColor-dark;
+}
+
+.mfz-track-chart-view-date-label-dark {
+    @extend .mfz-track-chart-view-date-label;
+    /* UILabel */
+    textColor: @mfzTrackChartLineColor-dark;
+}
+
+.mfz-track-chart-measurement-tableview-dark {
+    @extend .mfz-track-chart-measurement-tableview;
+    /* UITableView */
+    backgroundColor: @mfzTrackSdkPrimaryBackgroundColor-dark;
+}
+
+.mfz-track-measurement-cell-option-label-dark {
+    @extend .mfz-track-measurement-cell-option-label;
+    /* UILabel */
+}
+
+.mfz-track-measurement-cell-dark {
+    @extend .mfz-track-measurement-cell;
+    /* UITableViewCell */
+    backgroundColor: @mfzTrackSdkPrimaryDarkModeDarkColor;
+}
+
+.mfz-track-one-avatar-view-dark {
+    @extend .mfz-track-one-avatar-view;
+    /* UIView */
+    backgroundColor: @mfzTrackSdkPrimaryTransparentColor-dark;
+}
+
+.mfz-track-one-avatar-view-heading-label-dark {
+    @extend .mfz-track-one-avatar-view-heading-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfz-track-one-avatar-view-description-label-dark {
+    @extend .mfz-track-one-avatar-view-description-label;
+    /* UILabel */
+    textColor: @mfzTrackSdkPrimaryBlackTextColor-dark;
+}
+
+.mfzTrackSdkViewmfz-common-sdk-mesh-view-dark {
+    @extend .mfz-common-sdk-mesh-view;
+    backgroundColor: @mfzTrackHomeMeshViewBackgroundColor-dark;
+}
+
+.mfzTrackSdkViewmfz-common-sdk-mesh-view-frame-dark {
+    @extend .mfz-common-sdk-mesh-view-frame;
+    borderColor: @mfzTrackHomeMeshViewBackgroundColor-dark;
+}
+
+
+/****************************************************************/
+/***************** MyFiziqSDKHealthKit **************************/
+/****************************************************************/
+@mfzHealthWhiteColor: white;
+
+/* LAYOUT */
+
+.mfz-health-example-view {
+    /* UIView */
+    backgroundColor: @mfzHealthWhiteColor;
+}
+
