@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 import AVFoundation
 import AVKit
 import AdSupport
@@ -38,23 +38,6 @@ import UIKit
 import WebKit
 extension UIButton {
   @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
-}
-@objc @_inheritsConvenienceInitializers public class BRNAPIError : ObjectiveC.NSObject {
-  public var message: Swift.String?
-  public var code: Swift.Int
-  public var nsError: Foundation.NSError {
-    get
-  }
-  public class func webAuthError(message: Swift.String) -> BearnSDK.BRNAPIError
-  convenience public init(message: Swift.String, code: Swift.Int = 0)
-  @objc deinit
-  @objc override dynamic public init()
-}
-extension String {
-  public var convertHtmlToNSAttributedString: Foundation.NSAttributedString? {
-    get
-  }
-  public func convertHtmlToAttributedStringWithCSS(font: UIKit.UIFont?, textColor: UIKit.UIColor? = UIColor.black, lineHeight: Swift.Int = 0, textAlign: UIKit.NSTextAlignment = .left) -> Foundation.NSAttributedString?
 }
 @objc @_inheritsConvenienceInitializers open class Bearn : ObjectiveC.NSObject {
   public static let shared: BearnSDK.Bearn

@@ -209,12 +209,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC8BearnSDK11BRNAPIError")
-@interface BRNAPIError : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC8BearnSDK5Bearn")
 @interface Bearn : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
