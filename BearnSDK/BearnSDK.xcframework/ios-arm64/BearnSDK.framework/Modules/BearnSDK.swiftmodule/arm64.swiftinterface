@@ -39,6 +39,12 @@ import WebKit
 extension UIButton {
   @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
 }
+extension URLComponents {
+  public func brnEscape(_ string: Swift.String) -> Swift.String
+}
+extension CharacterSet {
+  public static let brnURLQueryAllowed: Foundation.CharacterSet
+}
 @objc @_inheritsConvenienceInitializers open class Bearn : ObjectiveC.NSObject {
   public static let shared: BearnSDK.Bearn
   public func present(on parentViewController: UIKit.UIViewController)
