@@ -44,9 +44,9 @@ Pod::Spec.new do |s|
   s.dependency 'RangeSeekSlider'
   
   # MyFiziq
-  s.dependency 'MyFiziqSDK', '~> 19.1.16'
-  s.dependency 'MyFiziqSDKCommon', '~> 19.1.16'
-  s.dependency 'MyFiziqSDKBilling', '~> 19.1.16'
+  s.dependency 'MyFiziqSDK'
+  s.dependency 'MyFiziqSDKCommon'
+  s.dependency 'MyFiziqSDKBilling'
   s.dependency 'MyFiziqSDKLoginView'
   s.dependency 'MyFiziqSDKInputView'
   s.dependency 'MyFiziqSDKOnboardingView'
