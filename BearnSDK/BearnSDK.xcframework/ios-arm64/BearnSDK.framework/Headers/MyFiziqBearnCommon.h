@@ -3,7 +3,7 @@
 //  Bearn
 //
 //  Created by Iurie Manea on 3/2/20.
-//  Copyright © 2020 Mihai Tugui. All rights reserved.
+//  Copyright © 2020 Manea Iurie. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
