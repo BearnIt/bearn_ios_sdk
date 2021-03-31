@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import MyFiziqSDKLoginView;
 @import ObjectiveC;
 @import UIKit;
@@ -219,6 +220,21 @@ SWIFT_CLASS("_TtC8BearnSDK5Bearn")
 @interface Bearn (SWIFT_EXTENSION(BearnSDK)) <MyFiziqLoginDelegate>
 - (void)myfiziqIsReadyAndUserLoggedIn:(BOOL)isLoggedIn;
 - (void)myfiziqSetupFailedWithError:(NSError * _Nullable)error;
+@end
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC8BearnSDK16EFCountingButton")
+@interface EFCountingButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8BearnSDK15EFCountingLabel")
+@interface EFCountingLabel : UILabel
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

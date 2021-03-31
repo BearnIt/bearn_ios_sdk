@@ -13,18 +13,18 @@
 #  distributed under the License is distributed on an "AS IS" BASIS,
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
-#  limitations under the License.
+#  limitations under the License .
 
 Pod::Spec.new do |s|
   s.name             = 'BearnSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'BearnSDK summary'
   s.description      = "BearnSDK description"
   s.homepage         = 'https://berancorp.com'
   s.license          = "MIT"
   s.module_name      = 'BearnSDK'
   s.author           = { 'Bearn' => 'dev@berancorp.com' }
-  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.1' }
+  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.2' }
 
   s.ios.deployment_target = '12.1'
   s.vendored_frameworks = 'BearnSDK/BearnSDK.xcframework'
