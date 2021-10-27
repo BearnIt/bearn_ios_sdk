@@ -17,35 +17,35 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BearnSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'BearnSDK summary'
   s.description      = "BearnSDK description"
   s.homepage         = 'https://berancorp.com'
   s.license          = "MIT"
   s.module_name      = 'BearnSDK'
   s.author           = { 'Bearn' => 'dev@berancorp.com' }
-  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.2' }
+  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.3' }
 
   s.ios.deployment_target = '12.1'
   s.vendored_frameworks = 'BearnSDK/BearnSDK.xcframework'
   s.frameworks = "BearnSDK"
   
-  s.dependency 'Kingfisher'
-  s.dependency 'Auth0'
-  s.dependency 'JWTDecode'
+  s.dependency 'Kingfisher', '7.1.1'
+  s.dependency 'Auth0', '1.37.1'
+  s.dependency 'JWTDecode', '~> 2.0'
   s.dependency 'OAuthSwift', '~> 2.0.0'
   s.dependency 'Plaid', '~> 2.0'
   
   # UI
-  s.dependency 'IQKeyboardManagerSwift'
-  s.dependency 'MBProgressHUD'
+  s.dependency 'IQKeyboardManagerSwift', '~> 6.5.6'
+  s.dependency 'MBProgressHUD', '~> 1.2.0'
   s.dependency 'NotificationBannerSwift', '2.5.1'
-  s.dependency 'Charts'
-  s.dependency 'RangeSeekSlider'
+  s.dependency 'Charts', '~> 3.6.0'
+  s.dependency 'RangeSeekSlider', '~> 1.8.0'
   
   # MyFiziq
-  s.dependency 'MyFiziqSDK'
-  s.dependency 'MyFiziqSDKCommon'
+  s.dependency 'MyFiziqSDK', '~> 19.1.16'
+  s.dependency 'MyFiziqSDKCommon', '~> 19.1.16'
   s.dependency 'MyFiziqSDKBilling'
   s.dependency 'MyFiziqSDKLoginView'
   s.dependency 'MyFiziqSDKInputView'
