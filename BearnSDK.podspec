@@ -17,14 +17,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BearnSDK'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'BearnSDK summary'
   s.description      = "BearnSDK description"
   s.homepage         = 'https://berancorp.com'
   s.license          = "MIT"
   s.module_name      = 'BearnSDK'
   s.author           = { 'Bearn' => 'dev@berancorp.com' }
-  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.3' }
+  s.source           = { :git => 'https://github.com/BearnIt/bearn_ios_sdk.git', :branch => '1.0.4' }
 
   s.ios.deployment_target = '12.1'
   s.vendored_frameworks = 'BearnSDK/BearnSDK.xcframework'
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.dependency 'Plaid', '~> 2.0'
   
   # UI
-  s.dependency 'IQKeyboardManagerSwift', '~> 6.5.6'
+  s.dependency 'IQKeyboardManagerSwift', '6.5.9'
   s.dependency 'MBProgressHUD', '~> 1.2.0'
   s.dependency 'NotificationBannerSwift', '2.5.1'
   s.dependency 'Charts', '~> 3.6.0'
