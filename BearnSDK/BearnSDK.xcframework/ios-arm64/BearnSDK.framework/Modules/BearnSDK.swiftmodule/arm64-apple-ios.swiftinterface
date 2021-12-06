@@ -136,7 +136,8 @@ public enum EFTimingFunction : BearnSDK.EFTiming {
 }
 @objc @_inheritsConvenienceInitializers open class Bearn : ObjectiveC.NSObject {
   public static let shared: BearnSDK.Bearn
-  public func present(on parentViewController: UIKit.UIViewController? = nil)
+  public func present()
+  public func present(on parentViewController: UIKit.UIViewController?)
   @objc override dynamic public init()
   public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment)
   open func isBearnURL(url: Foundation.URL) -> Swift.Bool
