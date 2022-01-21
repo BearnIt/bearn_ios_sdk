@@ -593,6 +593,7 @@ SWIFT_CLASS("_TtC8BearnSDK21SwiftyInnerShadowView")
 
 
 
+
 @class UITouch;
 
 SWIFT_CLASS("_TtC8BearnSDK19UILabelTapableLinks")

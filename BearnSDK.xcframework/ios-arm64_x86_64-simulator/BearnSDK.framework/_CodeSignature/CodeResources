@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		wTnHXsilnQRN0CkPIiIAayT9BLM=
+		vk/3R8XckzlvygPONo4NWET2sKA=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -302,23 +302,23 @@
 		</data>
 		<key>BRNDashboard.storyboardc/BRNDashboardActivitiesViewController.nib</key>
 		<data>
-		GFAIby11BZ0ckTyrGQWh/3gWf+Q=
+		aA2snlCbnA/TQ2WH4+bh8QxjOKw=
 		</data>
 		<key>BRNDashboard.storyboardc/BRNDashboardCenterViewController.nib</key>
 		<data>
-		flvx3V1zFQ2XSE4NJ6+gZsPNhuY=
+		aYFr0QguFnHIdtQAmMD4hp/mV2g=
 		</data>
 		<key>BRNDashboard.storyboardc/BRNDashboardGoalsViewController.nib</key>
 		<data>
-		YwuNWwvjsxjIfmOL9DUK+onw4zA=
+		oD0VE4MBzyX8Zlb2XdT3EIoBhjU=
 		</data>
 		<key>BRNDashboard.storyboardc/BRNDashboardPageViewController.nib</key>
 		<data>
-		tAcc4ONCkC+yzMOs9cGOElckN1g=
+		gT2GhRrmJOXkvvF6iI0BgOR9Ybg=
 		</data>
 		<key>BRNDashboard.storyboardc/BRNDashboardStreaksViewController.nib</key>
 		<data>
-		pa8k6rRGNmiERpsaLuip/drA+C4=
+		AHPaBGDw+mEAcvX9OFqw2teIx3I=
 		</data>
 		<key>BRNDashboard.storyboardc/D5d-z6-S1t-view-MXV-ia-EBA.nib</key>
 		<data>
@@ -346,15 +346,15 @@
 		</data>
 		<key>BRNDashboardActivitiesInfoCell.nib</key>
 		<data>
-		pUxpNhkx1sdygdKm4eTIgBahPMw=
+		qB8XwKzsNBaLd4UW+OHGQ19w/jg=
 		</data>
 		<key>BRNDashboardActivitiesProgressCell.nib</key>
 		<data>
-		YQw3wM6vy/X7bN8rbigdERJk+5o=
+		v2kMCbBoYnmzcng43JxafNquaB8=
 		</data>
 		<key>BRNDashboardCaloriesAndAmountInfoCell.nib</key>
 		<data>
-		spACjF6K1fUtwcUBJ1C8TgPtz+4=
+		shStaFm8j84FFpPGs0ZP9CxP8/Y=
 		</data>
 		<key>BRNDashboardGoalsInfoCell.nib</key>
 		<data>
@@ -370,15 +370,15 @@
 		</data>
 		<key>BRNDashboardProgressCell.nib</key>
 		<data>
-		uByRCa5u16ab+SK3KMUmXShYRdM=
+		gOOJIfxrFeQBkZhgItTtx4da0WY=
 		</data>
 		<key>BRNDashboardStreaksInfoCell.nib</key>
 		<data>
-		1nzaVpiDIa8uSqaAiaF5LpS0rcE=
+		/kfGrt8l0lZ+kE7Z7CKE0E/aKf4=
 		</data>
 		<key>BRNDashboardStreaksProgressCell.nib</key>
 		<data>
-		4Z3qbHUhB+mKTsa4+xXRp77IIN0=
+		8qP0MKGgvEXnZxvYxpkVVepCzo4=
 		</data>
 		<key>BRNDateInputChallengTextCell.nib</key>
 		<data>
@@ -418,15 +418,27 @@
 		</data>
 		<key>BRNGraphCell.nib</key>
 		<data>
-		USSsEwXaAsPKdWai6UxMLKRavt0=
+		9h73bwW2O/0R05a04ZGKDRzOLug=
 		</data>
 		<key>BRNGraphFilterCell.nib</key>
 		<data>
-		35Z1hWjnUvRiLqlNQF3cXVzgk+o=
+		3ypM0hEkA8aZEHMfqk01d8D1grY=
 		</data>
 		<key>BRNHealthPermissionsHeaderView.nib</key>
 		<data>
 		bB29ph4bcmiSzFbr7u1KqGjbzEE=
+		</data>
+		<key>BRNLabelButtonCell.nib</key>
+		<data>
+		bJWBNmnfcFtHnaC05RahqTkWWzw=
+		</data>
+		<key>BRNLabelCellRegistration.nib</key>
+		<data>
+		rjCUAWNGWujdmJRPq0gRqPIJQq0=
+		</data>
+		<key>BRNLoginWithSocialCell.nib</key>
+		<data>
+		qDTzFxCGFaxJ6yVbeMK5pgOHR3g=
 		</data>
 		<key>BRNMain.storyboardc/BRNAlowLocationViewController.nib</key>
 		<data>
@@ -470,7 +482,7 @@
 		</data>
 		<key>BRNMain.storyboardc/BRNSplashViewController.nib</key>
 		<data>
-		96Fu7SEjK5IWrKJ1ddR9vi7dDDQ=
+		Q65yoPaQkfZqSTQsxsolX31DzxM=
 		</data>
 		<key>BRNMain.storyboardc/BRNZipCodeViewController.nib</key>
 		<data>
@@ -506,7 +518,7 @@
 		</data>
 		<key>BRNMain.storyboardc/YjI-wC-5tH-view-c4S-Ts-Vhp.nib</key>
 		<data>
-		x4kjUEI/9P6Nqs6AfzQKUfjTc0o=
+		tYz5838YruFThTVHl4MTy2ksUQk=
 		</data>
 		<key>BRNMain.storyboardc/ZQI-tZ-Mev-view-Mdh-3s-yMc.nib</key>
 		<data>
@@ -592,6 +604,10 @@
 		<data>
 		JmCSmgAdnKfvf0EEJQ8cmLsRjWI=
 		</data>
+		<key>BRNRecoveryPasswordInfoCell.nib</key>
+		<data>
+		1Pqm0entxJ/CS5GRINv0FF8donw=
+		</data>
 		<key>BRNSignRegister.storyboardc/3UF-2T-QI2-view-BQa-82-Yli.nib</key>
 		<data>
 		T14FoSuaaV9eCJkeVk3GviiN0Mw=
@@ -675,6 +691,10 @@
 		<key>BRNSignRegister.storyboardc/yan-Js-8Ph-view-9kp-41-jEr.nib</key>
 		<data>
 		APFKvFgxh34Qlv06VO3cwGVuJz0=
+		</data>
+		<key>BRNSimpleButtonCell.nib</key>
+		<data>
+		AhdiEc76KXsZFDG/1KhF371l5FA=
 		</data>
 		<key>BRNSpendMeCell.nib</key>
 		<data>
@@ -771,6 +791,18 @@
 		<key>BRNSyncDevicesAndApps.storyboardc/jUw-0V-DXi-view-oP7-AH-PHH.nib</key>
 		<data>
 		JhnL5o+UcdJx9l/QiolKIPF9Yks=
+		</data>
+		<key>BRNTermsAndConditionsCell.nib</key>
+		<data>
+		aOY0GSns2sZ+KpUGj+xKi90yWBE=
+		</data>
+		<key>BRNTextFieldCell.nib</key>
+		<data>
+		iT8qhovnTL2Gvi9n2Y/YpcLrNvI=
+		</data>
+		<key>BRNTitleTopCenteredCell.nib</key>
+		<data>
+		58RbqKeg07tKOaWFrC/wFom5wD4=
 		</data>
 		<key>BRNWallet.storyboardc/6e9-wq-Xxf-view-OmJ-2b-vfo.nib</key>
 		<data>
@@ -874,7 +906,7 @@
 		</data>
 		<key>Headers/BearnSDK-Swift.h</key>
 		<data>
-		0HPqJrqg5wtzNMdYZxmrKhLQ+mg=
+		Q3E8G6E5SXTj6ReHqdRWcH/9mk0=
 		</data>
 		<key>Headers/BearnSDK.h</key>
 		<data>
@@ -910,23 +942,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		thdu6a6x569pR585/KMqZKpLKNM=
+		ZHOuAdeH/P2awzc6Ct6Bn9SeF4M=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
 		R7Vz44JM1eAqGjrpnic1tJ4CVuQ=
 		</data>
-		<key>LabelButtonCell.nib</key>
-		<data>
-		cfcTdpE+17mEoQbDtzbAvIhJEP0=
-		</data>
 		<key>LabelCell.nib</key>
 		<data>
 		2HeWszUQXhZJt9Bvh8bwgzdlOHk=
-		</data>
-		<key>LabelCellRegistration.nib</key>
-		<data>
-		KZ2kSGo9JcBJUBhuqk1CcaSBxnY=
 		</data>
 		<key>LabelTVCell.nib</key>
 		<data>
@@ -944,9 +968,9 @@
 		<data>
 		+C8VC4+X9q5sYPJnpiqa8rQPMzQ=
 		</data>
-		<key>LoginWithSocialCell.nib</key>
+		<key>LocalizableDefault.strings</key>
 		<data>
-		E3KB5e3B3NEBbCF/RKGvwC+biUg=
+		dIjUcla3o02OOQQ2OZJWYZppTlw=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -966,11 +990,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ttvz+TEnXnDow+uqLMMnfRGs34E=
+		Ha2hKJNWglJGtUw3jGSR5bnW3Ho=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7TwGEBPHhpc3xN6CroTp65Oq9iI=
+		PqxVhby0y+jqjvmLW3YaC63XOuU=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -978,11 +1002,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		ttvz+TEnXnDow+uqLMMnfRGs34E=
+		Ha2hKJNWglJGtUw3jGSR5bnW3Ho=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7TwGEBPHhpc3xN6CroTp65Oq9iI=
+		PqxVhby0y+jqjvmLW3YaC63XOuU=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -990,11 +1014,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dwq0b3G+26FH81lF1M0cXllJCC8=
+		E/OiT9YyArTO1Fxa5+rnCOZ6KKg=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bWSWLZEP+2H3teLpvhz2OZeYiD4=
+		tYH3VLF0ABzk8+X0romTBLqhtqA=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1002,11 +1026,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		dwq0b3G+26FH81lF1M0cXllJCC8=
+		E/OiT9YyArTO1Fxa5+rnCOZ6KKg=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		bWSWLZEP+2H3teLpvhz2OZeYiD4=
+		tYH3VLF0ABzk8+X0romTBLqhtqA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1096,10 +1120,6 @@
 		<data>
 		gMglRXj2kSpLTB65bnTPGzDK1Fo=
 		</data>
-		<key>RecoveryPasswordInfoCell.nib</key>
-		<data>
-		fmuekoWxE0iYA05xVqFC0qoITnE=
-		</data>
 		<key>SelectDeviceAppCell.nib</key>
 		<data>
 		neSSw/RmRrCKsSOsuBMy32Tl7QE=
@@ -1115,10 +1135,6 @@
 		<key>SetupGoalTextTVCell.nib</key>
 		<data>
 		pEecj08AU537B1mFzLMRMJxZvJg=
-		</data>
-		<key>SimpleButtonCell.nib</key>
-		<data>
-		zTTDuXjljdQOtrXVpEFR+9qwX/4=
 		</data>
 		<key>SwipeInfoCell.nib</key>
 		<data>
@@ -1136,21 +1152,9 @@
 		<data>
 		rTypgyi0NfeCN0rj+AnTVKb84io=
 		</data>
-		<key>TermsAndConditionsCell.nib</key>
-		<data>
-		wyXLGQ7E9bX/mmwafSNGVRichSI=
-		</data>
 		<key>TermsHTMLContentTVCell.nib</key>
 		<data>
 		pf1UQa1RTa2jmnPtXq4tYTVWlIE=
-		</data>
-		<key>TextFieldCell.nib</key>
-		<data>
-		6be7K9EC+MRZYuaoVQYNaniT/+4=
-		</data>
-		<key>TitleTopCenteredCell.nib</key>
-		<data>
-		8naXk2pfhfUEnJKCRBVt/R1+BNA=
 		</data>
 		<key>TransactionCell.nib</key>
 		<data>
@@ -1170,7 +1174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2we7dVZT1J/ysTqqfdgOFI6Oyqh+XJYsZGVQRzfryWs=
+			KIkNFLmfCcfZSsRYp2VWPh8xOxpuDBNiRw4TThZhP9Y=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1681,35 +1685,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SMDpHiTcukaKfe3XRgUXxA8QIulbFoMJCDMRAHa6mKI=
+			mM0R6Kh5XRKDSdtGczy5/klAIVO+DtSnhWdgMnAOuH8=
 			</data>
 		</dict>
 		<key>BRNDashboard.storyboardc/BRNDashboardCenterViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5yAR4FJpQh8GrYfzwBLB3wrAZLr7Tw+m8ElhDg8725c=
+			l31KswazWm0st7aDHssfdOXyomI2PFeX9KpoAxs6/W4=
 			</data>
 		</dict>
 		<key>BRNDashboard.storyboardc/BRNDashboardGoalsViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+eUlTkNS60nIHCYdr7oIjNc1moyfBL0+Z7KgwyTEl0s=
+			QeJtp3HNHu2WBitqLb3ZD7r4Ra7dyr9obddrE8JYy7g=
 			</data>
 		</dict>
 		<key>BRNDashboard.storyboardc/BRNDashboardPageViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsppLCepOHF46Z9s4ZTgd+Gaow1Fn3MlEbhSkyd90ig=
+			921LRJOLlb7x5s33Zrovt5kgJDh7E3klzYv3bTcn5o8=
 			</data>
 		</dict>
 		<key>BRNDashboard.storyboardc/BRNDashboardStreaksViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FKk394fr/aI8j6il4crBAF8X7Nfu9Orn3ob00jKHMYw=
+			zu3mtB0c1kWgWWGouCI1jycoxHE+ZOyFwjde63+2Ap8=
 			</data>
 		</dict>
 		<key>BRNDashboard.storyboardc/D5d-z6-S1t-view-MXV-ia-EBA.nib</key>
@@ -1758,21 +1762,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k9EiJG3U9jZdPZV/dAwTH7HLDSkCdTPwcN8OArTQ2FE=
+			UOAj5ryVtVkwYSD7Ca/Q+BU26O79EGsUWVQe26u1nWI=
 			</data>
 		</dict>
 		<key>BRNDashboardActivitiesProgressCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lkZnGyV9CUuHJkBBLikkuxPluMXsUWb6XFjSOfZ5uaM=
+			aYgh7TPHxKNg1xb6vVPUcXCwzrFqJ8JpNBMyekAE6tQ=
 			</data>
 		</dict>
 		<key>BRNDashboardCaloriesAndAmountInfoCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y2mKigA5tz1oYVKeqPCGfO/KRUfylMA1bniTnkLlacM=
+			bRNF86PTZAT/r6YlhnNN0KFx//0oWuPF7PCB7Q2CeOs=
 			</data>
 		</dict>
 		<key>BRNDashboardGoalsInfoCell.nib</key>
@@ -1800,21 +1804,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nEj3Ty/jwuTAGaMbyz59F84jAaQblVgHnlIkg4IzKzM=
+			+qkZtz6zuVpinmwD8Dwo0h32FYCiCo1aP/BQ42a6cVw=
 			</data>
 		</dict>
 		<key>BRNDashboardStreaksInfoCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T3PcOM9FL8Z+kJDkgestArXDnviBnXO3gwg18WTrxqc=
+			vs/FiTld9kJ00qJ7ijMTYvdMFpa+COPBziqUgdE+1wk=
 			</data>
 		</dict>
 		<key>BRNDashboardStreaksProgressCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WGf59q3Lle4zve93eDnUvpvf1kgswDbOe6IkzQpF/x4=
+			gvT/CBVYwwAc/KFli7uLpqensRFnrz0eTXe6DmwcSD8=
 			</data>
 		</dict>
 		<key>BRNDateInputChallengTextCell.nib</key>
@@ -1884,14 +1888,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			04/fP3RYpGQ1vm7vl4taVqwmuZpxrk1bNTLZgT2RNYE=
+			T28/jq6ejfoJUh5PSD5yh1we/Swh0XGcQDqIxY7UYI4=
 			</data>
 		</dict>
 		<key>BRNGraphFilterCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O99iYAOV5cef/1iaOO/QlNNcVvwIO4C/bvSICzgs6WQ=
+			fAc1YCU5GJJPe/CKv1+PrS+8gNcyqLx2k2ivIc7Zrqs=
 			</data>
 		</dict>
 		<key>BRNHealthPermissionsHeaderView.nib</key>
@@ -1899,6 +1903,27 @@
 			<key>hash2</key>
 			<data>
 			zbepSH5U/MMY9kbIMosVxFW/l4mrXHlcWjNCWIbFMDM=
+			</data>
+		</dict>
+		<key>BRNLabelButtonCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			efzo8OWsdsdq6p1sTDx86kDV+kuKR8r8aKMyH1UfOLo=
+			</data>
+		</dict>
+		<key>BRNLabelCellRegistration.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QdpiVoFl9srzXI9ZDzEbcBZbGQOcKpSbSh7ByNeU3Vk=
+			</data>
+		</dict>
+		<key>BRNLoginWithSocialCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y26+FKuubk2LwuMpmg5joDnTqoKmtQtEvUOGxRXyZE8=
 			</data>
 		</dict>
 		<key>BRNMain.storyboardc/BRNAlowLocationViewController.nib</key>
@@ -1975,7 +2000,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+f6syo8YGSDoGDb4rXtBJFRbrNdT+k5Dy8oAXaC7/3Y=
+			PIn6Ix0tcCEdwnjDJKkYwE0g2GKcANzmgMR2m7C10UM=
 			</data>
 		</dict>
 		<key>BRNMain.storyboardc/BRNZipCodeViewController.nib</key>
@@ -2038,7 +2063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5AfeOhqGcic9CXqSO++9xcHoyV5dCVlW+j3TqbCjajM=
+			Jw2da38ENRu3Jwyx8VaSClQTUHT6jnnQLgJpR4usIMY=
 			</data>
 		</dict>
 		<key>BRNMain.storyboardc/ZQI-tZ-Mev-view-Mdh-3s-yMc.nib</key>
@@ -2188,6 +2213,13 @@
 			kqvsRsfj2ixNkGh/CBsCX2THvjMyQi/6SyDsNXUsMbc=
 			</data>
 		</dict>
+		<key>BRNRecoveryPasswordInfoCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j/1HsE3mVeY5PCXBP9MgHJxonrrYH6FzR/nkPloguiw=
+			</data>
+		</dict>
 		<key>BRNSignRegister.storyboardc/3UF-2T-QI2-view-BQa-82-Yli.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2333,6 +2365,13 @@
 			<key>hash2</key>
 			<data>
 			9C1fC+KhJb0HtMrsydbyVH6CwWxnkxFOziqep0viA1A=
+			</data>
+		</dict>
+		<key>BRNSimpleButtonCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4FBaTK9S3KjRoO/w/pl8dyerwCr9sXLR54ttzg+mZ6w=
 			</data>
 		</dict>
 		<key>BRNSpendMeCell.nib</key>
@@ -2501,6 +2540,27 @@
 			<key>hash2</key>
 			<data>
 			0z1Dvc83mq5CoiufjnckZQSB63X2Hdb2hlHtfb8SDjQ=
+			</data>
+		</dict>
+		<key>BRNTermsAndConditionsCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AunB/akPrSdFvRheZo9YsqAqBb6SEvBqqqdRV0OJRxE=
+			</data>
+		</dict>
+		<key>BRNTextFieldCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iC63QsOr3oOigW+xauN/hP9bCa7ZG4Pcbx82BtRiAFE=
+			</data>
+		</dict>
+		<key>BRNTitleTopCenteredCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l9osBe3kfsKDfXZZJH4trY8fRZs3dpOeR67l/LYuvLw=
 			</data>
 		</dict>
 		<key>BRNWallet.storyboardc/6e9-wq-Xxf-view-OmJ-2b-vfo.nib</key>
@@ -2682,7 +2742,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9Zc4ifIhvjiVpaqazSJhHPn008uJ6RHTIE6lzZ4PBI=
+			RaMuMVvVqmB9PKMPlf4kKmsXRoypdAJh+iwAryIMVjY=
 			</data>
 		</dict>
 		<key>Headers/BearnSDK.h</key>
@@ -2748,25 +2808,11 @@
 			Pd+b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU=
 			</data>
 		</dict>
-		<key>LabelButtonCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ycjVcPe7avx1/jszLNkfOF/Vp83kOSVQj2jRnbxjdsk=
-			</data>
-		</dict>
 		<key>LabelCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			5KmeWTPmm7ascOh6gDEyynOJcHWfwU+kK+PVOboAoNc=
-			</data>
-		</dict>
-		<key>LabelCellRegistration.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Uf7Vhrwj/hqcv9Icbe32VJGIxqUtB7zJV1dy2v1nECI=
 			</data>
 		</dict>
 		<key>LabelTVCell.nib</key>
@@ -2797,11 +2843,11 @@
 			gqWMqwgJakIfh7OPNfcuvtFxKP+f6WhIlfQWwQ7aHC0=
 			</data>
 		</dict>
-		<key>LoginWithSocialCell.nib</key>
+		<key>LocalizableDefault.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zMNgb1ukILRqOHUOeyOc6CNFrqNgb9mBtkrq0Do34tM=
+			f9aGpeDtvu9/pACh3GTP2Ei27V26rekESuRRItMzDIc=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -2836,14 +2882,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CGkVlS9s4gzlTaY/o1w8+0BmsuVg9aBVKnbc8RKzsEs=
+			dRlx/wfU+vN0QoH4dsrfY10Hg4omrmiF/iPLOcX/3c4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tA8snBNAgVIUtVUNzjwd6MbOrR8C02UUaQMzRfggEZk=
+			JOmaDghMUlMhoJDi+rDXOkSmqgEEsA69TDjplT0AqC4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
@@ -2857,14 +2903,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CGkVlS9s4gzlTaY/o1w8+0BmsuVg9aBVKnbc8RKzsEs=
+			dRlx/wfU+vN0QoH4dsrfY10Hg4omrmiF/iPLOcX/3c4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tA8snBNAgVIUtVUNzjwd6MbOrR8C02UUaQMzRfggEZk=
+			JOmaDghMUlMhoJDi+rDXOkSmqgEEsA69TDjplT0AqC4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2878,14 +2924,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xveGTyVYdndUaAJuh0r0Io9t7OMhRns+cWQZLBuMpBI=
+			EVVo/dIq/Adw6TPp1KLm/zAh/HMJYHkNohAZKmmyEXA=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			43L5kFnA5zlf5PKlKJ7nQlxnqCFp3r+LhCcxFTRMZqs=
+			pH/YFrAaWc5p18ulaYFdxAGO2qzlJjAQBeoTbSWsP5I=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -2899,14 +2945,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xveGTyVYdndUaAJuh0r0Io9t7OMhRns+cWQZLBuMpBI=
+			EVVo/dIq/Adw6TPp1KLm/zAh/HMJYHkNohAZKmmyEXA=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			43L5kFnA5zlf5PKlKJ7nQlxnqCFp3r+LhCcxFTRMZqs=
+			pH/YFrAaWc5p18ulaYFdxAGO2qzlJjAQBeoTbSWsP5I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3063,13 +3109,6 @@
 			AU+F7vDP9bSALP4FhPk+KGOUKSjFyWjp6Kq3C+YW6rc=
 			</data>
 		</dict>
-		<key>RecoveryPasswordInfoCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NSTqg4AtllUscrlzRszJOypTwxPtuurwls0Se6kro9k=
-			</data>
-		</dict>
 		<key>SelectDeviceAppCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -3096,13 +3135,6 @@
 			<key>hash2</key>
 			<data>
 			LFmXqeVTP12X0x40TjtwgP0Sx5pglnbTS7J155Ng3qI=
-			</data>
-		</dict>
-		<key>SimpleButtonCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mBfmDe4AWux6q+p2FjRCqIduhSNRGfngUOpRySZ/uwA=
 			</data>
 		</dict>
 		<key>SwipeInfoCell.nib</key>
@@ -3133,32 +3165,11 @@
 			k2lPyAZzrIRU42flTV4xr1HfafnSerzostE6mWyPwA4=
 			</data>
 		</dict>
-		<key>TermsAndConditionsCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zCu+KjKdxbJNjAHNlJGoLvIt0QlCIpYw3kRfuQ4fuhw=
-			</data>
-		</dict>
 		<key>TermsHTMLContentTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			6cdi1A8ZLBLMIiLoJl044/Z/UcrkAirfsxlOpR5Do7g=
-			</data>
-		</dict>
-		<key>TextFieldCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZgSiNdFZZtUUeUe5MnZ5CWVfAOzUA9sT0dhWrq0bqZU=
-			</data>
-		</dict>
-		<key>TitleTopCenteredCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DTOHkwCzWxNhvmMTtLJZjO7gmPHKzUDUit2ybm7gKgg=
 			</data>
 		</dict>
 		<key>TransactionCell.nib</key>
