@@ -184,12 +184,8 @@ extension BearnSDK.EFCounter : BearnSDK.EFCount {
   required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BRNTheme : BearnSDK.BRNBaseThemeObject {
-  public static var shared: BearnSDK.BRNTheme {
-    get
-  }
   required public init(from decoder: Swift.Decoder) throws
   override public func encode(to encoder: Swift.Encoder) throws
-  public func loadDefaultTheme()
   public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String?, localizationColorsFile: Swift.String?)
   @objc deinit
 }
@@ -487,6 +483,8 @@ extension BearnSDK.GIFAnimatable {
   public class var environment: BearnSDK.BRNEnvironment {
     get
   }
+  public func loadDefaultTheme()
+  public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String?, localizationColorsFile: Swift.String?)
   public func bearnViewController(onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
   public func bearnViewController(isExitHidden: Swift.Bool, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
   public func present(on parentViewController: UIKit.UIViewController? = nil)
