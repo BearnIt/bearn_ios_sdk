@@ -900,6 +900,7 @@ public enum ESTabBarItemContentMode : Swift.Int {
 public enum BRNEnvironment : Swift.Int {
   case production
   case development
+  case partnerDemo
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
