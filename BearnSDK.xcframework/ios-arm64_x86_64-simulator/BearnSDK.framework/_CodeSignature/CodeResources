@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		qg5iw7suH5Rq2Y6Ay0FrKLdTmz4=
+		ZMzTPMUyAz+y1LDUDvZ3f6g3VwE=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>BRNChallengeDetailsWalletTVCell.nib</key>
 		<data>
-		+Yrnj+dO4DuL4CHR7KoglzlNkAU=
+		D0SHyX+wz/Y1LXyGW4vUV+ZIS7A=
 		</data>
 		<key>BRNChallengeFilterTVHeader.nib</key>
 		<data>
@@ -942,7 +942,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hcAhW75Mq6xZ7GyXufKrx+4FPt8=
+		SxQqxmK69yWUrhwyXGs8LnHt5So=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -994,7 +994,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		B8cVRiyieTXEO6dN+V5mToHMlFA=
+		aJ17SkJoyDgiXeXGRWkRb2Ae//0=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -1006,7 +1006,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		B8cVRiyieTXEO6dN+V5mToHMlFA=
+		aJ17SkJoyDgiXeXGRWkRb2Ae//0=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1018,7 +1018,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7PbZ0FluJ8IY5ZVwLYzeOoBjWcE=
+		9priErYWQJv0nNPEHGQhWYdZQpE=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1030,7 +1030,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		7PbZ0FluJ8IY5ZVwLYzeOoBjWcE=
+		9priErYWQJv0nNPEHGQhWYdZQpE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1174,7 +1174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oQrWDqiAiF2+9gBWxLnIfYg+UkgmZYKZm0FqtmE7dSA=
+			I2VYcya+a8fgqqA7AA4yK6s5mAdcV5Votva5GZGZqkI=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1314,7 +1314,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1f6SePAsEuLOWShA2rCnjvlpSolCNjHJyuqPd+YCGI=
+			fq93PntmKpY4qnUobPG5aeQRb5a1Rxs2aGZDLTFIyOM=
 			</data>
 		</dict>
 		<key>BRNChallengeFilterTVHeader.nib</key>
@@ -2889,7 +2889,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			41+Dh4pK3Is3fIi0HsGLF5/IrlcZo3uxVVliMir5Qrw=
+			C3vpvOmw5nHnY6PCQHBqh+oCAjQ2FV2eZgwZffTTJOc=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
@@ -2910,7 +2910,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			41+Dh4pK3Is3fIi0HsGLF5/IrlcZo3uxVVliMir5Qrw=
+			C3vpvOmw5nHnY6PCQHBqh+oCAjQ2FV2eZgwZffTTJOc=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2931,7 +2931,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NTpX3sIR697P7dD6u3QX6y73P5LdytnGadEu75+PplQ=
+			CsMMPc8DQVjWdOAWUkauqoYt8VChAkDU0raGLGjuKbg=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -2952,7 +2952,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NTpX3sIR697P7dD6u3QX6y73P5LdytnGadEu75+PplQ=
+			CsMMPc8DQVjWdOAWUkauqoYt8VChAkDU0raGLGjuKbg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
