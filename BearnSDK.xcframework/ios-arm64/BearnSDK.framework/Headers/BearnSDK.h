@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "MyFiziqBearnCommon.h"
+#import "MyFiziqBearnCommon.h"
 //#import "MyFiziqLoginCommon.h"
 //#import "MyFiziqLogin.h"
 //! Project version number for BearnSDK.
