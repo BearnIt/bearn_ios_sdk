@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RBDk3B59Bgywihi/rRbxw2fhb3E=
+		eN/nZb0PZklUosVRvZKuxEJ5FHI=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -718,7 +718,7 @@
 		</data>
 		<key>BRNScanResultResultsVC.nib</key>
 		<data>
-		uoUFSpEDAqLMHI0JLF71VJJyCHY=
+		unTQY47+Zt8DTJLNSYW2UtbXVn8=
 		</data>
 		<key>BRNScanResultRisksVC.nib</key>
 		<data>
@@ -750,7 +750,7 @@
 		</data>
 		<key>BRNScanResultsLabelCell.nib</key>
 		<data>
-		I6kFLX58T8H7++XgExi9bt2fZYY=
+		FtMh0FhR1nKBw+gBn2aTZ83P2gc=
 		</data>
 		<key>BRNScanResultsModelCell.nib</key>
 		<data>
@@ -1118,7 +1118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TNmVLrQ6WX6NZ2na4C9i+d5Wasc=
+		VS1y5DLxg2wkZCirp3WijIEA1mQ=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1170,7 +1170,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bj2b1r6EVoBdrZ8j/eeYaffVguQ=
+		5OQzfcFNFd9zUL+/dh7Zl7BmWXo=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -1182,7 +1182,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		bj2b1r6EVoBdrZ8j/eeYaffVguQ=
+		5OQzfcFNFd9zUL+/dh7Zl7BmWXo=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1194,7 +1194,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DlMPOb9tAKTDDJ04naAOcyegBOE=
+		9fO7PVxZTIwfQ5uarA1SMXkqnco=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1206,7 +1206,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DlMPOb9tAKTDDJ04naAOcyegBOE=
+		9fO7PVxZTIwfQ5uarA1SMXkqnco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1368,7 +1368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w8/aJWpjFzwHvJotscxtECRrM/VgDfDP95KQg2V2d6M=
+			n3JacZwrah+bIjrsLw9NDowBkhOIj/OMI8JIxDWs/uY=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -2593,7 +2593,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kcd7scqajG9KCbYHw7gwgO10Q3UoJ/vqReYvmMLVos0=
+			bNQVk/bLeN+Fl3ygvdnbVpWRIh9pnCo2OR07JQZFitk=
 			</data>
 		</dict>
 		<key>BRNScanResultRisksVC.nib</key>
@@ -2649,7 +2649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6rbnGu/4Um9VDUrezFOJT7XLgb2Yq9U7uPUSySDPyu0=
+			j3Afpx4tH2W4HkiP86mYOz47zAqO2YSd/20LK6A0ILI=
 			</data>
 		</dict>
 		<key>BRNScanResultsModelCell.nib</key>
@@ -3377,7 +3377,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OgxCdym3w1oerPMpBu6hT2rAT13xMQsaLhnKRN2NjJA=
+			YqzKMQ3YyrBjfCdGMF17oMbVmlsmcTM4cJ6xhrmf0A4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
@@ -3398,7 +3398,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OgxCdym3w1oerPMpBu6hT2rAT13xMQsaLhnKRN2NjJA=
+			YqzKMQ3YyrBjfCdGMF17oMbVmlsmcTM4cJ6xhrmf0A4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3419,7 +3419,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpiApS2dWqAfTWCDAUeOOMDzCrlekx6eUvbEUq6jlKs=
+			DavXtJyE3jIUT0bVc44A922H1VO85bczV3bywl2xzX4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3440,7 +3440,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpiApS2dWqAfTWCDAUeOOMDzCrlekx6eUvbEUq6jlKs=
+			DavXtJyE3jIUT0bVc44A922H1VO85bczV3bywl2xzX4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
