@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		adZQVsfBa9zE7XQAOZgK8fh0DoE=
+		u7pfVvAQI4/JZ7SnrLYLMf960vc=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -702,11 +702,11 @@
 		</data>
 		<key>BRNScanOnboardingVC.nib/objects-14.0+.nib</key>
 		<data>
-		/84hS1e6LZWR28ks1cwpsvDF3ho=
+		MdaVK2Vb0A7XqOaoBhah33VlEVI=
 		</data>
 		<key>BRNScanOnboardingVC.nib/runtime.nib</key>
 		<data>
-		tu2HFyo5wPr2s3kidaA9xRmpR/g=
+		/9o6i+gtSGWXBfFmcgMXDBpaHGQ=
 		</data>
 		<key>BRNScanResultHeaderVC.nib</key>
 		<data>
@@ -874,7 +874,7 @@
 		</data>
 		<key>BRNSurvey.storyboardc/BRNSurveyViewController.nib</key>
 		<data>
-		2NXrg1iWj8WOHhJb+2cGgGPRrQM=
+		AwTgHWJ1MaHy5yEebzgaGFugiHo=
 		</data>
 		<key>BRNSurvey.storyboardc/Info.plist</key>
 		<data>
@@ -1078,7 +1078,7 @@
 		</data>
 		<key>Headers/BearnSDK-Swift.h</key>
 		<data>
-		UlGWVrRa7iCbbiQGI5AIaqglWDg=
+		EEAwNJslA7ntfAf6N5lQIkbcbVo=
 		</data>
 		<key>Headers/BearnSDK.h</key>
 		<data>
@@ -1118,7 +1118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VS1y5DLxg2wkZCirp3WijIEA1mQ=
+		7bRQdB8ulLQdU4oZgcDnv+Xtm4A=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1170,7 +1170,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z52trzDTCspsp7OIGoQD7z0pswE=
+		T3KRx/LJiOFx3GSPYKShj5a9kqI=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -1182,7 +1182,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		z52trzDTCspsp7OIGoQD7z0pswE=
+		T3KRx/LJiOFx3GSPYKShj5a9kqI=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1194,7 +1194,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ksZzOyzyWAjAAFPpNGfbw0gDcik=
+		r0OXZrGGZyIb4fpl4b7tsBSkRfs=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1206,7 +1206,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ksZzOyzyWAjAAFPpNGfbw0gDcik=
+		r0OXZrGGZyIb4fpl4b7tsBSkRfs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1368,7 +1368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LtH5f/2HyfVkQD8sRpUqd4UH7doeFdvPrW15mo6M1pc=
+			PDw6ELD4zzHy1uaGUapSCEpXyXAAFTLd5jxpn7vkrMI=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -2565,14 +2565,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dMtE17eSyc4gd3Y5UKeP2ZI8xhMKkxdK0jqEDpHYSY=
+			pFeQa9J54lMDAmVPzQoyjQg7qmHTB1RJRNx7IQItj9U=
 			</data>
 		</dict>
 		<key>BRNScanOnboardingVC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rs0QRlzDBVAYyRz0TmULt8YVJxCya+I5aUa79cKuHts=
+			8Xnkp4o24OivPe6+6+WQS633aK45p6T+K7+/0H7412U=
 			</data>
 		</dict>
 		<key>BRNScanResultHeaderVC.nib</key>
@@ -2866,7 +2866,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			moRTW2LM9oTukN2DeDprqAyeHYL30N7WS7Xd95/G64M=
+			tZVrcM+bXtPYEgAKgipvte/fGDuGFGIgBzoXQBAOaRk=
 			</data>
 		</dict>
 		<key>BRNSurvey.storyboardc/Info.plist</key>
@@ -3223,7 +3223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hnJyBO72yCRL7/r5BvlXD70Rv4lTXA3McDkxHSmLUh0=
+			2VmUUjGh+XfoZjPzqjnTET9ATFqp8SBIpnYdH/XcDMo=
 			</data>
 		</dict>
 		<key>Headers/BearnSDK.h</key>
@@ -3377,7 +3377,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XEJjsVxWAtUT3e5F51GzWwqI12G6JJWgtqQptSE8pQI=
+			2LIOVM+HPccRT2hth0m8mdWtfgD46NwUxxjTwj3E3NE=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
@@ -3398,7 +3398,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XEJjsVxWAtUT3e5F51GzWwqI12G6JJWgtqQptSE8pQI=
+			2LIOVM+HPccRT2hth0m8mdWtfgD46NwUxxjTwj3E3NE=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3419,7 +3419,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4RYHhC66ueR0ypevCwkpT1253NZ2Szb0NTF5esbJfyQ=
+			CkIOCAYKlig9yY4Y954RAWRN8ifvCb9vlV87O8LLUZQ=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3440,7 +3440,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4RYHhC66ueR0ypevCwkpT1253NZ2Szb0NTF5esbJfyQ=
+			CkIOCAYKlig9yY4Y954RAWRN8ifvCb9vlV87O8LLUZQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
