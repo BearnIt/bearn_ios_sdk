@@ -863,6 +863,39 @@ extension UIKit.UIStatusBarStyle {
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public class func fromStoryboard<T>(_ storyboardName: Swift.String) -> T where T : UIKit.UIViewController
 }
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension BearnSDK.AnyDecodable : BearnSDK._AnyDecodable {
+}
+extension BearnSDK._AnyDecodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension BearnSDK.AnyDecodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyDecodable, rhs: BearnSDK.AnyDecodable) -> Swift.Bool
+}
+extension BearnSDK.AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol Reusable : AnyObject {
   static var reuseIdentifier: Swift.String { get }
 }
@@ -1017,6 +1050,75 @@ public enum ESTabBarItemContentMode : Swift.Int {
   @_Concurrency.MainActor(unsafe) open func badgeChangedAnimation(animated: Swift.Bool, completion: (() -> ())?)
   @objc deinit
 }
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension BearnSDK.AnyEncodable : BearnSDK._AnyEncodable {
+}
+extension BearnSDK._AnyEncodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension BearnSDK.AnyEncodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyEncodable, rhs: BearnSDK.AnyEncodable) -> Swift.Bool
+}
+extension BearnSDK.AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension BearnSDK._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension BearnSDK.AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc extension BearnSDK.JJFloatingActionButton {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func open(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func close(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
@@ -1165,6 +1267,54 @@ extension UIKit.UITableView {
   @_Concurrency.MainActor(unsafe) final public func register<T>(headerFooterViewType: T.Type) where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.NibLoadable, T : BearnSDK.Reusable
   @_Concurrency.MainActor(unsafe) final public func register<T>(headerFooterViewType: T.Type) where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.Reusable
   @_Concurrency.MainActor(unsafe) final public func dequeueReusableHeaderFooterView<T>(_ viewType: T.Type = T.self) -> T? where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.Reusable
+}
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension BearnSDK.AnyCodable : BearnSDK._AnyEncodable, BearnSDK._AnyDecodable {
+}
+extension BearnSDK.AnyCodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyCodable, rhs: BearnSDK.AnyCodable) -> Swift.Bool
+}
+extension BearnSDK.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension BearnSDK.AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 extension UIKit.UINavigationController {
   @_Concurrency.MainActor(unsafe) public func pushViewController(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)

@@ -220,6 +220,7 @@ SWIFT_CLASS("_TtC8BearnSDK16BRNColoredButton")
 @end
 
 
+
 SWIFT_CLASS("_TtC8BearnSDK22BRNDynamicLinksManager")
 @interface BRNDynamicLinksManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -571,16 +572,16 @@ SWIFT_CLASS("_TtC8BearnSDK12JJActionItem")
 
 
 @interface JJActionItem (SWIFT_EXTENSION(BearnSDK))
-/// Tells the view that its superview changed.
-- (void)didMoveToSuperview;
-/// Updates constraints for the view.
-- (void)updateConstraints;
+/// A Boolean value indicating whether the action item draws a highlight.
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @end
 
 
 @interface JJActionItem (SWIFT_EXTENSION(BearnSDK))
-/// A Boolean value indicating whether the action item draws a highlight.
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+/// Tells the view that its superview changed.
+- (void)didMoveToSuperview;
+/// Updates constraints for the view.
+- (void)updateConstraints;
 @end
 
 
@@ -907,8 +908,10 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 
 
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// A Boolean value indicating whether the action button draws a highlight.
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+/// Updates constraints for the view.
+- (void)updateConstraints;
+/// Tells the view that its superview changed.
+- (void)didMoveToSuperview;
 @end
 
 
@@ -937,13 +940,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 - (void)closeWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
 @end
 
-
-@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// Updates constraints for the view.
-- (void)updateConstraints;
-/// Tells the view that its superview changed.
-- (void)didMoveToSuperview;
-@end
 
 
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
@@ -979,6 +975,11 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 - (void)displayInViewController:(UIViewController * _Nonnull)viewController bottomInset:(CGFloat)bottomInset trailingInset:(CGFloat)trailingInset safeAreaInset:(CGFloat)safeAreaInset;
 @end
 
+
+@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
+/// A Boolean value indicating whether the action button draws a highlight.
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@end
 
 
 
@@ -1045,7 +1046,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 @end
 
 
-
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// The shadow color of the floating action button.
 /// Default is <code>UIColor.black</code>.
@@ -1060,6 +1060,7 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 /// Default is <code>2</code>.
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
 @end
+
 
 
 /// Floating action button delegate protocol
@@ -1444,6 +1445,7 @@ SWIFT_CLASS("_TtC8BearnSDK21SwiftyInnerShadowView")
 @interface UIButton (SWIFT_EXTENSION(BearnSDK))
 - (void)sendActionsForControlEvents:(UIControlEvents)controlEvents;
 @end
+
 
 
 
