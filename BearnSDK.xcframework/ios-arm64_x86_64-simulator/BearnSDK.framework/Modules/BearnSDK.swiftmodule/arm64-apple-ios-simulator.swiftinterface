@@ -677,7 +677,7 @@ extension BearnSDK.GIFAnimatable {
   public func loadDefaultTheme()
   public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String?, localizationColorsFile: Swift.String?)
   public func bearnViewController(onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
-  public func bearnViewController(isExitHidden: Swift.Bool, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
+  public func bearnViewController(isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
   public func present(on parentViewController: UIKit.UIViewController? = nil)
   public func present(on parentViewController: UIKit.UIViewController? = nil, isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil)
   @objc override dynamic public init()

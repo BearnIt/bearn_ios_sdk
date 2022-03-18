@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		cyBxIsM+n7At8769jCeAKqmnt/Y=
+		9YN0BTXYAtyfG/XW8vPzdarck0Y=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -1166,11 +1166,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		b+h9jeq/6rjRAplbQ06xJTjGn6A=
+		rXvsUE2aZNgFeQRo7Ej0kW5N2zw=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ozq2Kw7rT0ZJV7hi9HNDFv5Qoak=
+		gdFAZLct0vtMhx+cKcW12I6AU9Q=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -1178,11 +1178,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		b+h9jeq/6rjRAplbQ06xJTjGn6A=
+		rXvsUE2aZNgFeQRo7Ej0kW5N2zw=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Ozq2Kw7rT0ZJV7hi9HNDFv5Qoak=
+		gdFAZLct0vtMhx+cKcW12I6AU9Q=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -1190,11 +1190,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U8z2Yr31mNTZn5CLBLbDdmiIwCs=
+		Y39t/i/LDGPkvvkxLPiXXfoigps=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0j9P72cMbcN1EptNB0Xmt1Bj3fk=
+		neZR1QP+iB79NdWxzQJH1Pkl8Ew=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1202,11 +1202,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		U8z2Yr31mNTZn5CLBLbDdmiIwCs=
+		Y39t/i/LDGPkvvkxLPiXXfoigps=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		0j9P72cMbcN1EptNB0Xmt1Bj3fk=
+		neZR1QP+iB79NdWxzQJH1Pkl8Ew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1368,7 +1368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S8gFCuNg536xM0Xq7MrYrTCxKdSLgblRN0+NLvCFIOI=
+			izuo5gZt/hpUAWD5Rd3jucF+9KUPYeWYJPlrtVzcls0=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -3370,14 +3370,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3nKT/VW51F1t21kNMnxox/w09ennU0NcS7syLq9f4E=
+			eDNh4vy/N4Zm61sQ8iE2aMieaUcwYKlkbguxRVoRDFM=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qn5Jv35puq8cFIIR1/9XGhdfs8QiYh0DfNX5a/hGa98=
+			/e3kSQr01FAwCcCXKkKl1W1I941CP76ZcJCqgLxx3Sw=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftdoc</key>
@@ -3391,14 +3391,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3nKT/VW51F1t21kNMnxox/w09ennU0NcS7syLq9f4E=
+			eDNh4vy/N4Zm61sQ8iE2aMieaUcwYKlkbguxRVoRDFM=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qn5Jv35puq8cFIIR1/9XGhdfs8QiYh0DfNX5a/hGa98=
+			/e3kSQr01FAwCcCXKkKl1W1I941CP76ZcJCqgLxx3Sw=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -3412,14 +3412,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gKZtq2gGqfrGIwAw7Xw4kOeq7rtjAGt/79i4qDg1AQo=
+			SqGkJeW16BWnFdum82SnuZiQI22dpW/K64bfEdSrI+k=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wYXFRTLDDDwFGF+C4L7ZqxHOIUme588/c2R0QMvGB9Q=
+			JQWIeWgZB6s93GD4gGmjvvD07UlbhsyhMFNhGU5gVfY=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3433,14 +3433,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gKZtq2gGqfrGIwAw7Xw4kOeq7rtjAGt/79i4qDg1AQo=
+			SqGkJeW16BWnFdum82SnuZiQI22dpW/K64bfEdSrI+k=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wYXFRTLDDDwFGF+C4L7ZqxHOIUme588/c2R0QMvGB9Q=
+			JQWIeWgZB6s93GD4gGmjvvD07UlbhsyhMFNhGU5gVfY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
