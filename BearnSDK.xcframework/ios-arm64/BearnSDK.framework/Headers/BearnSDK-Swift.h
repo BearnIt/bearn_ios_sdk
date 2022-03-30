@@ -577,13 +577,13 @@ SWIFT_CLASS("_TtC8BearnSDK12JJActionItem")
 @end
 
 
+
 @interface JJActionItem (SWIFT_EXTENSION(BearnSDK))
 /// Tells the view that its superview changed.
 - (void)didMoveToSuperview;
 /// Updates constraints for the view.
 - (void)updateConstraints;
 @end
-
 
 
 
@@ -907,6 +907,7 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 
 
 
+
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// Updates constraints for the view.
 - (void)updateConstraints;
@@ -941,6 +942,11 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 @end
 
 
+@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
+/// A Boolean value indicating whether the action button draws a highlight.
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@end
+
 
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// Add floating action button to a given superview and place in trailing bottom corner.
@@ -973,12 +979,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 /// Default is <code>0</code>.
 ///
 - (void)displayInViewController:(UIViewController * _Nonnull)viewController bottomInset:(CGFloat)bottomInset trailingInset:(CGFloat)trailingInset safeAreaInset:(CGFloat)safeAreaInset;
-@end
-
-
-@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// A Boolean value indicating whether the action button draws a highlight.
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @end
 
 
@@ -1046,6 +1046,7 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 @end
 
 
+
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// The shadow color of the floating action button.
 /// Default is <code>UIColor.black</code>.
@@ -1060,7 +1061,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 /// Default is <code>2</code>.
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
 @end
-
 
 
 /// Floating action button delegate protocol
@@ -1436,6 +1436,7 @@ SWIFT_CLASS("_TtC8BearnSDK21SwiftyInnerShadowView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
