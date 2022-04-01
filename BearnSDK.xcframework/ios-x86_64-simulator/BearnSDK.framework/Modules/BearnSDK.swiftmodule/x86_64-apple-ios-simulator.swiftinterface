@@ -862,6 +862,7 @@ extension UIKit.UIStatusBarStyle {
 }
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public class func fromStoryboard<T>(_ storyboardName: Swift.String) -> T where T : UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) public func openLink(_ link: Swift.String, inBrowser: Swift.Bool = false, title: Swift.String? = nil)
 }
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
