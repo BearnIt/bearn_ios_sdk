@@ -1122,7 +1122,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6hCzz89erMkC+VyT4Zwt/6wFqJc=
+		kGk43tNcBXBR/Bzzbm5vP7/YXfw=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1170,11 +1170,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aNS8PpZyd0nrXy58F5qXBFBqKlQ=
+		FPCmT7j76RymIZ7LNLOAFzEEO4E=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V3r5ZBUwx6ujvIgqhwqCdUkZiRY=
+		r94OfNB7AFF5J6wjtFFcmCIDJ10=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1182,11 +1182,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		aNS8PpZyd0nrXy58F5qXBFBqKlQ=
+		FPCmT7j76RymIZ7LNLOAFzEEO4E=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		V3r5ZBUwx6ujvIgqhwqCdUkZiRY=
+		r94OfNB7AFF5J6wjtFFcmCIDJ10=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3357,14 +3357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bati6BMWMPcyp3clfRYhSkPhIbvgTJurCGpPf0V7128=
+			pr1WPoKMfgJKyRUKgb1dI1mEyg38MPKvVnuflqG9Jok=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ADzgOPA9ru9BE5ZeT2k9FhMcsm97ym4xVwSligie2k=
+			O39JNsWR4xwrD9zwoFrvNcYIqB0ZXLEIaecuBuLgMhY=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3378,14 +3378,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bati6BMWMPcyp3clfRYhSkPhIbvgTJurCGpPf0V7128=
+			pr1WPoKMfgJKyRUKgb1dI1mEyg38MPKvVnuflqG9Jok=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ADzgOPA9ru9BE5ZeT2k9FhMcsm97ym4xVwSligie2k=
+			O39JNsWR4xwrD9zwoFrvNcYIqB0ZXLEIaecuBuLgMhY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
