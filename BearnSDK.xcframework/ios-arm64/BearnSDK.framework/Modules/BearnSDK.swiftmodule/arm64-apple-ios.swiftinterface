@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios13.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 import AHIMultiScan
 import AVFoundation
@@ -21,7 +21,6 @@ import JWTDecode
 import Kingfisher
 import LinkKit
 import MBProgressHUD
-import MFZFaceScan
 import MessageUI
 import MobileCoreServices
 import MyFiziqSDKCommon
@@ -31,6 +30,7 @@ import OAuthSwift
 import QuartzCore
 import SafariServices
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import WebKit
@@ -285,7 +285,7 @@ extension BearnSDK.EFCounter : BearnSDK.EFCount {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BRNTheme : BearnSDK.BRNBaseThemeObject {
   required public init(from decoder: Swift.Decoder) throws
   override public func encode(to encoder: Swift.Encoder) throws
-  public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String? = nil, colorsFile: Swift.String? = nil)
+  public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String? = nil, localizationColorsFile: Swift.String? = nil)
   @objc deinit
 }
 extension UIKit.UIColor {
@@ -675,9 +675,9 @@ extension BearnSDK.GIFAnimatable {
     get
   }
   public func loadDefaultTheme()
-  public func loadCustomInfoFrom(bundle: Foundation.Bundle? = .main, localizationStringsFile: Swift.String? = nil, colorsFile: Swift.String? = nil)
+  public func loadCustomInfoFrom(bundle: Foundation.Bundle? = .main, localizationStringsFile: Swift.String? = nil, localizationColorsFile: Swift.String? = nil)
   public func bearnViewController(onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
-  public func bearnViewController(isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
+  public func bearnViewController(isExitHidden: Swift.Bool, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
   public func present(on parentViewController: UIKit.UIViewController? = nil)
   public func present(on parentViewController: UIKit.UIViewController? = nil, isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil)
   @objc override dynamic public init()
@@ -862,7 +862,6 @@ extension UIKit.UIStatusBarStyle {
 }
 extension UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public class func fromStoryboard<T>(_ storyboardName: Swift.String) -> T where T : UIKit.UIViewController
-  @_Concurrency.MainActor(unsafe) public func openLink(_ link: Swift.String, inBrowser: Swift.Bool = false, title: Swift.String? = nil)
 }
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
