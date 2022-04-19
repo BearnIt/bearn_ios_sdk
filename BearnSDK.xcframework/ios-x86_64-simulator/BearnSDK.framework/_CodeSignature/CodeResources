@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		1gxSiIUuUvxlyKyGEjRC7BYKtfs=
+		PM/H56tYILOQVHf71BTgz1L8FrA=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>BRNChallenges.storyboardc/QYg-cb-9di-view-RmI-j6-LvS.nib</key>
 		<data>
-		Tm/svNxRiFAB8Or/14p0lQZ5kDw=
+		oW40z8KGM+dSxknMJu7jj9Gju3Y=
 		</data>
 		<key>BRNChallenges.storyboardc/Sx7-F2-ktS-view-2yY-q2-CjL.nib</key>
 		<data>
@@ -382,11 +382,11 @@
 		</data>
 		<key>BRNDashboardGoalsInfoCell.nib</key>
 		<data>
-		nMl7PoWBxIoJ/hDGm9TdmYCNLYw=
+		rBsGvMZCUA5jjAbul5BVFYv8a4c=
 		</data>
 		<key>BRNDashboardGoalsProgressCell.nib</key>
 		<data>
-		idI/0QcRH+fhlXy4ROovsj5itCs=
+		SD8febLHXFyXKADW0WdgYfJIeXY=
 		</data>
 		<key>BRNDashboardProgress2ItemCell.nib</key>
 		<data>
@@ -446,7 +446,7 @@
 		</data>
 		<key>BRNGraphFilterCell.nib</key>
 		<data>
-		3ypM0hEkA8aZEHMfqk01d8D1grY=
+		kQDxj3zKRsarrXEQi8leyMzAnEw=
 		</data>
 		<key>BRNHealthPermissionsHeaderView.nib</key>
 		<data>
@@ -1158,7 +1158,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		ynMq9RcyddJeSm1hRkibf75Rq18=
+		YrrSN9J1PjQGJS9UMot3PhniOxc=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1182,7 +1182,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/L7TSiuWmy/dJYNqbnptX9kSlbQ=
+		n28TdOxTasiS2fbGyql+6xYVyJA=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1194,7 +1194,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		/L7TSiuWmy/dJYNqbnptX9kSlbQ=
+		n28TdOxTasiS2fbGyql+6xYVyJA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1356,7 +1356,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXFIWECX5NWfjgrVK4IVwxJIJgzvX+Aa/CpaEkdBW8o=
+			i6B9puYH9e7hnEp4urMXfjyesfv8D1F+AJwKzEJXg18=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1797,7 +1797,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MjE1EnSrdsWn088BmHudhrLHJlxwZJ+GPJVwRCsy4Ps=
+			Hpqmt/hyTxsy1dbGsl5BniUzXAA+hZaPd5nQfutLJKc=
 			</data>
 		</dict>
 		<key>BRNChallenges.storyboardc/Sx7-F2-ktS-view-2yY-q2-CjL.nib</key>
@@ -1993,14 +1993,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aL1ho1/yteon7hz+1IUnjYeZW/6/P6Ic9ACkO+bnVE=
+			Jrd+c78HtZSlUTC+bYvZhXGNjcLHK1tT3AGTtTCUcCg=
 			</data>
 		</dict>
 		<key>BRNDashboardGoalsProgressCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xFdWFv7wxRNQbudYqr9c51f4xLiDS1E/rWhVIDjuee0=
+			59XBSwumJgFqrUiTwqT7ydK7i7CweZZxDaBhSI52SYo=
 			</data>
 		</dict>
 		<key>BRNDashboardProgress2ItemCell.nib</key>
@@ -2105,7 +2105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAc1YCU5GJJPe/CKv1+PrS+8gNcyqLx2k2ivIc7Zrqs=
+			uDWK54X9faIj6xr3Ak0HrZ2WTLeyfSEvf80GRkiHjaM=
 			</data>
 		</dict>
 		<key>BRNHealthPermissionsHeaderView.nib</key>
@@ -3344,7 +3344,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GA0P0i1i8pp2SuizgWGs3Rek6bFTVZmrSvAa/xFYBi8=
+			0nLbElArQqi2FQKLf32NTuuSns0IweYN0D71rBSRw/E=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3386,7 +3386,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1nQgWzqetByT4mYdXPNbU07eVOmBgzOmIQLcG0kFNzU=
+			0lPaltpNM0CUU6EGZbU0hlRiqIHNh1H20okgvxlkldE=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3407,7 +3407,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1nQgWzqetByT4mYdXPNbU07eVOmBgzOmIQLcG0kFNzU=
+			0lPaltpNM0CUU6EGZbU0hlRiqIHNh1H20okgvxlkldE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
