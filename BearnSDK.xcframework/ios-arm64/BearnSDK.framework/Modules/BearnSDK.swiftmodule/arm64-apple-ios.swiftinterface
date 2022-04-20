@@ -701,6 +701,9 @@ extension BearnSDK.StoryboardBased where Self : UIKit.UIViewController {
   public static func instantiate() -> Self
 }
 extension Foundation.NSNotification.Name {
+  public static let BRNLastRegisteredUserEmail: Foundation.NSNotification.Name
+}
+extension Foundation.NSNotification.Name {
   public static let BRNSmartNotificationReceived: Foundation.NSNotification.Name
   public static let BRNSmartNotificationDeleted: Foundation.NSNotification.Name
 }
