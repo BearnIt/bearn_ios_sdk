@@ -756,6 +756,7 @@ extension BearnSDK.TextFromatter {
 }
 extension Foundation.NSNotification.Name {
   public static let BRNDashboardDataNeedReloadNotification: Foundation.NSNotification.Name
+  public static let BRNDashboardHealthDataNeedUpdateAndReloadNotification: Foundation.NSNotification.Name
   public static let BRNDashboardDataReceivedNotification: Foundation.NSNotification.Name
 }
 public protocol StoryboardSceneBased : AnyObject {
@@ -853,7 +854,7 @@ extension BearnSDK.NibOwnerLoadable where Self : UIKit.UIView {
   public static let shared: BearnSDK.BRNHealthKitManager
   public class func authorizeHealthKit(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   public func fetchLatestHeartRateSample(completion: @escaping (_ samples: [HealthKit.HKQuantitySample]?) -> Swift.Void)
-  public func updateHealthdata(deviceStatus: BearnSDK.DeviceStatus, completion: @escaping (() -> Swift.Void))
+  public func updateHealthdata(deviceStatus: BearnSDK.DeviceStatus, notifyOnFinished: Swift.Bool, completion: @escaping (() -> Swift.Void))
   public func loadBiometricDevices(completed: (() -> Swift.Void)?)
   @objc override dynamic public init()
   @objc deinit
