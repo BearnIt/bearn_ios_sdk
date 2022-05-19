@@ -24,12 +24,14 @@ import MBProgressHUD
 import MFZFaceScan
 import MessageUI
 import MobileCoreServices
+import SceneKit.ModelIO
 import MyFiziqSDKCommon
 import MyFiziqSDKCoreLite
 import NotificationBannerSwift
 import OAuthSwift
 import QuartzCore
 import SafariServices
+import SceneKit
 import Swift
 import SystemConfiguration
 import UIKit
