@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		1gxSiIUuUvxlyKyGEjRC7BYKtfs=
+		NxPfV4c3TmgTyKH+8NRWJJx1ROo=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -114,27 +114,27 @@
 		</data>
 		<key>BRNChallengeLeaderboardMultiplayerItemMidTVCell.nib</key>
 		<data>
-		rXFRMHq777GgphMbxJFSBRgTfcw=
+		fY4TEY3R+xCVPFUThfM7mD0Pndw=
 		</data>
 		<key>BRNChallengeLeaderboardMultiplayerItemStartTVCell.nib</key>
 		<data>
-		NMCGYddtRjw00Rs6euTfLFAvDEE=
+		1a1fioTLrGxmqabQowUcdwA8oIo=
 		</data>
 		<key>BRNChallengeLeaderboardMultiplayerOneRewardMidHeaderTVCell.nib</key>
 		<data>
-		HWuPcux0Hkjl3Tbcdplmr//VJtA=
+		1fs5PPgTwOnVocAaB1L18kyll2o=
 		</data>
 		<key>BRNChallengeLeaderboardMultiplayerThreeRewardMidHeaderTVCell.nib</key>
 		<data>
-		erh5vWjuu1BI+Z6khWYIfhb8Rro=
+		/074PsKqGf7uT8MlkDvrtY9Gn8g=
 		</data>
 		<key>BRNChallengeLeaderboardTwoHeaderTVCell.nib</key>
 		<data>
-		YwM9qfSsBFREy0WhmmFI73LE6Ks=
+		smOPYzeodY12QcFA4kx2uckFLKM=
 		</data>
 		<key>BRNChallengeLeaderboardTwoItemTVCell.nib</key>
 		<data>
-		eC2+77glKtIeaGLjf+Wn4sTSqCQ=
+		fPKPGJFJUPDAoAG1UE1gmPSXEPo=
 		</data>
 		<key>BRNChallengeTVCell.nib</key>
 		<data>
@@ -270,7 +270,7 @@
 		</data>
 		<key>BRNChallenges.storyboardc/QYg-cb-9di-view-RmI-j6-LvS.nib</key>
 		<data>
-		kAPd0hooKAmDjfObWcS4PM+sulM=
+		MWREXRZpw7UKFJeiBEGIQyrEu+M=
 		</data>
 		<key>BRNChallenges.storyboardc/Sx7-F2-ktS-view-2yY-q2-CjL.nib</key>
 		<data>
@@ -386,7 +386,7 @@
 		</data>
 		<key>BRNDashboardGoalsProgressCell.nib</key>
 		<data>
-		QTNVTky6s7XDPsQiStFoqWN1uMY=
+		P0Yp5CdWgPF0uC6MVcyPeHyn/as=
 		</data>
 		<key>BRNDashboardProgress2ItemCell.nib</key>
 		<data>
@@ -442,7 +442,7 @@
 		</data>
 		<key>BRNGraphCell.nib</key>
 		<data>
-		9h73bwW2O/0R05a04ZGKDRzOLug=
+		ukV9Me0RWipTtlGfD/3UeYaJTMI=
 		</data>
 		<key>BRNGraphFilterCell.nib</key>
 		<data>
@@ -634,7 +634,7 @@
 		</data>
 		<key>BRNScan.storyboardc/BRNAllScansVC.nib</key>
 		<data>
-		0VAdqO76HkzgXR+gRseuzwRt7pQ=
+		UiYqjZqh7DKtiw5M/cayY891jPQ=
 		</data>
 		<key>BRNScan.storyboardc/BRNScanCompleteVC.nib</key>
 		<data>
@@ -654,7 +654,7 @@
 		</data>
 		<key>BRNScan.storyboardc/ETJ-Bq-Mfk-view-wRi-V1-LvV.nib</key>
 		<data>
-		gduPIBS5iEAs1z55GjzAN10ELbs=
+		MkuSrvXkldzzij3tr8aT2BNe/4A=
 		</data>
 		<key>BRNScan.storyboardc/EYf-bZ-h3l-view-M0z-45-AWp.nib</key>
 		<data>
@@ -674,7 +674,7 @@
 		</data>
 		<key>BRNScan.storyboardc/hMg-92-jOC-view-lPK-db-rlb.nib</key>
 		<data>
-		gcCB9/lQRKRmDFO8Tihyje/3lUQ=
+		d53UKSZL85gOqP6+JRYMvh0Wvk8=
 		</data>
 		<key>BRNScanIndicatorsBodyCell.nib</key>
 		<data>
@@ -706,7 +706,7 @@
 		</data>
 		<key>BRNScanMainItemTVCell.nib</key>
 		<data>
-		0IwOThbFHyruELggF+xc718DTQM=
+		ucex90Ct2Q2CtediJhtZ/+QGDgs=
 		</data>
 		<key>BRNScanOnboardingVC.nib/objects-14.0+.nib</key>
 		<data>
@@ -760,9 +760,9 @@
 		<data>
 		FtMh0FhR1nKBw+gBn2aTZ83P2gc=
 		</data>
-		<key>BRNScanResultsModelCell.nib</key>
+		<key>BRNScanResultsMeshCell.nib</key>
 		<data>
-		YfnYdDScPLo53wCHkZFNnw1JK88=
+		8LQAnoSkSkfz+CczbhFk2sAbeuk=
 		</data>
 		<key>BRNScanRisksBodyAboutFatCell.nib</key>
 		<data>
@@ -1074,7 +1074,7 @@
 		</data>
 		<key>EmptyDataCell.nib</key>
 		<data>
-		ks5DhdxjytRki2qhXptw5+FM7Vw=
+		EYFuc7EqV5ZBi7J5W5zYJevJ6po=
 		</data>
 		<key>EmptyTVCell.nib</key>
 		<data>
@@ -1130,7 +1130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z9IEzPihX2mwlsPBLoeGQLDwReY=
+		sUL2oGZ8gYfCSoEXgmLSXaJPklI=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1158,7 +1158,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		B87dA+y1DcCWknvWCZslsEv3Rs0=
+		DDMq80rrZeyVIByL8pC/dm7SDA0=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1186,7 +1186,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JphrYb8T+2whEKiOXOZhRMEz5MI=
+		9Sgijc8n5GNUKULxo3jdLaPyBoU=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -1198,7 +1198,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		JphrYb8T+2whEKiOXOZhRMEz5MI=
+		9Sgijc8n5GNUKULxo3jdLaPyBoU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1360,7 +1360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXFIWECX5NWfjgrVK4IVwxJIJgzvX+Aa/CpaEkdBW8o=
+			2x/ivRRuLXJMA/ESvSoD6pt+ff+2VyH5IlYQKEu4NEI=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1528,42 +1528,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RTjn1mqjhpEWfEiJ3VgjWqPfdgaNRRDLrVA3pmzIVd8=
+			gLqip+sw9h4u5fXpJHf6vOWbkhUMOw4x9sSW2/ia/+E=
 			</data>
 		</dict>
 		<key>BRNChallengeLeaderboardMultiplayerItemStartTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+WJkwk64XL20G5cXiFJvWiRma1yxDNseTQVPRa5qzXQ=
+			jJrwkXET5TCCE4oGor4ipN3e9vEHMclJjOIa0PmFiQw=
 			</data>
 		</dict>
 		<key>BRNChallengeLeaderboardMultiplayerOneRewardMidHeaderTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wzFd/xxc6zFYHM9jYEEYzRtT2FtBnDZx3OStraDdnAI=
+			m4kHXqYQ3CY+e/IQoegZgu7qUL51Sid0mPY6ynpesJM=
 			</data>
 		</dict>
 		<key>BRNChallengeLeaderboardMultiplayerThreeRewardMidHeaderTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3GR57iwpu/mt0ui66PI/A6oaKsHihtDMR04o+mO+BFs=
+			LlUw26O+9a1DZNHzQXnhX1sE+jHOAzwlidmIuprrL8g=
 			</data>
 		</dict>
 		<key>BRNChallengeLeaderboardTwoHeaderTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IUjyqjQz2lHdjbkKgs4J0ifhu7fp9vCnT6p0/sngz68=
+			bFUXZ6s3zYEvI/xkikZ3REfnPkpzp1k+iY1FCagPozY=
 			</data>
 		</dict>
 		<key>BRNChallengeLeaderboardTwoItemTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJNISM4ynFMHE/nur11odsjRbV39DzixcwCvFiv8yMI=
+			bqjXJMQv4rMQPCSdGrjWPTnDBBSOFcvARl5rSL0Z1xw=
 			</data>
 		</dict>
 		<key>BRNChallengeTVCell.nib</key>
@@ -1801,7 +1801,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQSuZfIhu81prDxVj669x+/jj61r2fkx5hLtzTAhXCo=
+			kLS73U52WVVuxk0Hyswo94SGjpLcf8OwbyL7+HyvPmE=
 			</data>
 		</dict>
 		<key>BRNChallenges.storyboardc/Sx7-F2-ktS-view-2yY-q2-CjL.nib</key>
@@ -2004,7 +2004,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KegFsw0nifej7ZjT3mq8z1P9j2B8eeNMXYlXxTc1f9w=
+			9eD3dimtiHpYhhiWH7kArmaiXmSbqvWOgCtVcoVFFYk=
 			</data>
 		</dict>
 		<key>BRNDashboardProgress2ItemCell.nib</key>
@@ -2102,7 +2102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T28/jq6ejfoJUh5PSD5yh1we/Swh0XGcQDqIxY7UYI4=
+			bI1iT4+mZX8nPPUhYYCqDmaSx089CgR5+GuhFNId7X0=
 			</data>
 		</dict>
 		<key>BRNGraphFilterCell.nib</key>
@@ -2438,7 +2438,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pFWaUKZAHFBe1xnMPaK8m5C2GXGkv7TGybe2N8tFVHY=
+			p9SxDdbAfwtoVxACtxtfyIRdkR7Bg6ffeWmN90Lp5BM=
 			</data>
 		</dict>
 		<key>BRNScan.storyboardc/BRNScanCompleteVC.nib</key>
@@ -2473,7 +2473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9xHx+2nd0v1gGge858m5vxbpxu9gkJQFF/9qM/V/5I=
+			aYiorZmOASwWJe6tdvO8+vPEgMnUCxKEFlbUewJZtIE=
 			</data>
 		</dict>
 		<key>BRNScan.storyboardc/EYf-bZ-h3l-view-M0z-45-AWp.nib</key>
@@ -2508,7 +2508,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XHy/1xHqZ3J8ijxVxQPAdbkyrIr/OxLlKrVZVLi1SPg=
+			BsCO+bosuNbhJmsJydsjFDF0IuPw4fTz1W4VgnYw06w=
 			</data>
 		</dict>
 		<key>BRNScanIndicatorsBodyCell.nib</key>
@@ -2564,7 +2564,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVLUuHBlucQKJyXM5juwzAawzINjqee3mCb2wgLZQdE=
+			DXFlQJ8JNVpgbr/3G1p8DE70Fo5Ej1ALVEq3NqaYqas=
 			</data>
 		</dict>
 		<key>BRNScanOnboardingVC.nib/objects-14.0+.nib</key>
@@ -2658,11 +2658,11 @@
 			j3Afpx4tH2W4HkiP86mYOz47zAqO2YSd/20LK6A0ILI=
 			</data>
 		</dict>
-		<key>BRNScanResultsModelCell.nib</key>
+		<key>BRNScanResultsMeshCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgtqPWPoTutbfX2esnhDdmsPO8D4gKoQ7ffPvk06wkE=
+			mtG1EjjLMGeN62EM6Yk0++rAZK6/fXUW9T8R6ERkJ5s=
 			</data>
 		</dict>
 		<key>BRNScanRisksBodyAboutFatCell.nib</key>
@@ -3208,7 +3208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9zYsVty9LM/vGKbqNAy19UIKfhKUlaOkkngvTwbeeBQ=
+			GzFcyfMxksCAVPCWlZ8egF+8FwvFuW5paOGi3lu4KaA=
 			</data>
 		</dict>
 		<key>EmptyTVCell.nib</key>
@@ -3348,7 +3348,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tuvPwj7nP8OIa84NMdgSlbCkyu771d/NzZfbNWmYayY=
+			6pp4s+KPqIiA/U3o3iJmZaOcAFSpq81IBGPfLHOZPWg=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3397,7 +3397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oluIjg3QbH4gsaWM+aFFVPPwri/rGSF+AUCXWWa3bj8=
+			stx1n7HqA8x6OT6ghZ4tCYfCD/WMEV9E1e3Nin6tUP0=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -3418,7 +3418,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oluIjg3QbH4gsaWM+aFFVPPwri/rGSF+AUCXWWa3bj8=
+			stx1n7HqA8x6OT6ghZ4tCYfCD/WMEV9E1e3Nin6tUP0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
