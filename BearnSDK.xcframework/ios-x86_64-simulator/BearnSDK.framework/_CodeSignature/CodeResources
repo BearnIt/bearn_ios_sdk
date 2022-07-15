@@ -642,7 +642,7 @@
 		</data>
 		<key>BRNScan.storyboardc/BRNScanCompleteVC.nib</key>
 		<data>
-		Ui2RRUmQUpAbvIkcfgD92AEnKTI=
+		5cpDlE5OcrgMedbW/awNTfzt9iM=
 		</data>
 		<key>BRNScan.storyboardc/BRNScanMainVC.nib</key>
 		<data>
@@ -654,7 +654,7 @@
 		</data>
 		<key>BRNScan.storyboardc/BRNScanResultsVC.nib</key>
 		<data>
-		+/FKyke2Q8+HF/R3BtdnhVk0BT4=
+		r8fWXPEcEvULoFiJLprC8nlHHSU=
 		</data>
 		<key>BRNScan.storyboardc/ETJ-Bq-Mfk-view-wRi-V1-LvV.nib</key>
 		<data>
@@ -678,7 +678,7 @@
 		</data>
 		<key>BRNScan.storyboardc/hMg-92-jOC-view-lPK-db-rlb.nib</key>
 		<data>
-		szrAaTPMcmle0Uq9zzuwQjQJugU=
+		k+sn1w4bIl/lqO8tRwDFjp3qdCY=
 		</data>
 		<key>BRNScanIndicatorsBodyCell.nib</key>
 		<data>
@@ -698,7 +698,7 @@
 		</data>
 		<key>BRNScanIndicatorsFaceKeyIndicatorsCell.nib</key>
 		<data>
-		PFsd4IOah4TU+3k9WIPn5lJqNHk=
+		o2Vsi4noy2zG6C0r/PJKgYIqWb4=
 		</data>
 		<key>BRNScanIndicatorsFaceKeyIndicatorsValueCell.nib</key>
 		<data>
@@ -722,7 +722,7 @@
 		</data>
 		<key>BRNScanResultHeaderVC.nib</key>
 		<data>
-		6oww0shDJJpnpqg+2/AJLCaUl80=
+		FfUXiH1iwpljsYRhqSXYdK931qc=
 		</data>
 		<key>BRNScanResultIndicatorsVC.nib</key>
 		<data>
@@ -746,11 +746,11 @@
 		</data>
 		<key>BRNScanResultsFooterInfoCell.nib</key>
 		<data>
-		qcZCUgwlxsJIsxoGrRdh2rZZSTM=
+		KIBIV6BEXHuJt8+f/LcfKDSZXKg=
 		</data>
 		<key>BRNScanResultsInfoCell.nib</key>
 		<data>
-		2Z79LTYHfNT1hWhluffmtUqztyU=
+		Jp9G3Hfh6cIv2c8YMqmgqOTpxKQ=
 		</data>
 		<key>BRNScanResultsInfoHeaderTVCell.nib</key>
 		<data>
@@ -758,11 +758,11 @@
 		</data>
 		<key>BRNScanResultsInfoTextTVCell.nib</key>
 		<data>
-		oFqn8frSwXvBqGDARQzOjS1CL6Q=
+		AwAEQqyESPb0ToNDQkvIk6M5/N8=
 		</data>
 		<key>BRNScanResultsLabelCell.nib</key>
 		<data>
-		dYbuJ3TIkKZrCw0jyjdjHFk0lq0=
+		9jg9qZSbVo/MzniAfL3v7FC+YQE=
 		</data>
 		<key>BRNScanResultsMeshCell.nib</key>
 		<data>
@@ -1094,7 +1094,7 @@
 		</data>
 		<key>Headers/BearnSDK-Swift.h</key>
 		<data>
-		OeDUfIDk46oSw9FrPL5TwW+7yXc=
+		dSf54ctZb9l3ikxmqeKFV6EEQpc=
 		</data>
 		<key>Headers/BearnSDK.h</key>
 		<data>
@@ -1134,7 +1134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sbLzKLWn9Dzi2ZGBxiF1xZtsTxs=
+		V6zsE98XBTleGAkiCEoChVZJt7Y=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1162,7 +1162,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		RzTEyEMShRjD8SIhUyB30HC7S48=
+		r1X8gWMWydzTrwh3IGCJISOoT60=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1186,11 +1186,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xa0EecX71rz6LKR4/EagLZpoIqk=
+		xY8SNMiqR9e6zyu8NctCWNIZ6qc=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ir4UPk4syJz4i+J4wzSMsIEbd6g=
+		v0QP1D1YOAc4P/D5lbu9oGgBm6U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1198,7 +1198,7 @@
 		</data>
 		<key>MyAccountEditHeaderCell.nib</key>
 		<data>
-		5ipgqO66+f0wlc15fiVUNxYdDX0=
+		DVVubWWsIFwUJ+n0eNrJr9Cy19A=
 		</data>
 		<key>MyAccountEditSaveCollectionViewCell.nib</key>
 		<data>
@@ -2444,7 +2444,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Tv8ijhlLBOKGxJPS948Lqa+5zxSsF1hp3YikcP/bYc=
+			/LrJH/s9k7afvh9fTjaMXkt3nPyP17AMTQ6/OW0OmUU=
 			</data>
 		</dict>
 		<key>BRNScan.storyboardc/BRNScanMainVC.nib</key>
@@ -2465,7 +2465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pzPJag5MhatGQIxpX8QEBvOPFQSQZKNbRZcK1izdWkQ=
+			kJCk/dwd4BVkSM2DCfq8bKPido/2/UFOK7mETfVxVbE=
 			</data>
 		</dict>
 		<key>BRNScan.storyboardc/ETJ-Bq-Mfk-view-wRi-V1-LvV.nib</key>
@@ -2507,7 +2507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4gOqWm8LQGbsi6hmDb+YmYm0sSyEH0W+wsFuJmdnP1I=
+			LYmFqHEpFM7WRhDmEPiY4Wws/5L0udlkXo/sQwlgmDU=
 			</data>
 		</dict>
 		<key>BRNScanIndicatorsBodyCell.nib</key>
@@ -2542,7 +2542,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwV/DOg8BbDDZfNBMuOPJz9aVGwb/O6S2dlNTGsmw2w=
+			rgaIISWdsKwW2uWfRrJjBW42OAMMb51WeVmpl/KSl7o=
 			</data>
 		</dict>
 		<key>BRNScanIndicatorsFaceKeyIndicatorsValueCell.nib</key>
@@ -2584,7 +2584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YGO+olqldRPtbarXiGChsib7SalaKLF7+R4TKK1CXVM=
+			6IR3+KkMoBZBa0ZQ/uP07CV+f0aT1iT8C3pdJK5nHLQ=
 			</data>
 		</dict>
 		<key>BRNScanResultIndicatorsVC.nib</key>
@@ -2626,14 +2626,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQ8P6CgxhvFlv8exBuHHxm+aozDqtEPvIXvIPI76Pgg=
+			kY2KVjpmXzbbC+pBuhSOBZz+hLg/AOX8XyDBykuEIho=
 			</data>
 		</dict>
 		<key>BRNScanResultsInfoCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FGIqg7q7CQnkAED8mrW1FbWaWZFPci4JVdfx+1rq4uU=
+			D/As46aYb3lBJ6G9puF1qVOARIxVQdaIgy6Bn6SUoAc=
 			</data>
 		</dict>
 		<key>BRNScanResultsInfoHeaderTVCell.nib</key>
@@ -2647,14 +2647,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BARTVkbtwtUSY0uzF5pA5YwkpHfvWEkzUEbxD6lhYC8=
+			zejdJM9e1jQ/TFJq7QQ8GM/83t3SyFaSmSMB3QswcNM=
 			</data>
 		</dict>
 		<key>BRNScanResultsLabelCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7wLatMEHpFNfrwICIPa91SfW3sZRIjY/+Bv9xbmuFUI=
+			kt3YYutvcxgkTs1Yx7PLLzPd2oXnq44f05UKpCd/Mbc=
 			</data>
 		</dict>
 		<key>BRNScanResultsMeshCell.nib</key>
@@ -3235,7 +3235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFco7rIYyd2A0mwU1M2f46+KAV8gjPyMD8xkr3A7bU4=
+			bX8cEaBRrd8C11nfA6PrqpBVixYtySd0MTOeWeGtGpo=
 			</data>
 		</dict>
 		<key>Headers/BearnSDK.h</key>
@@ -3347,7 +3347,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3tsxLvjOcJuhNDht743e5DvHv/JVskVYeb8Nfjq0y8U=
+			ElbiC+SzTkt4/PjDce6KhC47DJeJdYCduMpOmEl8yMY=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3389,14 +3389,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2mkVwNR+6NJRHHk3RtkY9/feyM3I9NeXBHXRipJqPJs=
+			22wjgno5kChC/9kaaFkrmuS67CaMuYl0/nY7FX949Eg=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+aeR91logSVH+X+/RCJ5pA8dNPU6Pt/5/tyl65CJQc=
+			KRp/l6aHO+zr5n6u2tWEZ5OfkYz15hvkgRUSAUWDoTU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3410,7 +3410,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w5wh6amjkqZT+9CEfj+Z3hgYYO/TooEMSTLZYrad9QM=
+			081MY3V2jBuHq6md4P3EBBIRL029SYZSYLpNRv0WRqc=
 			</data>
 		</dict>
 		<key>MyAccountEditSaveCollectionViewCell.nib</key>

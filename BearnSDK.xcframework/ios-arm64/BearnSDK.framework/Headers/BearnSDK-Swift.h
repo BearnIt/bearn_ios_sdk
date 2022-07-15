@@ -583,13 +583,13 @@ SWIFT_CLASS("_TtC8BearnSDK12JJActionItem")
 @end
 
 
-
 @interface JJActionItem (SWIFT_EXTENSION(BearnSDK))
 /// Tells the view that its superview changed.
 - (void)didMoveToSuperview;
 /// Updates constraints for the view.
 - (void)updateConstraints;
 @end
+
 
 
 
@@ -913,47 +913,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 
 
 
-
-@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// Updates constraints for the view.
-- (void)updateConstraints;
-/// Tells the view that its superview changed.
-- (void)didMoveToSuperview;
-@end
-
-
-@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// Open the floating action button and show all action items.
-/// remark:
-/// Hidden items and items that have user interaction disabled are omitted.
-/// seealso:
-/// <code>buttonAnimationConfiguration</code>
-/// seealso:
-/// <code>itemAnimationConfiguration</code>
-/// \param animated When true, button will be opened with an animation. Default is <code>true</code>.
-///
-/// \param completion Will be handled upon completion. Default is <code>nil</code>.
-///
-- (void)openWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
-/// Close the floating action button and hide all action items.
-/// seealso:
-/// <code>buttonAnimationConfiguration</code>
-/// seealso:
-/// <code>itemAnimationConfiguration</code>
-/// \param animated When true, button will be close with an animation. Default is <code>true</code>.
-///
-/// \param completion Will be handled upon completion. Default is <code>nil</code>.
-///
-- (void)closeWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
-@end
-
-
-@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
-/// A Boolean value indicating whether the action button draws a highlight.
-@property (nonatomic, getter=isHighlighted) BOOL highlighted;
-@end
-
-
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// Add floating action button to a given superview and place in trailing bottom corner.
 /// remark:
@@ -987,6 +946,47 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 - (void)displayInViewController:(UIViewController * _Nonnull)viewController bottomInset:(CGFloat)bottomInset trailingInset:(CGFloat)trailingInset safeAreaInset:(CGFloat)safeAreaInset;
 @end
 
+
+@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
+/// A Boolean value indicating whether the action button draws a highlight.
+@property (nonatomic, getter=isHighlighted) BOOL highlighted;
+@end
+
+
+
+@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
+/// Open the floating action button and show all action items.
+/// remark:
+/// Hidden items and items that have user interaction disabled are omitted.
+/// seealso:
+/// <code>buttonAnimationConfiguration</code>
+/// seealso:
+/// <code>itemAnimationConfiguration</code>
+/// \param animated When true, button will be opened with an animation. Default is <code>true</code>.
+///
+/// \param completion Will be handled upon completion. Default is <code>nil</code>.
+///
+- (void)openWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
+/// Close the floating action button and hide all action items.
+/// seealso:
+/// <code>buttonAnimationConfiguration</code>
+/// seealso:
+/// <code>itemAnimationConfiguration</code>
+/// \param animated When true, button will be close with an animation. Default is <code>true</code>.
+///
+/// \param completion Will be handled upon completion. Default is <code>nil</code>.
+///
+- (void)closeWithAnimated:(BOOL)animated completion:(void (^ _Nullable)(void))completion;
+@end
+
+
+
+@interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
+/// Updates constraints for the view.
+- (void)updateConstraints;
+/// Tells the view that its superview changed.
+- (void)didMoveToSuperview;
+@end
 
 
 
@@ -1052,7 +1052,6 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 @end
 
 
-
 @interface JJFloatingActionButton (SWIFT_EXTENSION(BearnSDK))
 /// The shadow color of the floating action button.
 /// Default is <code>UIColor.black</code>.
@@ -1067,6 +1066,7 @@ SWIFT_CLASS("_TtC8BearnSDK22JJFloatingActionButton")
 /// Default is <code>2</code>.
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
 @end
+
 
 
 /// Floating action button delegate protocol
@@ -1367,6 +1367,7 @@ SWIFT_CLASS("_TtC8BearnSDK17JJItemPreparation")
 
 
 
+
 SWIFT_CLASS("_TtC8BearnSDK12SJSegmentTab")
 @interface SJSegmentTab : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -1449,9 +1450,12 @@ SWIFT_CLASS("_TtC8BearnSDK21SwiftyInnerShadowView")
 
 
 
+
 @interface UIButton (SWIFT_EXTENSION(BearnSDK))
 - (void)sendActionsForControlEvents:(UIControlEvents)controlEvents;
 @end
+
+
 
 
 
@@ -1500,9 +1504,11 @@ SWIFT_CLASS("_TtC8BearnSDK19UILabelTapableLinks")
 
 
 
+
 @interface UIWindow (SWIFT_EXTENSION(BearnSDK))
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent * _Nullable)event;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

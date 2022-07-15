@@ -22,6 +22,7 @@ import Kingfisher
 import LinkKit
 import MBProgressHUD
 import MFZFaceScan
+import Mantis
 import MessageUI
 import MobileCoreServices
 import SceneKit.ModelIO
