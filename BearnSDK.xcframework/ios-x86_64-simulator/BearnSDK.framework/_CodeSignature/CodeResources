@@ -10,7 +10,7 @@
 		</data>
 		<key>AHILocalizable.strings</key>
 		<data>
-		+C8VC4+X9q5sYPJnpiqa8rQPMzQ=
+		8R8fAy40vQtKDlhbC3l3T75HPQQ=
 		</data>
 		<key>AlertYesNoViewController.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		5ZWSr1zfjBF42BURZn1+Snn3jB4=
+		Ljfxxg3zMkFQhUTs2r0HhP3ei8w=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -39,6 +39,10 @@
 		<key>BRNAlertWithGIFDeleteAccountViewController.nib</key>
 		<data>
 		AU8MOWC9iM85htUdEhR9TFZy+zw=
+		</data>
+		<key>BRNAlertWithGIFDeleteProfilePictureViewController.nib</key>
+		<data>
+		RyuifHaJqa0pyRL1ClCgdA18k60=
 		</data>
 		<key>BRNAlertWithGifViewController.nib</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>BRNAppSectionFooterReusableView.nib</key>
 		<data>
-		3RuVDSEEIZmoeD8CkOO5zshDVfU=
+		slfC3cmZUCUFXZfoLLkQS2QtUgI=
 		</data>
 		<key>BRNAppSectionHeaderReusableView.nib</key>
 		<data>
@@ -710,7 +714,7 @@
 		</data>
 		<key>BRNScanMainItemTVCell.nib</key>
 		<data>
-		vPpCoaVvzf5585E3eF5OFVYgcag=
+		rKUfNP6ox+OLkNO+UYnclFb4HRI=
 		</data>
 		<key>BRNScanOnboardingVC.nib/objects-14.0+.nib</key>
 		<data>
@@ -944,6 +948,14 @@
 		<data>
 		eh1spRlZ//AdRXt+NHBkKbkXGHY=
 		</data>
+		<key>BRNSyncDevicesAndApps.storyboardc/BRNGetStartedViewController.nib</key>
+		<data>
+		aRF5E8F+/Sv+H+ASkNJUTdjBs+k=
+		</data>
+		<key>BRNSyncDevicesAndApps.storyboardc/BRNGetStartedViewController0.nib</key>
+		<data>
+		9SzbrnOdvKK9QIHFjFrijloyuME=
+		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/BRNHeadsUpDeviceViewController.nib</key>
 		<data>
 		z7hRjQ8F6WLQDeVFbtxwUS+2Eb8=
@@ -958,7 +970,7 @@
 		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/Info.plist</key>
 		<data>
-		Xc2F35+hXE0e+hjXp6XvWZ5U46o=
+		gfBx5Gj+9uOBclJKaef3XmItbt0=
 		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/Oam-nD-5UT-view-9HR-Od-82w.nib</key>
 		<data>
@@ -970,11 +982,19 @@
 		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/VFM-Mv-H4n-view-jUZ-Su-iNb.nib</key>
 		<data>
-		cL2DhLXcwMP5yjOlW0nhZXKFEUY=
+		bvEzP14gHSQmeMZ7EcIck75nGs0=
+		</data>
+		<key>BRNSyncDevicesAndApps.storyboardc/VpS-Ux-bUg-view-NwA-Lx-b7b.nib</key>
+		<data>
+		nQ5nO99O82puEZZRiqcvEZdJm7M=
 		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/a9R-Sa-hdX-view-WFt-Ef-aKh.nib</key>
 		<data>
 		iBEtBBLN2JZqc7S0qKKaHWEuvLk=
+		</data>
+		<key>BRNSyncDevicesAndApps.storyboardc/dch-gi-uEP-view-1cY-Pw-MZK.nib</key>
+		<data>
+		4PfgFklUY/ysfHr3BkxNbV08NIw=
 		</data>
 		<key>BRNSyncDevicesAndApps.storyboardc/jUw-0V-DXi-view-oP7-AH-PHH.nib</key>
 		<data>
@@ -1134,7 +1154,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2OYZcFVzQ+2DXBNn9ZB7GJE7nhE=
+		AZFoWijedYLT53CpSKNLO2nQMok=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1158,11 +1178,11 @@
 		</data>
 		<key>Localizable.strings</key>
 		<data>
-		+C8VC4+X9q5sYPJnpiqa8rQPMzQ=
+		8R8fAy40vQtKDlhbC3l3T75HPQQ=
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		r1X8gWMWydzTrwh3IGCJISOoT60=
+		qaLtxdTWLAokq8YqJ+ay4rqZep0=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1186,11 +1206,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xY8SNMiqR9e6zyu8NctCWNIZ6qc=
+		1x2a7mldq5r8CAevTTLVCHAQzsE=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6rwJaojwVIc5gU65UFq98ZQOBJU=
+		noKSI2qqFYaDhpe3tOU97Nh/zXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1198,7 +1218,7 @@
 		</data>
 		<key>MyAccountEditHeaderCell.nib</key>
 		<data>
-		DVVubWWsIFwUJ+n0eNrJr9Cy19A=
+		RueQ4AyYtRFb/UeF0UyMpJfOV1M=
 		</data>
 		<key>MyAccountEditSaveCollectionViewCell.nib</key>
 		<data>
@@ -1338,7 +1358,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gqWMqwgJakIfh7OPNfcuvtFxKP+f6WhIlfQWwQ7aHC0=
+			FnMX16hhWNqNJkjVL3AWbFndX4yQREnwb6JBx8G9XAM=
 			</data>
 		</dict>
 		<key>AlertYesNoViewController.nib</key>
@@ -1352,7 +1372,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9XsGNiiEnlOMlBZvQSmI71uTo1j+YelA+Y92YoA7+tg=
+			DQHpT/MRVt1urwJbDGfhTG+D+t0sWQWkeyE7qpocGO8=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1388,6 +1408,13 @@
 			<key>hash2</key>
 			<data>
 			A7mEtkkQn6nUvmkTw2dzKkJnmpfN6bVIll29Xr6zq4g=
+			</data>
+		</dict>
+		<key>BRNAlertWithGIFDeleteProfilePictureViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Oh/AC6waxWWDmk9vJ7FGSAxGRrIHCiLc3gq3nvc4NKg=
 			</data>
 		</dict>
 		<key>BRNAlertWithGifViewController.nib</key>
@@ -1429,7 +1456,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2b9njvCJa5E/Gvz/muBat/A7pW0E7frRrMx8bA77joQ=
+			EEf9thEwTSIBTJKqQXLp8DswLFQZyqq9Yvh8SCJDzjI=
 			</data>
 		</dict>
 		<key>BRNAppSectionHeaderReusableView.nib</key>
@@ -2563,7 +2590,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OA6JgQBSN9Orax8t1535kU5H6dd7JODlmk6IArPSBdk=
+			puM4YnJDpbXyckY216nmgMXPAC7wHlXziVEWfEnwd5g=
 			</data>
 		</dict>
 		<key>BRNScanOnboardingVC.nib/objects-14.0+.nib</key>
@@ -2972,6 +2999,20 @@
 			rtAuCcoTHFhR3SWJx94xXUj8zZZvC4QgDM0NMxhb/wI=
 			</data>
 		</dict>
+		<key>BRNSyncDevicesAndApps.storyboardc/BRNGetStartedViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			u1fZY5Uz0rMam48IMF9HFPGEh+6L1W+Usz2aVrSYJ+E=
+			</data>
+		</dict>
+		<key>BRNSyncDevicesAndApps.storyboardc/BRNGetStartedViewController0.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RM3hJSogGCSUBtTox75U/NpG84VwT4fFGEARCMSTmnE=
+			</data>
+		</dict>
 		<key>BRNSyncDevicesAndApps.storyboardc/BRNHeadsUpDeviceViewController.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -2997,7 +3038,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQCvUGuASHbrUPP2Jo6OONTScXhjGfdiroNYQhVe93Q=
+			FdTHsJUh2wCmR1meTXvpCRsDGi22afr40NdpNzeFM4Y=
 			</data>
 		</dict>
 		<key>BRNSyncDevicesAndApps.storyboardc/Oam-nD-5UT-view-9HR-Od-82w.nib</key>
@@ -3018,7 +3059,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O1Q/bH/Ql7OqwwvxykSwXZGGHIbTd8UNjs795dV/fzk=
+			vfZXK9Es5CQrkh+ANNkAeeMs7yncWNd/dn+yeC804qk=
+			</data>
+		</dict>
+		<key>BRNSyncDevicesAndApps.storyboardc/VpS-Ux-bUg-view-NwA-Lx-b7b.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mZ+Np4ZsRzdbALHQ4cdY97xnj1kB8m/ld6erZX2SJbY=
 			</data>
 		</dict>
 		<key>BRNSyncDevicesAndApps.storyboardc/a9R-Sa-hdX-view-WFt-Ef-aKh.nib</key>
@@ -3026,6 +3074,13 @@
 			<key>hash2</key>
 			<data>
 			8d0LfiTypk8dZCRwiaa+Pjyk+OBP0/tS9om2ocPX0Cw=
+			</data>
+		</dict>
+		<key>BRNSyncDevicesAndApps.storyboardc/dch-gi-uEP-view-1cY-Pw-MZK.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LfxYwDqmoj3i0dCoyQ5mBdydfCdyT5EuDBBDOtkI1XQ=
 			</data>
 		</dict>
 		<key>BRNSyncDevicesAndApps.storyboardc/jUw-0V-DXi-view-oP7-AH-PHH.nib</key>
@@ -3340,14 +3395,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gqWMqwgJakIfh7OPNfcuvtFxKP+f6WhIlfQWwQ7aHC0=
+			FnMX16hhWNqNJkjVL3AWbFndX4yQREnwb6JBx8G9XAM=
 			</data>
 		</dict>
 		<key>LocalizableDefault.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ElbiC+SzTkt4/PjDce6KhC47DJeJdYCduMpOmEl8yMY=
+			KtTme3ujyWRT7WZwxfjWijdDXg+bOevm1zGBcbwgWa8=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3389,14 +3444,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			22wjgno5kChC/9kaaFkrmuS67CaMuYl0/nY7FX949Eg=
+			NU0eevAp1VGhJ/kLUd5QcO7KakozGzEhkl/IU/nhuW0=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FLB/vRiCX40I9EVGuct7znWi5WEDqPmtuV9ePFUGHzU=
+			WUUaYcxKucKNeARkTbXT4k9JVB8u8GpXSyj97Vb7Hiw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3410,7 +3465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			081MY3V2jBuHq6md4P3EBBIRL029SYZSYLpNRv0WRqc=
+			b6MroeXKAETwwkd4btJ9GBLfSiRqCbODYyOB1Q0bO+M=
 			</data>
 		</dict>
 		<key>MyAccountEditSaveCollectionViewCell.nib</key>

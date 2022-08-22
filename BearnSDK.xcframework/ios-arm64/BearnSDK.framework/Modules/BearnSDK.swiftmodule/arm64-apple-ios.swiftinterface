@@ -689,6 +689,7 @@ extension BearnSDK.GIFAnimatable {
   @objc override dynamic public init()
   public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment)
   public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment, checkAppVersion: Swift.Bool)
+  open func deleteFirebaseTokenIfExists(completition: (() -> Swift.Void)? = nil)
   open func isBearnURL(url: Foundation.URL) -> Swift.Bool
   @discardableResult
   open func handle(url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any]) -> Swift.Bool
