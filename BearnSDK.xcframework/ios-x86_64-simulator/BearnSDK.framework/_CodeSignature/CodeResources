@@ -84,6 +84,10 @@
 		<data>
 		eu6asLVaamZTrQDkJ9T5YJCJzj4=
 		</data>
+		<key>BRNChallengeDetailsChallengePoolLabelTVCell.nib</key>
+		<data>
+		vpdehTIQ0UGmZIlc6rMoLhfRoi0=
+		</data>
 		<key>BRNChallengeDetailsColoredButtonTVCell.nib</key>
 		<data>
 		dOqe9RrSNtlLZhCgLlRhIYNy9mw=
@@ -102,7 +106,7 @@
 		</data>
 		<key>BRNChallengeDetailsMultiRewardTVCell.nib</key>
 		<data>
-		jv3uYuU2Hezf+dbf/1Akc7kMgh0=
+		4RGiD6BRFHlcekReH4dgfS3X7jI=
 		</data>
 		<key>BRNChallengeDetailsRewardItemCVCell.nib</key>
 		<data>
@@ -1154,7 +1158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gNfV0BQuraKrk/PUKHsoFYfmju4=
+		lGlrHZ4ImW41ANTYAsLLpT4EtqE=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1210,7 +1214,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KrYFnWl20RofYtsFKmGfS6QYCVA=
+		QxsZzCJfzbaCxpj3HIJksoZuhng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1487,6 +1491,13 @@
 			T0OY+HaXgAwknkFUis0VMR35AH9+CpvXJzexDBS7gv8=
 			</data>
 		</dict>
+		<key>BRNChallengeDetailsChallengePoolLabelTVCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0Lxr58pnIaRVcrXlMdAE3P6tMaqnFHOf/mAd0chJFFM=
+			</data>
+		</dict>
 		<key>BRNChallengeDetailsColoredButtonTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1519,7 +1530,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1N8ThyVwqJkWMlzThSLk6D5HNWnSMY+afUDxf4FpOvk=
+			s4sbTGQ35kEUO9X6dsZa6wTPzuRVPmL5MXInzg5jEhQ=
 			</data>
 		</dict>
 		<key>BRNChallengeDetailsRewardItemCVCell.nib</key>
@@ -3451,7 +3462,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s2NguQEbGLKxWzfCv9pT6oIo6ct2HIUY3xTQbg/CWt8=
+			wblwa4QWYi//71mP6dZl6SozZ4dgYVS7MEZjdo1gBQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
