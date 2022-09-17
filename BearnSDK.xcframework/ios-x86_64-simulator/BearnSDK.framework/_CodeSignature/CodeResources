@@ -108,17 +108,21 @@
 		<data>
 		4RGiD6BRFHlcekReH4dgfS3X7jI=
 		</data>
+		<key>BRNChallengeDetailsNoTitleSimpleTextTVCell.nib</key>
+		<data>
+		i3HDSlVgmL5US5CeR+XrivexqiI=
+		</data>
 		<key>BRNChallengeDetailsRewardItemCVCell.nib</key>
 		<data>
 		N20tdJFFMzgPXrlsIGTK9Od4zUs=
 		</data>
-		<key>BRNChallengeDetailsSimpleTextTVCell.nib</key>
-		<data>
-		SiBcNVnoptg59Zq+PGMpc1MGiEM=
-		</data>
 		<key>BRNChallengeDetailsWalletTVCell.nib</key>
 		<data>
 		HkZ241iDZfqIkVdwxB7DS21fSXg=
+		</data>
+		<key>BRNChallengeDetailsWithTitleSimpleTextTVCell.nib</key>
+		<data>
+		Q+9eNY3oB+vjxn6jmOT8+0Sfzts=
 		</data>
 		<key>BRNChallengeFilterTVHeader.nib</key>
 		<data>
@@ -1158,7 +1162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lGlrHZ4ImW41ANTYAsLLpT4EtqE=
+		t4WFqr5vtWmXzhDMQOALXOJE0tg=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1186,7 +1190,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		cufHsUoH7Wj+cmNtTFxcDoI7mrs=
+		pQh4CMBHAEeU3f2p3SmODgqIcVM=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1214,7 +1218,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QxsZzCJfzbaCxpj3HIJksoZuhng=
+		WRBJrO5pUEv/Sl11wHSCCW5axkM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1533,6 +1537,13 @@
 			s4sbTGQ35kEUO9X6dsZa6wTPzuRVPmL5MXInzg5jEhQ=
 			</data>
 		</dict>
+		<key>BRNChallengeDetailsNoTitleSimpleTextTVCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W0KhmfHbkDdffInHIknC5eTGp6YvdNpdhEgB+6sD8Bs=
+			</data>
+		</dict>
 		<key>BRNChallengeDetailsRewardItemCVCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1540,18 +1551,18 @@
 			yJcvwbO7Nr6RMEtbIvFA2MygiSwMeBk6wKtc5G8LMSc=
 			</data>
 		</dict>
-		<key>BRNChallengeDetailsSimpleTextTVCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kei5TIzfAbiDgFeIkXyqRAu4pZZkYSGBXxarMIM5OpQ=
-			</data>
-		</dict>
 		<key>BRNChallengeDetailsWalletTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ZEeQ9+rq1QqxXnOpXKqLwkN2sgp9jQpAulNkHKwt+UM=
+			</data>
+		</dict>
+		<key>BRNChallengeDetailsWithTitleSimpleTextTVCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2mjQMLJ2dAf0Zgiql//QUrctg3NNhQ2H2yTVHeXT4cE=
 			</data>
 		</dict>
 		<key>BRNChallengeFilterTVHeader.nib</key>
@@ -3413,7 +3424,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tn8qKw3uD83da1DJzNkdhPP3ls+ciYbHW8DaZmKOiqs=
+			83BHLMIdYLOxo3eFf/VJ6JvfvEyoTxOF33D0Xpu0SlY=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3462,7 +3473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wblwa4QWYi//71mP6dZl6SozZ4dgYVS7MEZjdo1gBQ0=
+			iK8BthQk7PNALeOIoOpG6cxCGte/Rtd7CKkppUg9/y8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
