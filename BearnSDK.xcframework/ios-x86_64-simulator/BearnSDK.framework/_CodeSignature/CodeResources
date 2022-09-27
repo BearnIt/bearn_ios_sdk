@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Unudt81C3yEZzAoh2GjN92Vr5EE=
+		jGp4Kn8GMHsutOTe1iN8VdXCbR8=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>BRNAppSectionFooterReusableView.nib</key>
 		<data>
-		slfC3cmZUCUFXZfoLLkQS2QtUgI=
+		Ub5Qdkd9XZbuJGe3ZE74ldSXxGY=
 		</data>
 		<key>BRNAppSectionHeaderReusableView.nib</key>
 		<data>
@@ -758,7 +758,7 @@
 		</data>
 		<key>BRNScanResultsFooterInfoCell.nib</key>
 		<data>
-		KIBIV6BEXHuJt8+f/LcfKDSZXKg=
+		pjy+1l+x4ziNRbEH0/R7vwtD8bc=
 		</data>
 		<key>BRNScanResultsInfoCell.nib</key>
 		<data>
@@ -1162,7 +1162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		t4WFqr5vtWmXzhDMQOALXOJE0tg=
+		hC6CxVJCFSYFY3uf92WzMK3RPeQ=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1190,7 +1190,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		pQh4CMBHAEeU3f2p3SmODgqIcVM=
+		603VpEJL44r6ns8W1/kQDS9Vj0c=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1218,7 +1218,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WRBJrO5pUEv/Sl11wHSCCW5axkM=
+		KIkASVuQcgUC3vF1hGXyvcBZemc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1380,7 +1380,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LJyIm+rgEf9ihbpMjRDm85+QC56J6IMB3Gg89QbymDk=
+			b2JR1OL3TiM8hmbQhdyNxrFX1Aqf8o+6lkpJEogg/VI=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1464,7 +1464,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EEf9thEwTSIBTJKqQXLp8DswLFQZyqq9Yvh8SCJDzjI=
+			1VHeb6ZvlAAmxYo+/huSpHcxBtvaojdMdnFNihqgJ08=
 			</data>
 		</dict>
 		<key>BRNAppSectionHeaderReusableView.nib</key>
@@ -2675,7 +2675,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY2KVjpmXzbbC+pBuhSOBZz+hLg/AOX8XyDBykuEIho=
+			3esdoZ+4kLDp6RPUxv5HBoevGx0eZDX0ieF4Dzm8uTA=
 			</data>
 		</dict>
 		<key>BRNScanResultsInfoCell.nib</key>
@@ -3424,7 +3424,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			83BHLMIdYLOxo3eFf/VJ6JvfvEyoTxOF33D0Xpu0SlY=
+			Xdhuiu3B53XPmsvk18eilYVPcZrQUo/Fv3ORxhHYQTI=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3473,7 +3473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iK8BthQk7PNALeOIoOpG6cxCGte/Rtd7CKkppUg9/y8=
+			3QowrdgwUJeWPC/OAnsDMdZpamWO9m2l5nDCK6u5ASE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
