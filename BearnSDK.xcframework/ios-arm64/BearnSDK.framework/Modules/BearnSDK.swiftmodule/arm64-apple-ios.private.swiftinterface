@@ -1,0 +1,1957 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios13.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AHIMultiScan
+import AVFoundation
+import AVKit
+import AdSupport
+import Auth0
+import AuthenticationServices
+@_exported import BearnSDK
+import Charts
+import CoreGraphics
+import CoreLocation
+import DeviceKit
+import FirebaseDynamicLinks
+import Foundation
+import HealthKit
+import IQKeyboardManagerSwift
+import ImageIO
+import JWTDecode
+import Kingfisher
+import LinkKit
+import MBProgressHUD
+import MFZFaceScan
+import Mantis
+import MessageUI
+import MobileCoreServices
+import SceneKit.ModelIO
+import MyFiziqSDKCommon
+import MyFiziqSDKCoreLite
+import NotificationBannerSwift
+import OAuthSwift
+import QuartzCore
+import SafariServices
+import SceneKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc public enum JJActionItemTitlePosition : Swift.Int {
+  case leading
+  case trailing
+  case left
+  case right
+  case top
+  case bottom
+  case hidden
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) public class JJFloatingActionButton : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: BearnSDK.JJFloatingActionButtonDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public var items: [BearnSDK.JJActionItem] {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedButtonColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var buttonImageSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonDiameter: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var itemSizeRatio: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var buttonAnimationConfiguration: BearnSDK.JJButtonAnimationConfiguration
+  @_Concurrency.MainActor(unsafe) public var itemAnimationConfiguration: BearnSDK.JJItemAnimationConfiguration
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var handleSingleActionDirectly: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var closeAutomatically: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var buttonState: BearnSDK.JJFloatingActionButtonState {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var circleView: BearnSDK.JJCircleView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var overlayView: UIKit.UIControl {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage, action: ((BearnSDK.JJActionItem) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc extension BearnSDK.JJFloatingActionButton {
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func addItem(title: Swift.String? = nil, image: UIKit.UIImage? = nil, action: ((BearnSDK.JJActionItem) -> Swift.Void)? = nil) -> BearnSDK.JJActionItem
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addItem(_ item: BearnSDK.JJActionItem)
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(_ item: BearnSDK.JJActionItem) -> BearnSDK.JJActionItem?
+  @objc @discardableResult
+  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(at index: Swift.Int) -> BearnSDK.JJActionItem
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func configureDefaultItem(_ body: ((BearnSDK.JJActionItem) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var enabledItems: [BearnSDK.JJActionItem] {
+    @objc get
+  }
+}
+extension BearnSDK.JJFloatingActionButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension BearnSDK.JJFloatingActionButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func updateConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+}
+extension Foundation.URLRequest {
+  public mutating func setUserAuthorizationHeader(token: Swift.String)
+}
+extension Swift.Dictionary {
+  public var jsonStringRepresentation: Swift.String? {
+    get
+  }
+}
+extension Foundation.URLComponents {
+  public func brnEscape(_ string: Swift.String) -> Swift.String
+}
+extension Foundation.CharacterSet {
+  public static let brnURLQueryAllowed: Foundation.CharacterSet
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class BRNColoredButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func sendActions(for controlEvents: UIKit.UIControl.Event)
+}
+public enum ESTabBarItemPositioning : Swift.Int {
+  case automatic
+  case fill
+  case centered
+  case fillExcludeSeparator
+  case fillIncludeSeparator
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ESTabBar : UIKit.UITabBar {
+  @_Concurrency.MainActor(unsafe) public var itemEdgeInsets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) public var itemCustomPositioning: BearnSDK.ESTabBarItemPositioning? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var moreContentView: BearnSDK.ESTabBarItemContentView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var items: [UIKit.UITabBarItem]? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var isEditing: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func setItems(_ items: [UIKit.UITabBarItem]?, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func beginCustomizingItems(_ items: [UIKit.UITabBarItem])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func endCustomizing(animated: Swift.Bool) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ESTabBarItemMoreContentView : BearnSDK.ESTabBarItemContentView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func systemMore(highlighted isHighlighted: Swift.Bool) -> UIKit.UIImage?
+  @objc deinit
+}
+public protocol EFTiming {
+  func update(_ time: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+public protocol EFCount {
+  func countFrom(_ startValue: CoreFoundation.CGFloat, to endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  func countFromCurrentValueTo(_ endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  func stopCountAtCurrentValue()
+}
+extension BearnSDK.EFCount {
+  public func countFromZeroTo(_ endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  public func countFrom(_ startValue: CoreFoundation.CGFloat, to endValue: CoreFoundation.CGFloat)
+  public func countFromCurrentValueTo(_ endValue: CoreFoundation.CGFloat)
+  public func countFromZeroTo(_ endValue: CoreFoundation.CGFloat)
+}
+public class EFCounter {
+  public var timingFunction: BearnSDK.EFTiming
+  public var updateBlock: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  public var completionBlock: (() -> Swift.Void)?
+  public var fromValue: CoreFoundation.CGFloat {
+    get
+  }
+  public var toValue: CoreFoundation.CGFloat {
+    get
+  }
+  public var totalDuration: Swift.Double {
+    get
+  }
+  public var isCounting: Swift.Bool {
+    get
+  }
+  public var progress: CoreFoundation.CGFloat {
+    get
+  }
+  public var currentValue: CoreFoundation.CGFloat {
+    get
+  }
+  public init()
+  @objc public func updateValue(_ timer: Foundation.Timer)
+  public func reset()
+  public func invalidate()
+  @objc deinit
+}
+extension BearnSDK.EFCounter : BearnSDK.EFCount {
+  public func countFromCurrentValueTo(_ endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  public func countFrom(_ startValue: CoreFoundation.CGFloat, to endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  public func stopCountAtCurrentValue()
+}
+@objc @available(iOS 8.0, *)
+@_Concurrency.MainActor(unsafe) open class ESTabBarItem : UIKit.UITabBarItem {
+  @_Concurrency.MainActor(unsafe) open var contentView: BearnSDK.ESTabBarItemContentView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var title: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var image: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var selectedImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var badgeValue: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @available(iOS 8.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var badgeColor: UIKit.UIColor? {
+    @objc get
+    @objc set(newValue)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var tag: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public init(_ contentView: BearnSDK.ESTabBarItemContentView = ESTabBarItemContentView(), title: Swift.String? = nil, image: UIKit.UIImage? = nil, selectedImage: UIKit.UIImage? = nil, tag: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setTitle(_ title: Swift.String? = nil, image: UIKit.UIImage? = nil, selectedImage: UIKit.UIImage? = nil, tag: Swift.Int = 0)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class BRNBaseThemeObject : Swift.Codable {
+  @objc deinit
+  open func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BRNTheme : BearnSDK.BRNBaseThemeObject {
+  required public init(from decoder: Swift.Decoder) throws
+  override public func encode(to encoder: Swift.Encoder) throws
+  public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String? = nil, colorsFile: Swift.String? = nil)
+  @objc deinit
+}
+extension UIKit.UIColor {
+  convenience public init(r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat, a: CoreFoundation.CGFloat = 1)
+}
+public enum BRNNotificationBannerPosition {
+  case top, bottom
+  public static func == (a: BearnSDK.BRNNotificationBannerPosition, b: BearnSDK.BRNNotificationBannerPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BRNNotificationBannerSpringiness {
+  case none, slight, heavy
+  public static func == (a: BearnSDK.BRNNotificationBannerSpringiness, b: BearnSDK.BRNNotificationBannerSpringiness) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) open class BRNNotificationBanner : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open var animationDuration: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) open var preferredStatusBarStyle: UIKit.UIStatusBarStyle
+  @objc @_Concurrency.MainActor(unsafe) open var adjustsStatusBarStyle: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var position: BearnSDK.BRNNotificationBannerPosition
+  @_Concurrency.MainActor(unsafe) open var springiness: BearnSDK.BRNNotificationBannerSpringiness
+  @objc @_Concurrency.MainActor(unsafe) open var textColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var minimumHeight: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) open var hasShadows: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var alpha: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var didTapBlock: (() -> ())?
+  @objc @_Concurrency.MainActor(unsafe) open var didDismissBlock: (() -> ())?
+  @objc @_Concurrency.MainActor(unsafe) open var dismissesOnTap: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open var dismissesOnSwipe: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) open var shouldTintImage: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public let titleLabel: UIKit.UILabel
+  @objc @_Concurrency.MainActor(unsafe) final public let detailLabel: UIKit.UILabel
+  @objc @_Concurrency.MainActor(unsafe) final public let imageView: UIKit.UIImageView
+  @objc @_Concurrency.MainActor(unsafe) required public init(title: Swift.String? = nil, subtitle: Swift.String? = nil, image: UIKit.UIImage? = nil, backgroundColor: UIKit.UIColor = UIColor.black, didTapBlock: (() -> ())? = nil)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) open func show(_ view: UIKit.UIView? = nil, duration: Foundation.TimeInterval? = nil)
+  @_Concurrency.MainActor(unsafe) open func dismiss()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SJSegmentTab : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc required override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setTitle(_ title: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func titleColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) open func selectedTitleColor(_ color: UIKit.UIColor?)
+  @_Concurrency.MainActor(unsafe) open func titleFont(_ font: UIKit.UIFont)
+  @objc deinit
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarStyle: UIKit.UIViewController? {
+    @objc get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let BRNLogoutNotification: Foundation.NSNotification.Name
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) final public func register<T>(cellType: T.Type) where T : UIKit.UICollectionViewCell, T : BearnSDK.NibLoadable, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(cellType: T.Type) where T : UIKit.UICollectionViewCell, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func dequeueReusableCell<T>(for indexPath: Foundation.IndexPath, cellType: T.Type = T.self) -> T where T : UIKit.UICollectionViewCell, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(supplementaryViewType: T.Type, ofKind elementKind: Swift.String) where T : UIKit.UICollectionReusableView, T : BearnSDK.NibLoadable, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(supplementaryViewType: T.Type, ofKind elementKind: Swift.String) where T : UIKit.UICollectionReusableView, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func dequeueReusableSupplementaryView<T>(ofKind elementKind: Swift.String, for indexPath: Foundation.IndexPath, viewType: T.Type = T.self) -> T where T : UIKit.UICollectionReusableView, T : BearnSDK.Reusable
+}
+public enum EFTimingFunction : BearnSDK.EFTiming {
+  case linear
+  case easeIn(easingRate: CoreFoundation.CGFloat)
+  case easeOut(easingRate: CoreFoundation.CGFloat)
+  case easeInOut(easingRate: CoreFoundation.CGFloat)
+  case easeInBounce
+  case easeOutBounce
+  public func update(_ time: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+public typealias ESTabBarControllerShouldHijackHandler = ((_ tabBarController: UIKit.UITabBarController, _ viewController: UIKit.UIViewController, _ index: Swift.Int) -> (Swift.Bool))
+public typealias ESTabBarControllerDidHijackHandler = ((_ tabBarController: UIKit.UITabBarController, _ viewController: UIKit.UIViewController, _ index: Swift.Int) -> (Swift.Void))
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ESTabBarController : UIKit.UITabBarController {
+  @_Concurrency.MainActor(unsafe) public static func printError(_ description: Swift.String)
+  @_Concurrency.MainActor(unsafe) public static func isShowingMore(_ tabBarController: UIKit.UITabBarController?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var shouldHijackHandler: BearnSDK.ESTabBarControllerShouldHijackHandler?
+  @_Concurrency.MainActor(unsafe) open var didHijackHandler: BearnSDK.ESTabBarControllerDidHijackHandler?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var selectedViewController: UIKit.UIViewController? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var selectedIndex: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tabBar(_ tabBar: UIKit.UITabBar, didSelect item: UIKit.UITabBarItem)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tabBar(_ tabBar: UIKit.UITabBar, willBeginCustomizing items: [UIKit.UITabBarItem])
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tabBar(_ tabBar: UIKit.UITabBar, didEndCustomizing items: [UIKit.UITabBarItem], changed: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Swift.String {
+  public var convertHtmlToNSAttributedString: Foundation.NSAttributedString? {
+    get
+  }
+  public func convertHtmlToAttributedStringWithCSS(font: UIKit.UIFont?, textColor: UIKit.UIColor? = UIColor.black, lineHeight: Swift.Int = 0, textAlign: UIKit.NSTextAlignment = .left) -> Foundation.NSAttributedString?
+}
+public protocol UILabelTapableLinksDelegate : ObjectiveC.NSObjectProtocol {
+  func tapableLabel(_ label: BearnSDK.UILabelTapableLinks, didTapUrl url: Swift.String, atRange range: Foundation.NSRange)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class UILabelTapableLinks : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: BearnSDK.UILabelTapableLinksDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var attributedText: Foundation.NSAttributedString? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var lineBreakMode: UIKit.NSLineBreakMode {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var numberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+@objc extension BearnSDK.JJFloatingActionButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func display(inView superview: UIKit.UIView, bottomInset: CoreFoundation.CGFloat = 16, trailingInset: CoreFoundation.CGFloat = 16, safeAreaInset: CoreFoundation.CGFloat = 0)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func display(inViewController viewController: UIKit.UIViewController, bottomInset: CoreFoundation.CGFloat = 16, trailingInset: CoreFoundation.CGFloat = 16, safeAreaInset: CoreFoundation.CGFloat = 0)
+}
+public enum BRNSwiftyJSONError : Swift.Int, Swift.Error {
+  case unsupportedType
+  case indexOutOfBounds
+  case elementTooDeep
+  case wrongType
+  case notExist
+  case invalidJSON
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension BearnSDK.BRNSwiftyJSONError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+}
+public enum BRNValueType : Swift.Int {
+  case number
+  case string
+  case bool
+  case array
+  case dictionary
+  case null
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct BRNJSON {
+  public init(data: Foundation.Data, options opt: Foundation.JSONSerialization.ReadingOptions = []) throws
+  public init(_ object: Any)
+  public init(parseJSON jsonString: Swift.String)
+  public mutating func merge(with other: BearnSDK.BRNJSON) throws
+  public func merged(with other: BearnSDK.BRNJSON) throws -> BearnSDK.BRNJSON
+  public var type: BearnSDK.BRNValueType {
+    get
+  }
+  public var error: BearnSDK.BRNSwiftyJSONError? {
+    get
+  }
+  public var object: Any {
+    get
+    set
+  }
+  @available(*, unavailable, renamed: "null")
+  public static var nullJSON: BearnSDK.BRNJSON {
+    get
+  }
+  public static var null: BearnSDK.BRNJSON {
+    get
+  }
+}
+public enum Index<T> : Swift.Comparable {
+  case array(Swift.Int)
+  case dictionary(Swift.DictionaryIndex<Swift.String, T>)
+  case null
+  public static func == (lhs: BearnSDK.Index<T>, rhs: BearnSDK.Index<T>) -> Swift.Bool
+  public static func < (lhs: BearnSDK.Index<T>, rhs: BearnSDK.Index<T>) -> Swift.Bool
+}
+public typealias JSONIndex = BearnSDK.Index<BearnSDK.BRNJSON>
+public typealias JSONRawIndex = BearnSDK.Index<Any>
+extension BearnSDK.BRNJSON : Swift.Collection {
+  public typealias Index = BearnSDK.JSONRawIndex
+  public var startIndex: BearnSDK.BRNJSON.Index {
+    get
+  }
+  public var endIndex: BearnSDK.BRNJSON.Index {
+    get
+  }
+  public func index(after i: BearnSDK.BRNJSON.Index) -> BearnSDK.BRNJSON.Index
+  public subscript(position: BearnSDK.BRNJSON.Index) -> (Swift.String, BearnSDK.BRNJSON) {
+    get
+  }
+  public typealias Element = (Swift.String, BearnSDK.BRNJSON)
+  public typealias Indices = Swift.DefaultIndices<BearnSDK.BRNJSON>
+  public typealias Iterator = Swift.IndexingIterator<BearnSDK.BRNJSON>
+  public typealias SubSequence = Swift.Slice<BearnSDK.BRNJSON>
+}
+public enum JSONKey {
+  case index(Swift.Int)
+  case key(Swift.String)
+}
+public protocol JSONSubscriptType {
+  var jsonKey: BearnSDK.JSONKey { get }
+}
+extension Swift.Int : BearnSDK.JSONSubscriptType {
+  public var jsonKey: BearnSDK.JSONKey {
+    get
+  }
+}
+extension Swift.String : BearnSDK.JSONSubscriptType {
+  public var jsonKey: BearnSDK.JSONKey {
+    get
+  }
+}
+extension BearnSDK.BRNJSON {
+  public subscript(path: [BearnSDK.JSONSubscriptType]) -> BearnSDK.BRNJSON {
+    get
+    set
+  }
+  public subscript(path: BearnSDK.JSONSubscriptType...) -> BearnSDK.BRNJSON {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByStringLiteral {
+  public init(stringLiteral value: Swift.StringLiteralType)
+  public init(extendedGraphemeClusterLiteral value: Swift.StringLiteralType)
+  public init(unicodeScalarLiteral value: Swift.StringLiteralType)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
+  public typealias StringLiteralType = Swift.StringLiteralType
+  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByIntegerLiteral {
+  public init(integerLiteral value: Swift.IntegerLiteralType)
+  public typealias IntegerLiteralType = Swift.IntegerLiteralType
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByBooleanLiteral {
+  public init(booleanLiteral value: Swift.BooleanLiteralType)
+  public typealias BooleanLiteralType = Swift.BooleanLiteralType
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByFloatLiteral {
+  public init(floatLiteral value: Swift.FloatLiteralType)
+  public typealias FloatLiteralType = Swift.FloatLiteralType
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByDictionaryLiteral {
+  public init(dictionaryLiteral elements: (Swift.String, Any)...)
+  public typealias Key = Swift.String
+  public typealias Value = Any
+}
+extension BearnSDK.BRNJSON : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: Any...)
+  public typealias ArrayLiteralElement = Any
+}
+extension BearnSDK.BRNJSON : Swift.RawRepresentable {
+  public init?(rawValue: Any)
+  public var rawValue: Any {
+    get
+  }
+  public func rawData(options opt: Foundation.JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)) throws -> Foundation.Data
+  public func rawString(_ encoding: Swift.String.Encoding = .utf8, options opt: Foundation.JSONSerialization.WritingOptions = .prettyPrinted) -> Swift.String?
+  public func rawString(_ options: [BearnSDK.writingOptionsKeys : Any]) -> Swift.String?
+  public typealias RawValue = Any
+}
+extension BearnSDK.BRNJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var array: [BearnSDK.BRNJSON]? {
+    get
+  }
+  public var arrayValue: [BearnSDK.BRNJSON] {
+    get
+  }
+  public var arrayObject: [Any]? {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var dictionary: [Swift.String : BearnSDK.BRNJSON]? {
+    get
+  }
+  public var dictionaryValue: [Swift.String : BearnSDK.BRNJSON] {
+    get
+  }
+  public var dictionaryObject: [Swift.String : Any]? {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var bool: Swift.Bool? {
+    get
+    set
+  }
+  public var boolValue: Swift.Bool {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var string: Swift.String? {
+    get
+    set
+  }
+  public var stringValue: Swift.String {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var number: Foundation.NSNumber? {
+    get
+    set
+  }
+  public var numberValue: Foundation.NSNumber {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var null: Foundation.NSNull? {
+    get
+    set
+  }
+  public func exists() -> Swift.Bool
+}
+extension BearnSDK.BRNJSON {
+  public var url: Foundation.URL? {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON {
+  public var double: Swift.Double? {
+    get
+    set
+  }
+  public var doubleValue: Swift.Double {
+    get
+    set
+  }
+  public var float: Swift.Float? {
+    get
+    set
+  }
+  public var floatValue: Swift.Float {
+    get
+    set
+  }
+  public var int: Swift.Int? {
+    get
+    set
+  }
+  public var intValue: Swift.Int {
+    get
+    set
+  }
+  public var uInt: Swift.UInt? {
+    get
+    set
+  }
+  public var uIntValue: Swift.UInt {
+    get
+    set
+  }
+  public var int8: Swift.Int8? {
+    get
+    set
+  }
+  public var int8Value: Swift.Int8 {
+    get
+    set
+  }
+  public var uInt8: Swift.UInt8? {
+    get
+    set
+  }
+  public var uInt8Value: Swift.UInt8 {
+    get
+    set
+  }
+  public var int16: Swift.Int16? {
+    get
+    set
+  }
+  public var int16Value: Swift.Int16 {
+    get
+    set
+  }
+  public var uInt16: Swift.UInt16? {
+    get
+    set
+  }
+  public var uInt16Value: Swift.UInt16 {
+    get
+    set
+  }
+  public var int32: Swift.Int32? {
+    get
+    set
+  }
+  public var int32Value: Swift.Int32 {
+    get
+    set
+  }
+  public var uInt32: Swift.UInt32? {
+    get
+    set
+  }
+  public var uInt32Value: Swift.UInt32 {
+    get
+    set
+  }
+  public var int64: Swift.Int64? {
+    get
+    set
+  }
+  public var int64Value: Swift.Int64 {
+    get
+    set
+  }
+  public var uInt64: Swift.UInt64? {
+    get
+    set
+  }
+  public var uInt64Value: Swift.UInt64 {
+    get
+    set
+  }
+}
+extension BearnSDK.BRNJSON : Swift.Comparable {
+}
+public func == (lhs: BearnSDK.BRNJSON, rhs: BearnSDK.BRNJSON) -> Swift.Bool
+public func <= (lhs: BearnSDK.BRNJSON, rhs: BearnSDK.BRNJSON) -> Swift.Bool
+public func >= (lhs: BearnSDK.BRNJSON, rhs: BearnSDK.BRNJSON) -> Swift.Bool
+public func > (lhs: BearnSDK.BRNJSON, rhs: BearnSDK.BRNJSON) -> Swift.Bool
+public func < (lhs: BearnSDK.BRNJSON, rhs: BearnSDK.BRNJSON) -> Swift.Bool
+public enum writingOptionsKeys {
+  case jsonSerialization
+  case castNilToNSNull
+  case maxObjextDepth
+  case encoding
+  public static func == (a: BearnSDK.writingOptionsKeys, b: BearnSDK.writingOptionsKeys) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BearnSDK.BRNJSON : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) open class JJActionItem : UIKit.UIControl {
+  @objc @_Concurrency.MainActor(unsafe) open var action: ((BearnSDK.JJActionItem) -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public func callAction()
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedButtonColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var titleLabel: UIKit.UILabel {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) open var circleView: BearnSDK.JJCircleView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var titlePosition: BearnSDK.JJActionItemTitlePosition {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var titleSpacing: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var imageSize: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension BearnSDK.JJActionItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func updateConstraints()
+}
+extension BearnSDK.JJActionItem {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func generateOuterShadow()
+  @_Concurrency.MainActor(unsafe) public func generateInnerShadow()
+  @_Concurrency.MainActor(unsafe) public func generateEllipticalShadow()
+}
+extension BearnSDK.JJFloatingActionButton {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOffset: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var shadowRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BRNDynamicLinksManager : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.BRNDynamicLinksManager
+  public func createDynamicLinkFor(deepLinkType: BearnSDK.BRNDeepLinkHandler.BRNDeepLinkType, objectId: Swift.String?, completition: @escaping ((_ url: Foundation.URL?) -> Swift.Void))
+  @discardableResult
+  public func handle(url: Foundation.URL) -> Swift.Bool
+  public func handleDynamicLink(_ dynamicLink: FirebaseDynamicLinks.DynamicLink)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BRNDeepLinkHandler {
+  public enum BRNDeepLinkType : Swift.String {
+    case showDashboard
+    case showChallengeDetailsAndInvite
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum BRNDeepLink : Swift.Equatable {
+    case showDashboard
+    case challengDetails(challengeId: Swift.String)
+    public static func == (a: BearnSDK.BRNDeepLinkHandler.BRNDeepLink, b: BearnSDK.BRNDeepLinkHandler.BRNDeepLink) -> Swift.Bool
+  }
+  @objc deinit
+}
+extension Foundation.NSNotification.Name {
+  public static let BRNMainTabBarNeedToShowScreenNotification: Foundation.NSNotification.Name
+}
+@objc public enum JJFloatingActionButtonState : Swift.Int {
+  case closed
+  case open
+  case opening
+  case closing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIWindow {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SwiftyInnerShadowView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var shadowLayer: BearnSDK.SwiftyInnerShadowLayer
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var bounds: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var frame: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var cornerRadius: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ESTabBarItemBadgeView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static var defaultBadgeColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var badgeColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var badgeValue: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open var badgeLabel: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func sizeThatFits(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class SJShadow : ObjectiveC.NSObject {
+  convenience public init(offset: CoreFoundation.CGSize, color: UIKit.UIColor, radius: CoreFoundation.CGFloat, opacity: Swift.Float)
+  open class func light() -> BearnSDK.SJShadow
+  open class func medium() -> BearnSDK.SJShadow
+  open class func dark() -> BearnSDK.SJShadow
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol JJFloatingActionButtonDelegate {
+  @objc optional func floatingActionButtonWillOpen(_ button: BearnSDK.JJFloatingActionButton)
+  @objc optional func floatingActionButtonDidOpen(_ button: BearnSDK.JJFloatingActionButton)
+  @objc optional func floatingActionButtonWillClose(_ button: BearnSDK.JJFloatingActionButton)
+  @objc optional func floatingActionButtonDidClose(_ button: BearnSDK.JJFloatingActionButton)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SwiftyInnerShadowLayer : QuartzCore.CAShapeLayer {
+  @objc override dynamic public init(layer: Any)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic public var shadowOffset: CoreFoundation.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var shadowRadius: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var shadowColor: CoreGraphics.CGColor? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public func layoutSublayers()
+  @objc deinit
+}
+public protocol GIFAnimatable : AnyObject {
+  var animator: BearnSDK.Animator? { get set }
+  var layer: QuartzCore.CALayer { get }
+  var frame: CoreFoundation.CGRect { get set }
+  var contentMode: UIKit.UIView.ContentMode { get set }
+}
+public protocol ImageContainer {
+  var image: UIKit.UIImage? { get set }
+}
+extension BearnSDK.GIFAnimatable where Self : BearnSDK.ImageContainer {
+  public var intrinsicContentSize: CoreFoundation.CGSize {
+    get
+  }
+}
+extension BearnSDK.GIFAnimatable {
+  public var gifLoopDuration: Foundation.TimeInterval {
+    get
+  }
+  public var activeFrame: UIKit.UIImage? {
+    get
+  }
+  public var frameCount: Swift.Int {
+    get
+  }
+  public var isAnimatingGIF: Swift.Bool {
+    get
+  }
+  public func animate(withGIFNamed imageName: Swift.String, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func animate(withGIFData imageData: Foundation.Data, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func animate(withGIFURL imageURL: Foundation.URL, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFNamed imageName: Swift.String, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFData imageData: Foundation.Data, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFURL imageURL: Foundation.URL, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForReuse()
+  public func startAnimatingGIF()
+  public func stopAnimatingGIF()
+  public func setShouldResizeFrames(_ resize: Swift.Bool)
+  public func setFrameBufferCount(_ frames: Swift.Int)
+  public func updateImageIfNeeded()
+}
+@objc @_inheritsConvenienceInitializers open class Bearn : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.Bearn
+  public class var environment: BearnSDK.BRNEnvironment {
+    get
+  }
+  public var apiBearerToken: Swift.String? {
+    get
+  }
+  public func loadDefaultTheme()
+  public func loadCustomInfoFrom(bundle: Foundation.Bundle? = .main, localizationStringsFile: Swift.String? = nil, colorsFile: Swift.String? = nil)
+  public func bearnViewController(onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
+  public func bearnViewController(isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil, onClose: ((UIKit.UIViewController?) -> Swift.Void)?) -> UIKit.UIViewController
+  public func present(on parentViewController: UIKit.UIViewController? = nil)
+  public func present(on parentViewController: UIKit.UIViewController? = nil, isExitHidden: Swift.Bool = false, parterId: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, token: Swift.String? = nil)
+  @objc override dynamic public init()
+  public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment)
+  public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment, checkAppVersion: Swift.Bool)
+  open func deleteFirebaseTokenIfExists(completition: (() -> Swift.Void)? = nil)
+  open func isBearnURL(url: Foundation.URL) -> Swift.Bool
+  @discardableResult
+  open func handle(url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any]) -> Swift.Bool
+  open func performFetchWithCompletionHandler(_ completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @objc deinit
+}
+public protocol StoryboardBased : AnyObject {
+  static var sceneStoryboard: UIKit.UIStoryboard { get }
+}
+extension BearnSDK.StoryboardBased {
+  public static var sceneStoryboard: UIKit.UIStoryboard {
+    get
+  }
+}
+extension BearnSDK.StoryboardBased where Self : UIKit.UIViewController {
+  public static func instantiate() -> Self
+}
+extension Foundation.NSNotification.Name {
+  public static let BRNLastRegisteredUserEmail: Foundation.NSNotification.Name
+}
+extension Foundation.NSNotification.Name {
+  public static let BRNSmartNotificationReceived: Foundation.NSNotification.Name
+  public static let BRNSmartNotificationDeleted: Foundation.NSNotification.Name
+}
+@objc @_inheritsConvenienceInitializers public class BRNSmartNotification : ObjectiveC.NSObject {
+  public enum BRNSmartNotificationType : Swift.String {
+    case gifNotification
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum BRNSmartNotificationScreen : Swift.String {
+    case dashboardDailyActivity
+    case goalsMain
+    case dashboardStreaks
+    case challengeLeaderboard
+    case challengeDetailsAndJoin
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var type: BearnSDK.BRNSmartNotification.BRNSmartNotificationType?
+  public var screen: BearnSDK.BRNSmartNotification.BRNSmartNotificationScreen?
+  public var title: Swift.String?
+  public var subtitle: Swift.String?
+  public var gifUrl: Foundation.URL?
+  public var gifAnimationCycles: Swift.Int
+  public var buttonTitle: Swift.String?
+  public var objectId: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BRNSmartNotificationManager : ObjectiveC.NSObject {
+  public static var shared: BearnSDK.BRNSmartNotificationManager
+  public func handleSmartNotification(userInfo: [Swift.AnyHashable : Any], needToDisplayBanner: Swift.Bool) -> Swift.Bool
+  public func addNotification(_ notification: BearnSDK.BRNSmartNotification)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol TextFromatter {
+  func formattedText(from text: Swift.String, range: Swift.Range<Swift.String.Index>) -> (text: Swift.String, range: Swift.Range<Swift.String.Index>)
+  func unformattedText(from text: Swift.String, range: Swift.Range<Swift.String.Index>) -> (text: Swift.String, range: Swift.Range<Swift.String.Index>)
+}
+extension BearnSDK.TextFromatter {
+  public func formattedText(from text: Swift.String) -> Swift.String
+  public func unformattedText(from text: Swift.String) -> Swift.String
+}
+extension Foundation.NSNotification.Name {
+  public static let BRNDashboardDataNeedReloadNotification: Foundation.NSNotification.Name
+  public static let BRNDashboardHealthDataNeedUpdateAndReloadNotification: Foundation.NSNotification.Name
+  public static let BRNDashboardDataReceivedNotification: Foundation.NSNotification.Name
+}
+public protocol StoryboardSceneBased : AnyObject {
+  static var sceneStoryboard: UIKit.UIStoryboard { get }
+  static var sceneIdentifier: Swift.String { get }
+}
+extension BearnSDK.StoryboardSceneBased {
+  public static var sceneIdentifier: Swift.String {
+    get
+  }
+}
+extension BearnSDK.StoryboardSceneBased where Self : UIKit.UIViewController {
+  public static func instantiate() -> Self
+}
+public class MaskTextFormatter : BearnSDK.TextFromatter {
+  final public let mask: Swift.String
+  final public let maskSymbol: Swift.Character
+  public init(mask: Swift.String, maskSymbol: Swift.Character = "×")
+  public func formattedText(from text: Swift.String, range: Swift.Range<Swift.String.Index>) -> (text: Swift.String, range: Swift.Range<Swift.String.Index>)
+  public func unformattedText(from text: Swift.String, range: Swift.Range<Swift.String.Index>) -> (text: Swift.String, range: Swift.Range<Swift.String.Index>)
+  @objc deinit
+}
+@objc public protocol FormattedTextFieldDelegate : UIKit.UITextFieldDelegate {
+  @objc optional func textField(_ textField: UIKit.UITextField, shouldChangeUnformattedText text: Swift.String, in range: Foundation.NSRange, replacementString: Swift.String) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FormattedTextField : UIKit.UITextField {
+  public typealias Delegate = BearnSDK.FormattedTextFieldDelegate
+  public enum PlaceholderMode {
+    case whileEmpty
+    case always
+    public static func == (a: BearnSDK.FormattedTextField.PlaceholderMode, b: BearnSDK.FormattedTextField.PlaceholderMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open var textFormatter: BearnSDK.TextFromatter? {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var unformattedText: Swift.String? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) open var placeholderMode: BearnSDK.FormattedTextField.PlaceholderMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var placeholder: Swift.String? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedPlaceholder: Foundation.NSAttributedString? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var delegate: UIKit.UITextFieldDelegate? {
+    @objc get
+    @objc set(value)
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+}
+public protocol NibOwnerLoadable : AnyObject {
+  static var nib: UIKit.UINib { get }
+}
+extension BearnSDK.NibOwnerLoadable {
+  public static var nib: UIKit.UINib {
+    get
+  }
+}
+extension BearnSDK.NibOwnerLoadable where Self : UIKit.UIView {
+  public func loadNibContent()
+}
+@objc @_hasMissingDesignatedInitializers open class DeviceStatus : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BRNHealthKitManager : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.BRNHealthKitManager
+  public class func authorizeHealthKit(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  public func fetchLatestHeartRateSample(completion: @escaping (_ samples: [HealthKit.HKQuantitySample]?) -> Swift.Void)
+  public func updateHealthdata(deviceStatus: BearnSDK.DeviceStatus, notifyOnFinished: Swift.Bool, completion: @escaping (() -> Swift.Void))
+  public func loadBiometricDevices(completed: (() -> Swift.Void)?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIStatusBarStyle {
+  public static var darkContentWorkaround: UIKit.UIStatusBarStyle {
+    get
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public class func fromStoryboard<T>(_ storyboardName: Swift.String) -> T where T : UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) public func openLink(_ link: Swift.String, inBrowser: Swift.Bool = false, title: Swift.String? = nil)
+}
+@frozen public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension BearnSDK.AnyDecodable : BearnSDK._AnyDecodable {
+}
+extension BearnSDK._AnyDecodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension BearnSDK.AnyDecodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyDecodable, rhs: BearnSDK.AnyDecodable) -> Swift.Bool
+}
+extension BearnSDK.AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyDecodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Reusable : AnyObject {
+  static var reuseIdentifier: Swift.String { get }
+}
+public typealias NibReusable = BearnSDK.NibLoadable & BearnSDK.Reusable
+extension BearnSDK.Reusable {
+  public static var reuseIdentifier: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) public class JJCircleView : UIKit.UIView {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var color: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_: CoreFoundation.CGRect)
+  @objc deinit
+}
+extension Swift.Double {
+  public func toDoubleRounded(upTo digits: Swift.Int) -> Swift.Double
+  public func toDoubleFloor(downTo digits: Swift.Int) -> Swift.Double
+  public var feetsToCM: Swift.Double {
+    get
+  }
+  public var inchesToCM: Swift.Double {
+    get
+  }
+  public var cmToFeets: Swift.Double {
+    get
+  }
+  public var cmToInches: Swift.Double {
+    get
+  }
+  public var poundsToKG: Swift.Double {
+    get
+  }
+  public var kgToPounds: Swift.Double {
+    get
+  }
+  public var roundedTo1DigitString: Swift.String {
+    get
+  }
+  public var roundedTo2DigitString: Swift.String {
+    get
+  }
+  public var roundedDownTo1DigitString: Swift.String {
+    get
+  }
+  public var roundedDownTo2DigitString: Swift.String {
+    get
+  }
+  public var to1DigitsString: Swift.String {
+    get
+  }
+  public var to2DigitsString: Swift.String {
+    get
+  }
+}
+public enum ESTabBarItemContentMode : Swift.Int {
+  case alwaysOriginal
+  case alwaysTemplate
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ESTabBarItemContentView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var selected: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var highlighted: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var highlightEnabled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var textColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var highlightTextColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var highlightIconColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var backdropColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var highlightBackdropColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var title: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var renderingMode: UIKit.UIImage.RenderingMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var itemContentMode: BearnSDK.ESTabBarItemContentMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var image: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView
+  @_Concurrency.MainActor(unsafe) open var titleLabel: UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) open var badgeValue: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var badgeColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var badgeView: BearnSDK.ESTabBarItemBadgeView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var badgeOffset: UIKit.UIOffset {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func updateDisplay()
+  @_Concurrency.MainActor(unsafe) open func updateLayout()
+  @_Concurrency.MainActor(unsafe) open func selectAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @_Concurrency.MainActor(unsafe) open func deselectAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @_Concurrency.MainActor(unsafe) open func reselectAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @_Concurrency.MainActor(unsafe) open func highlightAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @_Concurrency.MainActor(unsafe) open func dehighlightAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @_Concurrency.MainActor(unsafe) open func badgeChangedAnimation(animated: Swift.Bool, completion: (() -> ())?)
+  @objc deinit
+}
+@frozen public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension BearnSDK.AnyEncodable : BearnSDK._AnyEncodable {
+}
+extension BearnSDK._AnyEncodable {
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension BearnSDK.AnyEncodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyEncodable, rhs: BearnSDK.AnyEncodable) -> Swift.Bool
+}
+extension BearnSDK.AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByNilLiteral {
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension BearnSDK.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension BearnSDK._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+extension BearnSDK.AnyEncodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc extension BearnSDK.JJFloatingActionButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func open(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func close(animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+}
+@objc public protocol SJSegmentedViewControllerDelegate {
+  @objc optional func didSelectSegmentAtIndex(_ index: Swift.Int)
+  @objc optional func didMoveToPage(_ controller: UIKit.UIViewController, segment: BearnSDK.SJSegmentTab?, index: Swift.Int)
+}
+@objc public protocol SJSegmentedViewControllerViewSource {
+  @objc optional func viewForSegmentControllerToObserveContentOffsetChange() -> UIKit.UIView
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) open class SJSegmentedViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) open var headerViewHeight: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentViewHeight: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var headerViewOffsetHeight: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedSegmentViewColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedSegmentViewHeight: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentTitleColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentSelectedTitleColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentShadow: BearnSDK.SJShadow {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentTitleFont: UIKit.UIFont {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentBounces: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var headerViewController: UIKit.UIViewController? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentControllers: [UIKit.UIViewController] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var segments: [BearnSDK.SJSegmentTab] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var segmentedScrollViewColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var showsVerticalScrollIndicator: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var showsHorizontalScrollIndicator: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var disableScrollOnContentView: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak open var delegate: BearnSDK.SJSegmentedViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) required public init(headerViewController: UIKit.UIViewController?, segmentControllers: [UIKit.UIViewController])
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) open func setSelectedSegmentAt(_ index: Swift.Int, animated: Swift.Bool)
+  @objc deinit
+}
+public enum BRNEnvironment : Swift.Int {
+  case production
+  case development
+  case partnerDemo
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GIFImageView : UIKit.UIImageView, BearnSDK.GIFAnimatable {
+  @_Concurrency.MainActor(unsafe) public var animator: BearnSDK.Animator? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func display(_ layer: QuartzCore.CALayer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(image: UIKit.UIImage?)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension BearnSDK.GIFImageView {
+  @_Concurrency.MainActor(unsafe) public func loadGifImage(from urlString: Swift.String?)
+}
+public class Animator {
+  public init(withDelegate delegate: BearnSDK.GIFAnimatable)
+  @objc deinit
+}
+extension UIKit.UIImageView : BearnSDK.ImageContainer {
+}
+public protocol NibLoadable : AnyObject {
+  static var nib: UIKit.UINib { get }
+}
+extension BearnSDK.NibLoadable {
+  public static var nib: UIKit.UINib {
+    get
+  }
+}
+extension BearnSDK.NibLoadable where Self : UIKit.UIView {
+  public static func loadFromNib() -> Self
+}
+@objc @_inheritsConvenienceInitializers open class BRNGarminManager : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.BRNGarminManager
+  public func handle(url: Foundation.URL)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) final public func register<T>(cellType: T.Type) where T : UIKit.UITableViewCell, T : BearnSDK.NibLoadable, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(cellType: T.Type) where T : UIKit.UITableViewCell, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func dequeueReusableCell<T>(for indexPath: Foundation.IndexPath, cellType: T.Type = T.self) -> T where T : UIKit.UITableViewCell, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(headerFooterViewType: T.Type) where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.NibLoadable, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func register<T>(headerFooterViewType: T.Type) where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.Reusable
+  @_Concurrency.MainActor(unsafe) final public func dequeueReusableHeaderFooterView<T>(_ viewType: T.Type = T.self) -> T? where T : UIKit.UITableViewHeaderFooterView, T : BearnSDK.Reusable
+}
+@frozen public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension BearnSDK.AnyCodable : BearnSDK._AnyEncodable, BearnSDK._AnyDecodable {
+}
+extension BearnSDK.AnyCodable : Swift.Equatable {
+  public static func == (lhs: BearnSDK.AnyCodable, rhs: BearnSDK.AnyCodable) -> Swift.Bool
+}
+extension BearnSDK.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByNilLiteral {
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift.Bool
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift.Int
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift.Double
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByArrayLiteral {
+  public typealias ArrayLiteralElement = Any
+}
+extension BearnSDK.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+}
+extension BearnSDK.AnyCodable : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public func pushViewController(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class BRNSurveySegmentedControl : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public var selectedSegmentIndex: Swift.Int {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var padding: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var customBorderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var customBorderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var animationDuration: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var thumbViewAlpha: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var segmentedBackGroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var thumbViewColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var thumbViewBorderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var thumbViewBorderWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var textColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var selectedTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var titlesFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var selectedTitlesFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var buttonColorForNormal: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var buttonColorForSelected: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var imageForItemWithDynamicColors: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var fillEqually: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var itemsWithText: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var roundedControl: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var bottomLineThumbView: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var thumbViewHidden: Swift.Bool {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var buttonsWithDynamicImages: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var itemsWithDynamicColor: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public func setSegmentedWith<T>(items: T)
+  @_Concurrency.MainActor(unsafe) public func updateSegmentedWith<T>(items: T)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class JJAnimationSettings : ObjectiveC.NSObject {
+  @objc public var duration: Swift.Double
+  @objc public var dampingRatio: CoreFoundation.CGFloat
+  @objc public var initialVelocity: CoreFoundation.CGFloat
+  @objc public var interItemDelay: Swift.Double
+  @objc convenience public init(duration: Foundation.TimeInterval = 0.3, dampingRatio: CoreFoundation.CGFloat = 0.55, initialVelocity: CoreFoundation.CGFloat = 0.3, interItemDelay: Foundation.TimeInterval = 0.1)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class JJButtonAnimationConfiguration : ObjectiveC.NSObject {
+  @objc public init(withStyle style: BearnSDK.JJButtonAnimationConfiguration.JJButtonAnimationStyle)
+  @objc public enum JJButtonAnimationStyle : Swift.Int {
+    case rotation
+    case transition
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public let style: BearnSDK.JJButtonAnimationConfiguration.JJButtonAnimationStyle
+  @objc public var angle: CoreFoundation.CGFloat
+  @objc public var image: UIKit.UIImage?
+  @objc public var opening: BearnSDK.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var closing: BearnSDK.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc extension BearnSDK.JJButtonAnimationConfiguration {
+  @objc public static func rotation(toAngle angle: CoreFoundation.CGFloat = -.pi / 4) -> BearnSDK.JJButtonAnimationConfiguration
+  @objc public static func transition(toImage image: UIKit.UIImage) -> BearnSDK.JJButtonAnimationConfiguration
+}
+@_inheritsConvenienceInitializers @objc public class JJItemAnimationConfiguration : ObjectiveC.NSObject {
+  @objc public var opening: BearnSDK.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var closing: BearnSDK.JJAnimationSettings {
+    @objc get
+    @objc set
+  }
+  @objc public var itemLayout: BearnSDK.JJItemLayout
+  @objc public var closedState: BearnSDK.JJItemPreparation
+  @objc public var openState: BearnSDK.JJItemPreparation
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension BearnSDK.JJItemAnimationConfiguration {
+  @objc public static func popUp(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> BearnSDK.JJItemAnimationConfiguration
+  @objc public static func slideIn(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> BearnSDK.JJItemAnimationConfiguration
+  @objc public static func circularPopUp(withRadius radius: CoreFoundation.CGFloat = 100) -> BearnSDK.JJItemAnimationConfiguration
+  @objc public static func circularSlideIn(withRadius radius: CoreFoundation.CGFloat = 100) -> BearnSDK.JJItemAnimationConfiguration
+}
+@objc public class JJItemLayout : ObjectiveC.NSObject {
+  @objc public var layout: (_ items: [BearnSDK.JJActionItem], _ actionButton: BearnSDK.JJFloatingActionButton) -> Swift.Void
+  @objc public init(layout: @escaping (_ items: [BearnSDK.JJActionItem], _ actionButton: BearnSDK.JJFloatingActionButton) -> Swift.Void)
+  @objc public static func verticalLine(withInterItemSpacing interItemSpacing: CoreFoundation.CGFloat = 12, firstItemSpacing: CoreFoundation.CGFloat = 0) -> BearnSDK.JJItemLayout
+  @objc public static func circular(withRadius radius: CoreFoundation.CGFloat = 100) -> BearnSDK.JJItemLayout
+  @objc deinit
+}
+@objc public class JJItemPreparation : ObjectiveC.NSObject {
+  @objc public var prepare: (_ item: BearnSDK.JJActionItem, _ index: Swift.Int, _ numberOfItems: Swift.Int, _ actionButton: BearnSDK.JJFloatingActionButton) -> Swift.Void
+  @objc public init(prepare: @escaping (_ item: BearnSDK.JJActionItem, _ index: Swift.Int, _ numberOfItems: Swift.Int, _ actionButton: BearnSDK.JJFloatingActionButton) -> Swift.Void)
+  @objc public static func identity() -> BearnSDK.JJItemPreparation
+  @objc public static func scale(by ratio: CoreFoundation.CGFloat = 0.4) -> BearnSDK.JJItemPreparation
+  @objc public static func offset(translationX: CoreFoundation.CGFloat, translationY: CoreFoundation.CGFloat, scale: CoreFoundation.CGFloat = 0.4) -> BearnSDK.JJItemPreparation
+  @objc public static func horizontalOffset(distance: CoreFoundation.CGFloat = 50, scale: CoreFoundation.CGFloat = 0.4) -> BearnSDK.JJItemPreparation
+  @objc public static func circularOffset(distance: CoreFoundation.CGFloat = 50, scale: CoreFoundation.CGFloat = 0.4) -> BearnSDK.JJItemPreparation
+  @objc deinit
+}
+public protocol EFCountAdapter : AnyObject, BearnSDK.EFCount {
+  var counter: BearnSDK.EFCounter { get }
+}
+extension BearnSDK.EFCountAdapter {
+  public func setUpdateBlock(_ update: ((_ value: CoreFoundation.CGFloat, _ sender: Self) -> Swift.Void)?)
+  public func setCompletionBlock(_ completion: ((_ sender: Self) -> Swift.Void)?)
+  public func countFrom(_ startValue: CoreFoundation.CGFloat, to endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  public func countFromCurrentValueTo(_ endValue: CoreFoundation.CGFloat, withDuration duration: Foundation.TimeInterval)
+  public func stopCountAtCurrentValue()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class EFCountingButton : UIKit.UIButton, BearnSDK.EFCountAdapter {
+  @_Concurrency.MainActor(unsafe) public var counter: BearnSDK.EFCounter {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var formatBlock: ((CoreFoundation.CGFloat) -> Swift.String)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var attributedFormatBlock: ((CoreFoundation.CGFloat) -> Foundation.NSAttributedString)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var completionBlock: (() -> Swift.Void)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class EFCountingLabel : UIKit.UILabel, BearnSDK.EFCountAdapter {
+  @_Concurrency.MainActor(unsafe) public var counter: BearnSDK.EFCounter {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var formatBlock: ((CoreFoundation.CGFloat) -> Swift.String)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var attributedFormatBlock: ((CoreFoundation.CGFloat) -> Foundation.NSAttributedString)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var completionBlock: (() -> Swift.Void)? {
+    @available(*, unavailable)
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension BearnSDK.JJActionItemTitlePosition : Swift.Equatable {}
+extension BearnSDK.JJActionItemTitlePosition : Swift.Hashable {}
+extension BearnSDK.JJActionItemTitlePosition : Swift.RawRepresentable {}
+extension BearnSDK.ESTabBarItemPositioning : Swift.Equatable {}
+extension BearnSDK.ESTabBarItemPositioning : Swift.Hashable {}
+extension BearnSDK.ESTabBarItemPositioning : Swift.RawRepresentable {}
+extension BearnSDK.BRNNotificationBannerPosition : Swift.Equatable {}
+extension BearnSDK.BRNNotificationBannerPosition : Swift.Hashable {}
+extension BearnSDK.BRNNotificationBannerSpringiness : Swift.Equatable {}
+extension BearnSDK.BRNNotificationBannerSpringiness : Swift.Hashable {}
+extension BearnSDK.BRNSwiftyJSONError : Swift.Equatable {}
+extension BearnSDK.BRNSwiftyJSONError : Swift.Hashable {}
+extension BearnSDK.BRNSwiftyJSONError : Swift.RawRepresentable {}
+extension BearnSDK.BRNValueType : Swift.Equatable {}
+extension BearnSDK.BRNValueType : Swift.Hashable {}
+extension BearnSDK.BRNValueType : Swift.RawRepresentable {}
+extension BearnSDK.writingOptionsKeys : Swift.Equatable {}
+extension BearnSDK.writingOptionsKeys : Swift.Hashable {}
+extension BearnSDK.BRNDeepLinkHandler.BRNDeepLinkType : Swift.Equatable {}
+extension BearnSDK.BRNDeepLinkHandler.BRNDeepLinkType : Swift.Hashable {}
+extension BearnSDK.BRNDeepLinkHandler.BRNDeepLinkType : Swift.RawRepresentable {}
+extension BearnSDK.JJFloatingActionButtonState : Swift.Equatable {}
+extension BearnSDK.JJFloatingActionButtonState : Swift.Hashable {}
+extension BearnSDK.JJFloatingActionButtonState : Swift.RawRepresentable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationType : Swift.Equatable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationType : Swift.Hashable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationType : Swift.RawRepresentable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationScreen : Swift.Equatable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationScreen : Swift.Hashable {}
+extension BearnSDK.BRNSmartNotification.BRNSmartNotificationScreen : Swift.RawRepresentable {}
+extension BearnSDK.FormattedTextField.PlaceholderMode : Swift.Equatable {}
+extension BearnSDK.FormattedTextField.PlaceholderMode : Swift.Hashable {}
+extension BearnSDK.ESTabBarItemContentMode : Swift.Equatable {}
+extension BearnSDK.ESTabBarItemContentMode : Swift.Hashable {}
+extension BearnSDK.ESTabBarItemContentMode : Swift.RawRepresentable {}
+extension BearnSDK.BRNEnvironment : Swift.Equatable {}
+extension BearnSDK.BRNEnvironment : Swift.Hashable {}
+extension BearnSDK.BRNEnvironment : Swift.RawRepresentable {}
+extension BearnSDK.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.Equatable {}
+extension BearnSDK.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.Hashable {}
+extension BearnSDK.JJButtonAnimationConfiguration.JJButtonAnimationStyle : Swift.RawRepresentable {}
