@@ -601,6 +601,89 @@
           },
           {
             "kind": "Var",
+            "name": "isHighlighted",
+            "printedName": "isHighlighted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)highlighted",
+            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvp",
+            "moduleName": "BearnSDK",
+            "overriding": true,
+            "objc_name": "highlighted",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)isHighlighted",
+                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvg",
+                "moduleName": "BearnSDK",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "isHighlighted",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setHighlighted:",
+                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvs",
+                "moduleName": "BearnSDK",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "setHighlighted:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -832,605 +915,6 @@
           },
           {
             "kind": "Var",
-            "name": "buttonColor",
-            "printedName": "buttonColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)buttonColor",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonColorSo7UIColorCvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Custom",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonColor",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonColorSo7UIColorCvg",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setButtonColor:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonColorSo7UIColorCvs",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "highlightedButtonColor",
-            "printedName": "highlightedButtonColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIColor?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)highlightedButtonColor",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC011highlightedE5ColorSo7UIColorCSgvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Custom",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)highlightedButtonColor",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC011highlightedE5ColorSo7UIColorCSgvg",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setHighlightedButtonColor:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC011highlightedE5ColorSo7UIColorCSgvs",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buttonImage",
-            "printedName": "buttonImage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)buttonImage",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonImageSo7UIImageCSgvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIImage?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIImage",
-                        "printedName": "UIKit.UIImage",
-                        "usr": "c:objc(cs)UIImage"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonImage",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonImageSo7UIImageCSgvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIImage?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIImage",
-                        "printedName": "UIKit.UIImage",
-                        "usr": "c:objc(cs)UIImage"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setButtonImage:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonImageSo7UIImageCSgvs",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buttonImageSize",
-            "printedName": "buttonImageSize",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)buttonImageSize",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC15buttonImageSizeSo6CGSizeVvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "Dynamic",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonImageSize",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC15buttonImageSizeSo6CGSizeVvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGSize",
-                    "printedName": "CoreFoundation.CGSize",
-                    "usr": "c:@S@CGSize"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setButtonImageSize:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC15buttonImageSizeSo6CGSizeVvs",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buttonImageColor",
-            "printedName": "buttonImageColor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)buttonImageColor",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC16buttonImageColorSo7UIColorCvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Custom",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonImageColor",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC16buttonImageColorSo7UIColorCvg",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setButtonImageColor:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC16buttonImageColorSo7UIColorCvs",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "buttonDiameter",
-            "printedName": "buttonDiameter",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)buttonDiameter",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC14buttonDiameter12CoreGraphics7CGFloatVvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonDiameter",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC14buttonDiameter12CoreGraphics7CGFloatVvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setButtonDiameter:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC14buttonDiameter12CoreGraphics7CGFloatVvs",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "itemSizeRatio",
-            "printedName": "itemSizeRatio",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)itemSizeRatio",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13itemSizeRatio12CoreGraphics7CGFloatVvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "Dynamic",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)itemSizeRatio",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13itemSizeRatio12CoreGraphics7CGFloatVvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setItemSizeRatio:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13itemSizeRatio12CoreGraphics7CGFloatVvs",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "buttonAnimationConfiguration",
             "printedName": "buttonAnimationConfiguration",
             "children": [
@@ -1607,102 +1091,6 @@
           },
           {
             "kind": "Var",
-            "name": "handleSingleActionDirectly",
-            "printedName": "handleSingleActionDirectly",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)handleSingleActionDirectly",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC012handleSingleD8DirectlySbvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)handleSingleActionDirectly",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC012handleSingleD8DirectlySbvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)setHandleSingleActionDirectly:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC012handleSingleD8DirectlySbvs",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BearnSDK22JJFloatingActionButtonC012handleSingleD8DirectlySbvM",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC012handleSingleD8DirectlySbvM",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "closeAutomatically",
             "printedName": "closeAutomatically",
             "children": [
@@ -1839,104 +1227,6 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)buttonState",
                 "mangledName": "$s8BearnSDK22JJFloatingActionButtonC11buttonStateAA0cdeG0Ovg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "circleView",
-            "printedName": "circleView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JJCircleView",
-                "printedName": "BearnSDK.JJCircleView",
-                "usr": "c:@M@BearnSDK@objc(cs)JJCircleView"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)circleView",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC10circleViewAA08JJCircleG0Cvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Custom",
-              "Lazy",
-              "SetterAccess",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JJCircleView",
-                    "printedName": "BearnSDK.JJCircleView",
-                    "usr": "c:@M@BearnSDK@objc(cs)JJCircleView"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)circleView",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC10circleViewAA08JJCircleG0Cvg",
-                "moduleName": "BearnSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "imageView",
-            "printedName": "imageView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIImageView",
-                "printedName": "UIKit.UIImageView",
-                "usr": "c:objc(cs)UIImageView"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(py)imageView",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC9imageViewSo07UIImageG0Cvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Custom",
-              "Lazy",
-              "SetterAccess",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImageView",
-                    "printedName": "UIKit.UIImageView",
-                    "usr": "c:objc(cs)UIImageView"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)imageView",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC9imageViewSo07UIImageG0Cvg",
                 "moduleName": "BearnSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -2132,388 +1422,95 @@
           },
           {
             "kind": "Function",
-            "name": "addItem",
-            "printedName": "addItem(title:image:action:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JJActionItem",
-                "printedName": "BearnSDK.JJActionItem",
-                "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIImage?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BearnSDK.JJActionItem) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BearnSDK.JJActionItem) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "JJActionItem",
-                        "printedName": "BearnSDK.JJActionItem",
-                        "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)addItemWithTitle:image:action:",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC7addItem5title5image6actionAA08JJActionG0CSSSg_So7UIImageCSgyAIcSgtF",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "DiscardableResult",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "addItem",
-            "printedName": "addItem(_:)",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JJActionItem",
-                "printedName": "BearnSDK.JJActionItem",
-                "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)addItem:",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC7addItemyyAA08JJActionG0CF",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeItem",
-            "printedName": "removeItem(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BearnSDK.JJActionItem?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JJActionItem",
-                    "printedName": "BearnSDK.JJActionItem",
-                    "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JJActionItem",
-                "printedName": "BearnSDK.JJActionItem",
-                "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)removeItem:",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC10removeItemyAA08JJActionG0CSgAFF",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "DiscardableResult",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeItem",
-            "printedName": "removeItem(at:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "JJActionItem",
-                "printedName": "BearnSDK.JJActionItem",
-                "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)removeItemAt:",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC10removeItem2atAA08JJActionG0CSi_tF",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "DiscardableResult",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configureDefaultItem",
-            "printedName": "configureDefaultItem(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BearnSDK.JJActionItem) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BearnSDK.JJActionItem) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "JJActionItem",
-                        "printedName": "BearnSDK.JJActionItem",
-                        "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)configureDefaultItem:",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC20configureDefaultItemyyyAA08JJActionH0CcSgF",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "enabledItems",
-            "printedName": "enabledItems",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[BearnSDK.JJActionItem]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "JJActionItem",
-                    "printedName": "BearnSDK.JJActionItem",
-                    "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(py)enabledItems",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC12enabledItemsSayAA12JJActionItemCGvp",
-            "moduleName": "BearnSDK",
-            "declAttributes": [
-              "Dynamic",
-              "Custom",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[BearnSDK.JJActionItem]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "JJActionItem",
-                        "printedName": "BearnSDK.JJActionItem",
-                        "usr": "c:@M@BearnSDK@objc(cs)JJActionItem"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)enabledItems",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC12enabledItemsSayAA12JJActionItemCGvg",
-                "moduleName": "BearnSDK",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isHighlighted",
-            "printedName": "isHighlighted",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(py)highlighted",
-            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvp",
+            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)layoutSubviews",
+            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC14layoutSubviewsyyF",
             "moduleName": "BearnSDK",
             "overriding": true,
-            "objc_name": "highlighted",
+            "objc_name": "layoutSubviews",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "Custom",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
-            "isFromExtension": true,
-            "accessors": [
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "imageRect",
+            "printedName": "imageRect(forContentRect:)",
+            "children": [
               {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)isHighlighted",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvg",
-                "moduleName": "BearnSDK",
-                "overriding": true,
-                "objc_name": "isHighlighted",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
               },
               {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@CM@BearnSDK@objc(cs)JJFloatingActionButton(im)setHighlighted:",
-                "mangledName": "$s8BearnSDK22JJFloatingActionButtonC13isHighlightedSbvs",
-                "moduleName": "BearnSDK",
-                "overriding": true,
-                "objc_name": "setHighlighted:",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
               }
-            ]
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)imageRectForContentRect:",
+            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC9imageRect010forContentG0So6CGRectVAG_tF",
+            "moduleName": "BearnSDK",
+            "overriding": true,
+            "objc_name": "imageRectForContentRect:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "titleRect",
+            "printedName": "titleRect(forContentRect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BearnSDK@objc(cs)JJFloatingActionButton(im)titleRectForContentRect:",
+            "mangledName": "$s8BearnSDK22JJFloatingActionButtonC9titleRect010forContentG0So6CGRectVAG_tF",
+            "moduleName": "BearnSDK",
+            "overriding": true,
+            "objc_name": "titleRectForContentRect:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3131,13 +2128,13 @@
         "declAttributes": [
           "Custom",
           "AccessControl",
-          "IBDesignable",
-          "ObjC",
-          "RawDocComment"
+          "RawDocComment",
+          "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)UIControl",
+        "superclassUsr": "c:objc(cs)UIButton",
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
+          "UIKit.UIButton",
           "UIKit.UIControl",
           "UIKit.UIView",
           "UIKit.UIResponder",
@@ -3220,6 +2217,13 @@
             "printedName": "LayoutConstraintItem",
             "usr": "s:7SnapKit20LayoutConstraintItemP",
             "mangledName": "$s7SnapKit20LayoutConstraintItemP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KingfisherCompatible",
+            "printedName": "KingfisherCompatible",
+            "usr": "s:10Kingfisher0A10CompatibleP",
+            "mangledName": "$s10Kingfisher0A10CompatibleP"
           }
         ]
       },
@@ -33678,10 +32682,7 @@
         "name": "AHIMultiScan",
         "printedName": "AHIMultiScan",
         "declKind": "Import",
-        "moduleName": "BearnSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "BearnSDK"
       },
       {
         "kind": "Import",
@@ -56889,136 +55890,108 @@
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1657,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "Array",
-      "offset": 2327,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4735,
-      "length": 2,
-      "value": "56"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
       "kind": "FloatLiteral",
-      "offset": 5001,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6060,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6454,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7051,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7580,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8041,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8229,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8259,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10006,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10106,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "Array",
-      "offset": 10354,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "Array",
-      "offset": 10486,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "Array",
-      "offset": 10553,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
-      "kind": "FloatLiteral",
-      "offset": 21090,
+      "offset": 1822,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
       "kind": "FloatLiteral",
-      "offset": 21096,
+      "offset": 1828,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 21022,
+      "offset": 1742,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 2102,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 2108,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "Array",
+      "offset": 2424,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3566,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4109,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4297,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4327,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6074,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6174,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "Array",
+      "offset": 6422,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "Array",
+      "offset": 6554,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/JJFloatingActionButton.swift",
+      "kind": "Array",
+      "offset": 6621,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyExercisesTVCell.swift",
@@ -58010,14 +56983,14 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ThemeManager\/BRNTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 11966,
+      "offset": 12303,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ThemeManager\/BRNTheme.swift",
       "kind": "FloatLiteral",
-      "offset": 12283,
+      "offset": 12620,
       "length": 3,
       "value": "1.0"
     },
@@ -66347,21 +65320,21 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/BRNScanMainVC.swift",
       "kind": "Array",
-      "offset": 679,
+      "offset": 674,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/BRNScanMainVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 773,
+      "offset": 768,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/BRNScanMainVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2252,
+      "offset": 2082,
       "length": 5,
       "value": "false"
     },
@@ -68321,28 +67294,28 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10420,
+      "offset": 10429,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10535,
+      "offset": 10544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10567,
+      "offset": 10576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeModel.swift",
       "kind": "StringLiteral",
-      "offset": 10263,
+      "offset": 10272,
       "length": 43,
       "value": "\"BearnSDK.BRNChallengeLeaderboardItemMultiplayerModel\""
     },
@@ -68461,21 +67434,21 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Challenges\/ChallengeLeaderboards\/Multiplayer\/Cells\/BRNChallengeLeaderboardMultiplayerItemMidTVCell.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 687,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Challenges\/ChallengeLeaderboards\/Multiplayer\/Cells\/BRNChallengeLeaderboardMultiplayerItemMidTVCell.swift",
       "kind": "StringLiteral",
-      "offset": 583,
+      "offset": 697,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Challenges\/ChallengeLeaderboards\/Multiplayer\/Cells\/BRNChallengeLeaderboardMultiplayerItemMidTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 524,
+      "offset": 638,
       "length": 1,
       "value": "1"
     },
@@ -69714,7 +68687,7 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 13468,
+      "offset": 13470,
       "length": 3,
       "value": "100"
     },
@@ -69728,63 +68701,63 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 15899,
+      "offset": 15901,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 16666,
-      "length": 3,
-      "value": "0.4"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17498,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17519,
+      "offset": 16668,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 18363,
+      "offset": 17500,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 18384,
+      "offset": 17521,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18365,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
+      "kind": "FloatLiteral",
+      "offset": 18386,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 14324,
+      "offset": 14326,
       "length": 17,
       "value": "\"BearnSDK.JJItemPreparation\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 20324,
+      "offset": 20326,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/BodyAndFaceScan\/MainScan\/FloatMenu\/AnimationConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 20351,
+      "offset": 20353,
       "length": 1,
       "value": "0"
     },

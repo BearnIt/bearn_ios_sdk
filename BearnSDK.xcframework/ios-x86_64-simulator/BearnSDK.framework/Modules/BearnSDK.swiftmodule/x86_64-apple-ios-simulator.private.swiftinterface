@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AHIMultiScan
@@ -54,55 +54,24 @@ import _StringProcessing
     get
   }
 }
-@_inheritsConvenienceInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) public class JJFloatingActionButton : UIKit.UIControl {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class JJFloatingActionButton : UIKit.UIButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: BearnSDK.JJFloatingActionButtonDelegate?
   @objc @_Concurrency.MainActor(unsafe) public var items: [BearnSDK.JJActionItem] {
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var highlightedButtonColor: UIKit.UIColor? {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImage: UIKit.UIImage? {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor(unsafe) dynamic public var buttonImageSize: CoreFoundation.CGSize {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonImageColor: UIKit.UIColor {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var buttonDiameter: CoreFoundation.CGFloat {
-    @objc get
-    @objc set
-  }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) dynamic public var itemSizeRatio: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) public var buttonAnimationConfiguration: BearnSDK.JJButtonAnimationConfiguration
   @_Concurrency.MainActor(unsafe) public var itemAnimationConfiguration: BearnSDK.JJItemAnimationConfiguration
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var handleSingleActionDirectly: Swift.Bool {
-    @objc get
-    @objc set
-  }
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var closeAutomatically: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public var buttonState: BearnSDK.JJFloatingActionButtonState {
     get
-  }
-  @objc @_Concurrency.MainActor(unsafe) public var circleView: BearnSDK.JJCircleView {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView {
-    @objc get
   }
   @objc @_Concurrency.MainActor(unsafe) public var overlayView: UIKit.UIControl {
     @objc get
@@ -110,26 +79,10 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(image: UIKit.UIImage, action: ((BearnSDK.JJActionItem) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func imageRect(forContentRect contentRect: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func titleRect(forContentRect contentRect: CoreFoundation.CGRect) -> CoreFoundation.CGRect
   @objc deinit
-}
-@objc extension BearnSDK.JJFloatingActionButton {
-  @objc @discardableResult
-  @_Concurrency.MainActor(unsafe) dynamic public func addItem(title: Swift.String? = nil, image: UIKit.UIImage? = nil, action: ((BearnSDK.JJActionItem) -> Swift.Void)? = nil) -> BearnSDK.JJActionItem
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func addItem(_ item: BearnSDK.JJActionItem)
-  @objc @discardableResult
-  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(_ item: BearnSDK.JJActionItem) -> BearnSDK.JJActionItem?
-  @objc @discardableResult
-  @_Concurrency.MainActor(unsafe) dynamic public func removeItem(at index: Swift.Int) -> BearnSDK.JJActionItem
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func configureDefaultItem(_ body: ((BearnSDK.JJActionItem) -> Swift.Void)?)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public var enabledItems: [BearnSDK.JJActionItem] {
-    @objc get
-  }
-}
-extension BearnSDK.JJFloatingActionButton {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
-    @objc get
-    @objc set
-  }
 }
 extension BearnSDK.JJFloatingActionButton {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func updateConstraints()
