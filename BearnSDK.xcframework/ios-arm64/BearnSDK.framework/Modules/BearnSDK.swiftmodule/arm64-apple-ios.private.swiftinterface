@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AHIMultiScan
@@ -993,6 +993,7 @@ extension BearnSDK.GIFAnimatable {
   @objc override dynamic public init()
   public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment)
   public class func setupEnvironment(_ environment: BearnSDK.BRNEnvironment, checkAppVersion: Swift.Bool)
+  public class func setupFitBit(consumerKey: Swift.String, consumerSecret: Swift.String)
   open func deleteFirebaseTokenIfExists(completition: (() -> Swift.Void)? = nil)
   open func isBearnURL(url: Foundation.URL) -> Swift.Bool
   @discardableResult

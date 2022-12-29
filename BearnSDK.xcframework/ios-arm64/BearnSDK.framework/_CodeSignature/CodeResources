@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Y27D8Tq82XqYf9Uza2EWrrMMqMg=
+		oZ9ZIxUhfP5GLem1c6lsWnnWXtg=
 		</data>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>BRNChallenges.storyboardc/pLd-Uk-Hhe-view-gf7-2x-3dV.nib</key>
 		<data>
-		U97gho3pJwX2D08edlR7lvmH03w=
+		FTyi1r59Z8Pk3MwFwcuj+slOpdE=
 		</data>
 		<key>BRNChallenges.storyboardc/qTK-AU-QUC-view-jsD-94-2fW.nib</key>
 		<data>
@@ -1122,7 +1122,7 @@
 		</data>
 		<key>Headers/BearnSDK-Swift.h</key>
 		<data>
-		vjZRjJqk11/QzE7+hKMxk4sqQGk=
+		m6UK9qiUFKP5xKLUQ3W/RpC5bTI=
 		</data>
 		<key>Headers/BearnSDK.h</key>
 		<data>
@@ -1162,7 +1162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U0l3RQu9GvhgSgE5n+nXW8wcyNw=
+		oIzotzevqRoohxL+Kq1HaRrHiKQ=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -1190,7 +1190,7 @@
 		</data>
 		<key>LocalizableDefault.strings</key>
 		<data>
-		NEWgmLDuCMrjHTT55wHgpXhcCuE=
+		1fd64SSqxD0/K+PQRRdtnYQByKw=
 		</data>
 		<key>MYAccountEditAtributeCell.nib</key>
 		<data>
@@ -1210,23 +1210,23 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ERYvVfzle5sk38Jw4UOdb/BWi1M=
+		7OGhMIG3Usj2tOqJEH2nexerZcw=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RoPUIqzkeVhzEIET4kIuYRbV5ZQ=
+		Ivd6CYSJX66VOfhxyIfNqTTJulU=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		kwEp7m+LQx/O8JcahigTz1sc7Wc=
+		libcP2np2yjYnnrk856d2NcO5EQ=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RoPUIqzkeVhzEIET4kIuYRbV5ZQ=
+		Ivd6CYSJX66VOfhxyIfNqTTJulU=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QXN/i+w2T/dBqs8dIKK8VA5jWc8=
+		7Nl2IQqw013ktXmMxZPHWaLExdM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1388,7 +1388,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vQml1dfffVDFMJfrgFtT1P+wl3TjU9G0xy7AhV//mq8=
+			6Q6l2hAHYviblVg123m3ex+tYL81j/ub6Rwj8a8wjCg=
 			</data>
 		</dict>
 		<key>BRNAddChallengeDetailsHeaderCell.nib</key>
@@ -1906,7 +1906,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jg1qgzlVYKpnd/gbL0HspG+/7RMndV+0Y408JyWkvZ0=
+			4MF37WznnjBoL5RVwMqCLNMgznhXgPtG0RGEUhvVfrg=
 			</data>
 		</dict>
 		<key>BRNChallenges.storyboardc/qTK-AU-QUC-view-jsD-94-2fW.nib</key>
@@ -3320,7 +3320,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zfpekWYVlWJvmMlfHdv+Oj7AsbE+cg7mizU7NXPOqM=
+			9DlwTjpJNqZ1rVfS2K664cAEKE3yTKJoH21N95pOepU=
 			</data>
 		</dict>
 		<key>Headers/BearnSDK.h</key>
@@ -3432,7 +3432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n3ZhEBSckdBsiWB2VbjDJpsv2pRgKrpOkpm8GaL2NEk=
+			GpLgM2pusEOfVrFu36LbcoS/M3fnFDR1PGOWJgtCZHI=
 			</data>
 		</dict>
 		<key>MYAccountEditAtributeCell.nib</key>
@@ -3467,35 +3467,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EEvDLZJFpcpP0z0DxKKlMKYtiTz/dNkXz5ECfcIv7os=
+			cJ1bByUclgT+NQ+vMx8JwbLzdnvC/fP3Q7ZGl7GIJoc=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VKqaeL50mPxPykHtF17PcggxTv/S8Shq6Jb8PlmPSx8=
+			AjvBWJcv9HMVUB3skFRLHrtqWFTg+fo+kmMWhWsFNdk=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xJdfIKsoxvFCXSxMhQgEqyT9WRa1Lji7UmttYaQYBcA=
+			hhxabG2pzu/N1xEEV8eMDRvH0LIcL3WT+2JindLAtf4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VKqaeL50mPxPykHtF17PcggxTv/S8Shq6Jb8PlmPSx8=
+			AjvBWJcv9HMVUB3skFRLHrtqWFTg+fo+kmMWhWsFNdk=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VTK9a223mvQEDXwlW0SrQ0YICcSrWFpNWN8OyNfuiA=
+			t6i/kajuWkR75Cj+1IhR3o78xJdzY1bXAZf8rXgywnA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

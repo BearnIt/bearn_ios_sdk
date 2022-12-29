@@ -26435,13 +26435,6 @@
       },
       {
         "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "BearnSDK"
-      },
-      {
-        "kind": "Import",
         "name": "OAuthSwift",
         "printedName": "OAuthSwift",
         "declKind": "Import",
@@ -27147,6 +27140,39 @@
             "declKind": "Func",
             "usr": "s:8BearnSDK0A0C16setupEnvironment_15checkAppVersionyAA14BRNEnvironmentO_SbtFZ",
             "mangledName": "$s8BearnSDK0A0C16setupEnvironment_15checkAppVersionyAA14BRNEnvironmentO_SbtFZ",
+            "moduleName": "BearnSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupFitBit",
+            "printedName": "setupFitBit(consumerKey:consumerSecret:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BearnSDK0A0C11setupFitBit11consumerKey0F6SecretySS_SStFZ",
+            "mangledName": "$s8BearnSDK0A0C11setupFitBit11consumerKey0F6SecretySS_SStFZ",
             "moduleName": "BearnSDK",
             "static": true,
             "declAttributes": [
@@ -29683,13 +29709,6 @@
       },
       {
         "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "BearnSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -31892,13 +31911,6 @@
       },
       {
         "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "BearnSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -31963,13 +31975,6 @@
       },
       {
         "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "BearnSDK"
-      },
-      {
-        "kind": "Import",
         "name": "HealthKit",
         "printedName": "HealthKit",
         "declKind": "Import",
@@ -32011,13 +32016,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Auth0",
-        "printedName": "Auth0",
-        "declKind": "Import",
-        "moduleName": "BearnSDK"
       },
       {
         "kind": "Import",
@@ -56150,63 +56148,63 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 40206,
+      "offset": 40215,
       "length": 51,
       "value": "\"BRNUserAgent.globalBackgroundSyncronizeSharedData\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 40420,
+      "offset": 40429,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 40786,
+      "offset": 40795,
       "length": 7,
       "value": "\"en_US\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 41156,
+      "offset": 41165,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 46220,
+      "offset": 46229,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 46325,
+      "offset": 46334,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 46400,
+      "offset": 46409,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 46429,
+      "offset": 46438,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/BRNRouter.swift",
       "kind": "StringLiteral",
-      "offset": 46453,
+      "offset": 46462,
       "length": 2,
       "value": "\"\""
     },
@@ -63150,35 +63148,49 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
       "kind": "BooleanLiteral",
-      "offset": 493,
+      "offset": 480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
       "kind": "BooleanLiteral",
-      "offset": 544,
+      "offset": 531,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
       "kind": "BooleanLiteral",
-      "offset": 590,
+      "offset": 577,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
+      "kind": "StringLiteral",
+      "offset": 647,
+      "length": 8,
+      "value": "\"22DR58\""
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
+      "kind": "StringLiteral",
+      "offset": 704,
+      "length": 34,
+      "value": "\"aa23247c874c7414911d6d0cfebb8bb6\""
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
       "kind": "BooleanLiteral",
-      "offset": 3205,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Bearn.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4391,
+      "offset": 4914,
       "length": 5,
       "value": "false"
     },
@@ -63948,21 +63960,21 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeLeaderboardModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3742,
+      "offset": 3596,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeLeaderboardModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3775,
+      "offset": 3629,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Networking\/Models\/Challenges\/BRNChallengeLeaderboardModel.swift",
       "kind": "StringLiteral",
-      "offset": 3801,
+      "offset": 3655,
       "length": 5,
       "value": "\"cal\""
     },
@@ -64186,49 +64198,49 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 477,
+      "offset": 464,
       "length": 32,
       "value": "\"SWIPE TO CHOOSE ANOTHER DEVICE\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 543,
+      "offset": 530,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 603,
       "length": 14,
       "value": "\"Apple Health\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 672,
+      "offset": 659,
       "length": 14,
       "value": "\"healthKitApp\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 796,
+      "offset": 783,
       "length": 8,
       "value": "\"Fitbit\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 833,
       "length": 13,
       "value": "\"fitbitImage\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/SyncDevices&Apps\/BRNSyncDeviceAndAppsViewController.swift",
       "kind": "Array",
-      "offset": 1310,
+      "offset": 1297,
       "length": 2,
       "value": "[]"
     },
@@ -64326,98 +64338,98 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Dashboard\/BRNDashboardCenterViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 904,
+      "offset": 891,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Dashboard\/BRNDashboardCenterViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1062,
+      "offset": 1049,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Dashboard\/BRNDashboardCenterViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1576,
+      "offset": 1563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Dashboard\/BRNDashboardCenterViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6051,
+      "offset": 6038,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Main\/Dashboard\/BRNDashboardCenterViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8303,
+      "offset": 8290,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 578,
+      "offset": 565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 995,
+      "offset": 982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1044,
+      "offset": 1031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1300,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1485,
+      "offset": 1472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1083,
+      "offset": 1070,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1579,
+      "offset": 1566,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "Array",
-      "offset": 1793,
+      "offset": 1780,
       "length": 306,
       "value": "[\"AL\", \"AK\", \"AZ\", \"AR\", \"CA\", \"CO\", \"CT\", \"DE\", \"DC\", \"FL\", \"GA\", \"HI\", \"ID\", \"IL\", \"IN\", \"IA\", \"KS\", \"KY\", \"LA\", \"ME\", \"MD\", \"MA\", \"MI\", \"MN\", \"MS\", \"MO\", \"MT\", \"NE\", \"NV\", \"NH\", \"NJ\", \"NM\", \"NY\", \"NC\", \"ND\", \"OH\", \"OK\", \"OR\", \"PA\", \"RI\", \"SC\", \"SD\", \"TN\", \"TX\", \"UT\", \"VT\", \"VA\", \"WA\", \"WV\", \"WI\", \"WY\"]"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Profile\/BRNMyAccountEditViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13805,
+      "offset": 13792,
       "length": 5,
       "value": "false"
     },
@@ -64823,70 +64835,42 @@
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 564,
-      "length": 8,
-      "value": "\"22DR58\""
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 606,
-      "length": 34,
-      "value": "\"aa23247c874c7414911d6d0cfebb8bb6\""
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 674,
+      "offset": 735,
       "length": 64,
       "value": "\"https:\/\/www.fitbit.com\/oauth2\/authorize?prompt=login%20consent\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 772,
+      "offset": 833,
       "length": 37,
       "value": "\"https:\/\/api.fitbit.com\/oauth2\/token\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 904,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 945,
-      "length": 8,
-      "value": "\"22B4NL\""
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 987,
-      "length": 34,
-      "value": "\"7c2d6812f0678d4ee3fc4c69e35f26f5\""
-    },
-    {
-      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1055,
+      "offset": 1171,
       "length": 41,
       "value": "\"https:\/\/www.fitbit.com\/oauth2\/authorize\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 1130,
+      "offset": 1246,
       "length": 37,
       "value": "\"https:\/\/api.fitbit.com\/oauth2\/token\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/Common\/Helpers\/BRNFitbitManager.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1317,
       "length": 6,
       "value": "\"code\""
     },
