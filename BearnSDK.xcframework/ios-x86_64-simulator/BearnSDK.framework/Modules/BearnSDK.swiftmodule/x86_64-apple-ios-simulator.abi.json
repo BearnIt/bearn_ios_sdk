@@ -65555,71 +65555,92 @@
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 951,
+      "length": 4,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 987,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1018,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1592,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1303,
+      "offset": 1661,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "StringLiteral",
-      "offset": 1337,
+      "offset": 1695,
       "length": 12,
       "value": "\"MM-dd-yyyy\""
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1853,
+      "offset": 2211,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1856,
+      "offset": 2214,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1870,
+      "offset": 2228,
       "length": 3,
       "value": "208"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1874,
+      "offset": 2232,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1887,
+      "offset": 2245,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1890,
+      "offset": 2248,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/imanea\/Projects\/iOS+Vapor\/iOS\/Roman\/bearn-sdk-ios\/BearnSDK\/Sources\/ViewControllers\/Survey\/Cells\/BRNSurveyDOBTVCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1904,
+      "offset": 2262,
       "length": 1,
       "value": "1"
     },
