@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios13.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AHIMultiScan
@@ -62,7 +62,7 @@ import _StringProcessing
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: BearnSDK.JJFloatingActionButtonDelegate?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any BearnSDK.JJFloatingActionButtonDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public var items: [BearnSDK.JJActionItem] {
     @objc get
     @objc set
@@ -170,7 +170,7 @@ extension BearnSDK.EFCount {
   public func countFromZeroTo(_ endValue: CoreFoundation.CGFloat)
 }
 public class EFCounter {
-  public var timingFunction: BearnSDK.EFTiming
+  public var timingFunction: any BearnSDK.EFTiming
   public var updateBlock: ((CoreFoundation.CGFloat) -> Swift.Void)?
   public var completionBlock: (() -> Swift.Void)?
   public var fromValue: CoreFoundation.CGFloat {
@@ -237,12 +237,12 @@ extension BearnSDK.EFCounter : BearnSDK.EFCount {
 }
 @_hasMissingDesignatedInitializers open class BRNBaseThemeObject : Swift.Codable {
   @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class BRNTheme : BearnSDK.BRNBaseThemeObject {
-  required public init(from decoder: Swift.Decoder) throws
-  override public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: any Swift.Encoder) throws
   public func loadCustomInfoFrom(bundle: Foundation.Bundle?, localizationStringsFile: Swift.String? = nil, colorsFile: Swift.String? = nil)
   @objc deinit
 }
@@ -374,7 +374,7 @@ public protocol UILabelTapableLinksDelegate : ObjectiveC.NSObjectProtocol {
   func tapableLabel(_ label: BearnSDK.UILabelTapableLinks, didTapUrl url: Swift.String, atRange range: Foundation.NSRange)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class UILabelTapableLinks : UIKit.UILabel {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: BearnSDK.UILabelTapableLinksDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BearnSDK.UILabelTapableLinksDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var attributedText: Foundation.NSAttributedString? {
     @objc get
     @objc set
@@ -503,11 +503,11 @@ extension Swift.String : BearnSDK.JSONSubscriptType {
   }
 }
 extension BearnSDK.BRNJSON {
-  public subscript(path: [BearnSDK.JSONSubscriptType]) -> BearnSDK.BRNJSON {
+  public subscript(path: [any BearnSDK.JSONSubscriptType]) -> BearnSDK.BRNJSON {
     get
     set
   }
-  public subscript(path: BearnSDK.JSONSubscriptType...) -> BearnSDK.BRNJSON {
+  public subscript(path: any BearnSDK.JSONSubscriptType...) -> BearnSDK.BRNJSON {
     get
     set
   }
@@ -743,8 +743,8 @@ public enum writingOptionsKeys {
   }
 }
 extension BearnSDK.BRNJSON : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @IBDesignable @_Concurrency.MainActor(unsafe) open class JJActionItem : UIKit.UIControl {
   @objc @_Concurrency.MainActor(unsafe) open var action: ((BearnSDK.JJActionItem) -> Swift.Void)?
@@ -1108,7 +1108,7 @@ public class MaskTextFormatter : BearnSDK.TextFromatter {
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) open var textFormatter: BearnSDK.TextFromatter? {
+  @_Concurrency.MainActor(unsafe) open var textFormatter: (any BearnSDK.TextFromatter)? {
     get
     set
   }
@@ -1140,7 +1140,7 @@ public class MaskTextFormatter : BearnSDK.TextFromatter {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var delegate: UIKit.UITextFieldDelegate? {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var delegate: (any UIKit.UITextFieldDelegate)? {
     @objc get
     @objc set(value)
   }
@@ -1164,7 +1164,7 @@ extension BearnSDK.NibOwnerLoadable where Self : UIKit.UIView {
 }
 @objc @_inheritsConvenienceInitializers public class BRNHealthKitManager : ObjectiveC.NSObject {
   public static let shared: BearnSDK.BRNHealthKitManager
-  public class func authorizeHealthKit(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  public class func authorizeHealthKit(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   public func fetchLatestHeartRateSample(completion: @escaping (_ samples: [HealthKit.HKQuantitySample]?) -> Swift.Void)
   public func updateHealthdata(deviceStatus: BearnSDK.DeviceStatus, notifyOnFinished: Swift.Bool, completion: @escaping (() -> Swift.Void))
   public func loadBiometricDevices(completed: (() -> Swift.Void)?)
@@ -1192,7 +1192,7 @@ internal protocol _AnyDecodable {
 extension BearnSDK.AnyDecodable : BearnSDK._AnyDecodable {
 }
 extension BearnSDK._AnyDecodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension BearnSDK.AnyDecodable : Swift.Equatable {
   public static func == (lhs: BearnSDK.AnyDecodable, rhs: BearnSDK.AnyDecodable) -> Swift.Bool
@@ -1379,7 +1379,7 @@ internal protocol _AnyEncodable {
 extension BearnSDK.AnyEncodable : BearnSDK._AnyEncodable {
 }
 extension BearnSDK._AnyEncodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 extension BearnSDK.AnyEncodable : Swift.Equatable {
   public static func == (lhs: BearnSDK.AnyEncodable, rhs: BearnSDK.AnyEncodable) -> Swift.Bool
@@ -1519,7 +1519,7 @@ extension BearnSDK.AnyEncodable : Swift.Hashable {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak open var delegate: BearnSDK.SJSegmentedViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) weak open var delegate: (any BearnSDK.SJSegmentedViewControllerDelegate)?
   @_Concurrency.MainActor(unsafe) required public init(headerViewController: UIKit.UIViewController?, segmentControllers: [UIKit.UIViewController])
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func loadView()
@@ -1555,7 +1555,7 @@ extension BearnSDK.GIFImageView {
   @_Concurrency.MainActor(unsafe) public func loadGifImage(from urlString: Swift.String?)
 }
 public class Animator {
-  public init(withDelegate delegate: BearnSDK.GIFAnimatable)
+  public init(withDelegate delegate: any BearnSDK.GIFAnimatable)
   @objc deinit
 }
 extension UIKit.UIImageView : BearnSDK.ImageContainer {
