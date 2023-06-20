@@ -6,6 +6,6 @@ framework module BearnSDK {
 }
 
 module BearnSDK.Swift {
-  header "BearnSDK-Swift.h"
-  requires objc
+    header "BearnSDK-Swift.h"
+    requires objc
 }
