@@ -469,6 +469,14 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public func generateInnerShadow()
   @_Concurrency.MainActor(unsafe) public func generateEllipticalShadow()
 }
+@objc @_inheritsConvenienceInitializers open class BRNDynamicLinksManager : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.BRNDynamicLinksManager
+  @discardableResult
+  public func handle(url: Foundation.URL) -> Swift.Bool
+  public func handleDynamicLink(_ dynamicLink: FirebaseDynamicLinks.DynamicLink)
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension Foundation.NSNotification.Name {
   public static let BRNMainTabBarNeedToShowScreenNotification: Foundation.NSNotification.Name
 }
@@ -554,6 +562,12 @@ extension BearnSDK.StoryboardBased where Self : UIKit.UIViewController {
 extension Foundation.NSNotification.Name {
   public static let BRNLastRegisteredUserEmail: Foundation.NSNotification.Name
 }
+@objc @_inheritsConvenienceInitializers open class BRNSmartNotificationManager : ObjectiveC.NSObject {
+  public static var shared: BearnSDK.BRNSmartNotificationManager
+  public func handleSmartNotification(userInfo: [Swift.AnyHashable : Any], needToDisplayBanner: Swift.Bool) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension Foundation.NSNotification.Name {
   public static let BRNDashboardDataNeedReloadNotification: Foundation.NSNotification.Name
   public static let BRNDashboardHealthDataNeedUpdateAndReloadNotification: Foundation.NSNotification.Name
@@ -581,6 +595,14 @@ extension BearnSDK.NibOwnerLoadable {
 }
 extension BearnSDK.NibOwnerLoadable where Self : UIKit.UIView {
   public func loadNibContent()
+}
+@objc @_inheritsConvenienceInitializers open class BRNHealthKitManager : ObjectiveC.NSObject {
+  public static let shared: BearnSDK.BRNHealthKitManager
+  public class func authorizeHealthKit(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  public func fetchLatestHeartRateSample(completion: @escaping (_ samples: [HealthKit.HKQuantitySample]?) -> Swift.Void)
+  public func loadBiometricDevices(completed: (() -> Swift.Void)?)
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension UIKit.UIStatusBarStyle {
   public static var darkContentWorkaround: UIKit.UIStatusBarStyle {
