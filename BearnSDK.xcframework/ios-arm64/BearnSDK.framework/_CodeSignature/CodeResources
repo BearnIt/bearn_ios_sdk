@@ -1180,7 +1180,7 @@
 		</data>
 		<key>Headers/BearnSDK-Swift.h</key>
 		<data>
-		IiQ/E6AxE3yML7jCYHHth+XJWOI=
+		tqk3H/ipgj0lLnaPSbyn2dKD99A=
 		</data>
 		<key>Headers/BearnSDK.h</key>
 		<data>
@@ -1268,11 +1268,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		6R6UOKMTeCbkxEerNI5pOGZ3iCI=
+		5M8nk5e4YQhS2YU9EB3qItvVzwg=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		U8mI4O+EAnFXN8lR+K6fleuSTxM=
+		qjBSYTXavPWZXkiu8Dzy/2LfPFY=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -1280,11 +1280,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		U8mI4O+EAnFXN8lR+K6fleuSTxM=
+		qjBSYTXavPWZXkiu8Dzy/2LfPFY=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xdDg8EHGeYm/pnmz/KYuAsb7WcI=
+		at0e85lJBajqwL2K+ptGnJDRLzw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3482,7 +3482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qMNNXYcEn71gdh6jmklLBhNooqox4w5nQZi6lkkYgec=
+			O3+zpporWxMS1ig/ZGxnJJAH4myDwPKUXI1CpvKNflc=
 			</data>
 		</dict>
 		<key>Headers/BearnSDK.h</key>
@@ -3629,14 +3629,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9jpO0BDXGhwigXwiO+PymTM9KLGLQBYwMCMXFvqyO8Q=
+			PsrwzlYfu6t0Hfclwm+9niobSYw3S0UDEODhbOUWdK4=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HGFxGql1MzvUKnLovN33bxFtIOda36I39ak9L+6wBg4=
+			QGamQZKTjJ2miu94CrZGgNnSKDu92xuUL2DI+LV9+nU=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -3650,14 +3650,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HGFxGql1MzvUKnLovN33bxFtIOda36I39ak9L+6wBg4=
+			QGamQZKTjJ2miu94CrZGgNnSKDu92xuUL2DI+LV9+nU=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4o3BdMbMQFgMWbLUocbC28vjuBL/MpW4C07vY9LI/Pg=
+			AgGbnH5a/RkKcVc+6bf74C+RJGpN0xuaIIXhz/mBnG0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -284,6 +284,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC8BearnSDK22BRNDynamicLinksManager")
+@interface BRNDynamicLinksManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, BRNEnvironment, open) {
 /// For production use only.
   BRNEnvironmentProduction = 0,
@@ -292,6 +298,18 @@ typedef SWIFT_ENUM(NSInteger, BRNEnvironment, open) {
 /// For partner demo.
   BRNEnvironmentPartnerDemo = 2,
 };
+
+
+SWIFT_CLASS("_TtC8BearnSDK19BRNHealthKitManager")
+@interface BRNHealthKitManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8BearnSDK27BRNSmartNotificationManager")
+@interface BRNSmartNotificationManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class NSBundle;
 @class NSString;
