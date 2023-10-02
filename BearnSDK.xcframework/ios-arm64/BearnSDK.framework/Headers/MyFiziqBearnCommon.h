@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MyFiziqSDKCommon/MyFiziqCommon.h>
+//#import <AHICommon/AHICommonKeys.h>
 //#import <MyFiziqSDKInputView/MyFiziqInputCommon.h>
 //#import <MyFiziqSDKLoginView/MyFiziqLoginCommon.h>
 //#import <MyFiziqSDKOnboardingView/MyFiziqOnboardingCommon.h>
@@ -17,9 +17,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyFiziqBearnCommon: MyFiziqCommon <MyFiziqCommonProtocol>
+@interface MyFiziqBearnCommon: NSObject//: AHICommonKeys <MyFiziqCommonProtocol>
 // Singleton interface.
-+ (instancetype _Nullable)shared;
+//+ (instancetype _Nullable)shared;
 @end
 
 NS_ASSUME_NONNULL_END
