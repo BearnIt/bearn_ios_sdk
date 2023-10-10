@@ -1268,7 +1268,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5M8nk5e4YQhS2YU9EB3qItvVzwg=
+		CnalfGoEFd4mCALtppfnmNSWbtk=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -1284,7 +1284,7 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		at0e85lJBajqwL2K+ptGnJDRLzw=
+		w471/OYGkQohaTIck9S4xtEM6/k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -3629,7 +3629,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PsrwzlYfu6t0Hfclwm+9niobSYw3S0UDEODhbOUWdK4=
+			wN5U65VpITKt8K+JngDURhffb4t93ZrW8Gn6zfC5AHI=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -3657,7 +3657,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AgGbnH5a/RkKcVc+6bf74C+RJGpN0xuaIIXhz/mBnG0=
+			AgjrHi0ta4dJhVb2gS+JrY98RYx1iHipA0qb7Rpurxk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
