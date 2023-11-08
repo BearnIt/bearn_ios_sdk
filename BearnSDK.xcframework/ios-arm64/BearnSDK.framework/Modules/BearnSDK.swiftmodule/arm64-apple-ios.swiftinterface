@@ -2,8 +2,6 @@
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BearnSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AHIBodyScan
-import AHIFaceScan
 import AHIMultiScan
 import AVFoundation
 import AVKit
@@ -24,10 +22,13 @@ import JWTDecode
 import Kingfisher
 import LinkKit
 import MBProgressHUD
+import MFZFaceScan
 import Mantis
 import MessageUI
 import MobileCoreServices
 import SceneKit.ModelIO
+import MyFiziqSDKCommon
+import MyFiziqSDKCoreLite
 import NotificationBannerSwift
 import OAuthSwift
 import QuartzCore

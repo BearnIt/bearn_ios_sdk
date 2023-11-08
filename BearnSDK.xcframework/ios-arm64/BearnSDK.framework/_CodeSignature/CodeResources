@@ -8,48 +8,6 @@
 		<data>
 		iKZlrEKTKYEA1NUzsgVEPN0TV60=
 		</data>
-		<key>AHIBodyScan.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tqt7mbvSNchmDEXXgM3njaCK774=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AHIBodyScan.bundle/Info.plist</key>
-		<data>
-		WPHmlq1GH4ETvh7KwvjYQP3Zrg0=
-		</data>
-		<key>AHIBodyScanCommon.bundle/Info.plist</key>
-		<data>
-		ZeOqaXBLhVmauUQt7VgfR75IcA4=
-		</data>
-		<key>AHIBodyScanCommon.bundle/ahi-bodyscan-logo.png</key>
-		<data>
-		7kS39EoVbw1IiXUmRuJLHTgltbs=
-		</data>
-		<key>AHIBodyScanCommon.bundle/sound_aligned.m4a</key>
-		<data>
-		78TlXHwsUI3aGuFjT0rMhhpwK6g=
-		</data>
-		<key>AHIBodyScanCommon.bundle/sound_countdown.m4a</key>
-		<data>
-		Q2Wru1MKenU0C1D4v2vKhdRQ0GA=
-		</data>
-		<key>AHIBodyScanUI.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tqt7mbvSNchmDEXXgM3njaCK774=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AHIBodyScanUI.bundle/Info.plist</key>
-		<data>
-		KF98bxkuMiOkschaTHk+/LlfG/4=
-		</data>
 		<key>AHILocalizable.strings</key>
 		<data>
 		8R8fAy40vQtKDlhbC3l3T75HPQQ=
@@ -1162,14 +1120,6 @@
 		<data>
 		aCPHuAqTxnx337kTAfh1iNybcNw=
 		</data>
-		<key>FaceScanLibrary.bundle/Info.plist</key>
-		<data>
-		kLShj3bK9pLejBOMbZiE5Z0KdiA=
-		</data>
-		<key>FaceScanLibrary.bundle/ahi-facescan-logo.png</key>
-		<data>
-		HK2qC1apyqk76GYOAjE6TbMbqVI=
-		</data>
 		<key>GoalPopupTVCell.nib</key>
 		<data>
 		pVI2b1naRJVMDvwrSII9u2AQTA4=
@@ -1188,7 +1138,7 @@
 		</data>
 		<key>Headers/MyFiziqBearnCommon.h</key>
 		<data>
-		4/EVDnkpa8NTgfRM7ITJ6kCCDks=
+		k+jFxE422aTD79J0oU3rjOYslnk=
 		</data>
 		<key>HealtAndCreditScoreHeaderCell.nib</key>
 		<data>
@@ -1268,11 +1218,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CnalfGoEFd4mCALtppfnmNSWbtk=
+		zk5kg7q+nCyChGbT7ErQQDEQQn0=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qjBSYTXavPWZXkiu8Dzy/2LfPFY=
+		h46SSNNNbSPeg2pf88J3bEQc+B4=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -1280,11 +1230,11 @@
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qjBSYTXavPWZXkiu8Dzy/2LfPFY=
+		h46SSNNNbSPeg2pf88J3bEQc+B4=
 		</data>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		w471/OYGkQohaTIck9S4xtEM6/k=
+		pkmCVuKl1PQPoptR/5riObNvNn4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1418,22 +1368,6 @@
 		<data>
 		x1aQteN3pa5IT9VLthlGnktQ09o=
 		</data>
-		<key>commonLibrary.bundle/Info.plist</key>
-		<data>
-		hfUFKYxtETiDqpuFQv5jhBD5pPs=
-		</data>
-		<key>commonLibrary.bundle/ahi-common-logo.png</key>
-		<data>
-		l/TdzQiyBUMe4+qRQkZbJMj3vfA=
-		</data>
-		<key>multiscanLibrary.bundle/Info.plist</key>
-		<data>
-		kKexFZcsj218ZBvjOagxze4pbg8=
-		</data>
-		<key>multiscanLibrary.bundle/ahi-multiscan-logo.png</key>
-		<data>
-		+ka+zB2RpSMWJzTzMrkDWiOr6yQ=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -1442,66 +1376,6 @@
 			<key>hash2</key>
 			<data>
 			KahErdMvL7cYfYspQXKhdXpWm63LCsKU0zk6o5zGedM=
-			</data>
-		</dict>
-		<key>AHIBodyScan.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Miu6LOSja71RYz0c/W2pTt/4dyhjxm39hQIyKqwlKzI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AHIBodyScan.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lHP3u6RN1+iD35gP9/H2KdO1Q66CQUhZEZjdIVPr1iM=
-			</data>
-		</dict>
-		<key>AHIBodyScanCommon.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O67ZuTDE+eXaxb4Ep0Mj5qfhqm/H/wDiugwKPhexTdU=
-			</data>
-		</dict>
-		<key>AHIBodyScanCommon.bundle/ahi-bodyscan-logo.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uciPGFGxpq4cmDfuIYGOVxTlwjXcHFCGBV8JjblFcE8=
-			</data>
-		</dict>
-		<key>AHIBodyScanCommon.bundle/sound_aligned.m4a</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uCMiDDtG+gYg4FNeWsugf60HenzLW6e6/CeFVyfWnOA=
-			</data>
-		</dict>
-		<key>AHIBodyScanCommon.bundle/sound_countdown.m4a</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gFWITjYYWlQmBIHZU+V9RNCtG476IeSMAoOmqrzTxjI=
-			</data>
-		</dict>
-		<key>AHIBodyScanUI.bundle/Base.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Miu6LOSja71RYz0c/W2pTt/4dyhjxm39hQIyKqwlKzI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AHIBodyScanUI.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vjFT7Vm9valLYkD/Lt9pW83I5kXnMc80a6rz6tDgaVE=
 			</data>
 		</dict>
 		<key>AHILocalizable.strings</key>
@@ -3450,20 +3324,6 @@
 			xRKBaY0UfMGLuPEZHTBqDIwRAb0+/+7s6/O2DJ+DCZc=
 			</data>
 		</dict>
-		<key>FaceScanLibrary.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ds4hO9q4LBIJaUsTv+5D0tZk8+Mn2+ubwtOmeNVdCS4=
-			</data>
-		</dict>
-		<key>FaceScanLibrary.bundle/ahi-facescan-logo.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SjlL5q1KH6EiPUCMETB7lDFjO0MGTVm+Qwv/7GuPglA=
-			</data>
-		</dict>
 		<key>GoalPopupTVCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -3496,7 +3356,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vwKBFZS5X9sBtK7lTbodZ5BI7RdAhjnHK9cL2D+1p5Y=
+			SkPFCxQSJERja6Cc4QIALnAQ/IpbhZyFrdgRn7FdKyE=
 			</data>
 		</dict>
 		<key>HealtAndCreditScoreHeaderCell.nib</key>
@@ -3629,14 +3489,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wN5U65VpITKt8K+JngDURhffb4t93ZrW8Gn6zfC5AHI=
+			qUbX13iCDmdj3/aB5s8k/Ztv5sC3c7aaD0u0kccd3aM=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QGamQZKTjJ2miu94CrZGgNnSKDu92xuUL2DI+LV9+nU=
+			5z1G3upBW6BTjMdFFUHN6tvNN1V8UcW4fYdFhj2yF7A=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -3650,14 +3510,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QGamQZKTjJ2miu94CrZGgNnSKDu92xuUL2DI+LV9+nU=
+			5z1G3upBW6BTjMdFFUHN6tvNN1V8UcW4fYdFhj2yF7A=
 			</data>
 		</dict>
 		<key>Modules/BearnSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AgjrHi0ta4dJhVb2gS+JrY98RYx1iHipA0qb7Rpurxk=
+			JBfVAmYVB9huGKiCjHKVv0am+GDg6xMibOAroZJxPJ4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3889,34 +3749,6 @@
 			<key>hash2</key>
 			<data>
 			PezqYpuqM+nxIsoiR8NSBPaBtJvnVk86gkhqxUgPb0U=
-			</data>
-		</dict>
-		<key>commonLibrary.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rl3SyNLJE9HX9aQuGx4Qt3F4j0Cx+L9STM99ZCzbyGg=
-			</data>
-		</dict>
-		<key>commonLibrary.bundle/ahi-common-logo.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CZeu9tyv64ulWEUQUh4E47hcHehmGVZq/tUafdSdgtM=
-			</data>
-		</dict>
-		<key>multiscanLibrary.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/q8f2G/8Ei7VLIcybqaoPFK2KOR3k8lCOYt+izBUOzI=
-			</data>
-		</dict>
-		<key>multiscanLibrary.bundle/ahi-multiscan-logo.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SL96ljVo2j5Oqu9E5gSXioty0AuH8N8h48xgaUqCZXg=
 			</data>
 		</dict>
 	</dict>
